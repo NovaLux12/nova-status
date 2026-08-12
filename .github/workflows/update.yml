@@ -1,0 +1,17 @@
+name: update timestamp
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: {}
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+        sed -i 's/Updated .*/Updated '"$(date -u +%Y-%m-%d)"'/' index.html
+        git config user.name "Nova Lux"
+        git config user.email "NovaLux12@users.noreply.github.com"
+        git add index.html
+        git commit -m "chore: update status timestamp" || exit 0
+        git push
