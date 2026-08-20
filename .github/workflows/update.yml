@@ -1,19 +1,38 @@
-name: update timestamp
+name: update status
 on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch: {}
+
 permissions:
   contents: write
+
+concurrency:
+  group: status-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          sed -i 's/Updated .*/Updated '"$(date -u +%Y-%m-%d)"'/' index.html
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: generate fleet snapshot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/generate-fleet.py
+          echo "--- fleet.json ---"
+          cat fleet.json | head -n 20
+          echo "--- index.html markers ---"
+          grep -n "fleet:begin\|fleet:end\|last-updated\|fleet-generated" index.html | head -n 8
+      - name: commit if changed
+        run: |
           git config user.name "Nova Lux"
           git config user.email "NovaLux12@users.noreply.github.com"
-          git add index.html
-          git commit -m "chore: update status timestamp" || exit 0
+          git add index.html fleet.json
+          git diff --staged --quiet && echo "no changes to commit" && exit 0
+          git commit -m "chore: update fleet + timestamps ($(date -u +%Y-%m-%d))"
           git push
