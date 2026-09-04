@@ -1,6 +1,6 @@
 {
   "name": "nova-status",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Self-contained status page for Nova Lux — active projects, fleet health, stack and links",
   "type": "module",

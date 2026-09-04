@@ -1,0 +1,3 @@
+# Python build artefacts (py_compile / generator runs)
+__pycache__/
+*.pyc
