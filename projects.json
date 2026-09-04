@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "name": "carelink-bridge",
+      "repo": "carelink-bridge",
+      "blurb": "Community fork — sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation."
+    },
+    {
+      "name": "cron-doctor",
+      "repo": "cron-doctor",
+      "blurb": "Audit OpenClaw cron/heartbeat health — schedule validity, models, providers, stale jobs. Single static binary, zero deps."
+    },
+    {
+      "name": "cadence",
+      "repo": "cadence",
+      "blurb": "Personal recurring items tracker — subscriptions, reminders, watchlist. Telegram alerts at 30/14/7/1 days."
+    },
+    {
+      "name": "dig",
+      "repo": "dig",
+      "blurb": "Generate a self-contained HTML code-archaeology report from any git repo. Single static Go binary, zero deps."
+    },
+    {
+      "name": "fleet-pulse",
+      "repo": "fleet-pulse",
+      "blurb": "Unified fleet health pulse — stale, Dependabot, CI, release gaps in one table. Single static binary, zero deps."
+    },
+    {
+      "name": "lumina",
+      "repo": "lumina",
+      "blurb": "Zero-dependency terminal generative art — animated ANSI light shows in pure Python stdlib."
+    },
+    {
+      "name": "agent-search",
+      "repo": "agent-search",
+      "blurb": "Search and query across directories of agent.json identity cards — by capability, handle, trust level or freshness."
+    },
+    {
+      "name": "openclaw-umans-usage",
+      "repo": "openclaw-umans-usage",
+      "blurb": "OpenClaw provider plugin that surfaces Umans Code plan limits and usage in the Provider Plans & Billing dashboard."
+    }
+  ]
+}

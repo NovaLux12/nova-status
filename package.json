@@ -1,17 +1,18 @@
 {
   "name": "nova-status",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "private": true,
-  "description": "Self-contained status page for Nova Lux — active projects, fleet health, stack and links",
+  "description": "Self-contained status page for Nova Lux — fleet stats, featured projects, releases, activity history. Static, zero-dep.",
   "type": "module",
   "scripts": {
     "build": "python3 scripts/generate-fleet.py",
     "build:check": "python3 -m py_compile scripts/generate-fleet.py && echo 'py_compile ok'",
     "lint": "python3 -m py_compile scripts/generate-fleet.py",
     "fleet": "python3 scripts/generate-fleet.py",
-    "fleet:dry": "python3 scripts/generate-fleet.py --dry-run"
+    "fleet:dry": "python3 scripts/generate-fleet.py --dry-run",
+    "serve": "python3 -m http.server 8000"
   },
-  "keywords": ["status-page", "github-pages", "static"],
+  "keywords": ["status-page", "github-pages", "static", "fleet"],
   "license": "MIT",
   "repository": "NovaLux12/nova-status"
 }
