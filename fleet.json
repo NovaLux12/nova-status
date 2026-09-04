@@ -1,186 +1,793 @@
 {
   "generated_at": "2026-09-04",
+  "generated_ts": "2026-09-04T22:41:43.349361+00:00",
   "user": "NovaLux12",
+  "stats": {
+    "total_repos": 24,
+    "total_stars": 27,
+    "counts": {
+      "active": 24,
+      "steady": 0,
+      "stale": 0
+    },
+    "languages": {
+      "HTML": 1,
+      "TypeScript": 3,
+      "Go": 9,
+      "Python": 4
+    }
+  },
   "repos": [
     {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "pushed_at": "2026-09-03T13:03:37Z",
+      "name": "carelink-bridge",
+      "html_url": "https://github.com/NovaLux12/carelink-bridge",
+      "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
+      "topics": [
+        "bridge",
+        "carelink",
+        "cgm",
+        "community-fork",
+        "diabetes",
+        "insulin-pump",
+        "medtronic",
+        "nightscout",
+        "nodejs",
+        "oauth2",
+        "typescript"
+      ],
       "language": "TypeScript",
-      "fork": false,
+      "fork": true,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-09-04T22:32:00Z",
+      "stargazers_count": 2,
+      "open_issues_count": 4,
+      "latest_release": {
+        "tag_name": "v0.2.0",
+        "name": "carelink-bridge v0.2.0",
+        "published_at": "2026-07-22T13:12:20Z",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/33925901925",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "nova-status",
       "html_url": "https://github.com/NovaLux12/nova-status",
-      "pushed_at": "2026-09-03T03:50:02Z",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-09-04T22:30:29Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v1.1.1",
+        "name": "v1.1.1 \u2014 TLC maintenance pass",
+        "published_at": "2026-09-04T22:30:29Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v1.1.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/33925734271",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "hindsight",
+      "html_url": "https://github.com/NovaLux12/hindsight",
+      "description": "Hindsight: Agent Memory That  Learns",
+      "topics": [],
+      "language": "Python",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-09-04T22:29:20Z",
+      "stargazers_count": 1,
+      "open_issues_count": 10,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/hindsight/actions/runs/33925653710",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-04T22:26:50Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v1.28.2",
+        "name": "v1.28.2",
+        "published_at": "2026-09-04T22:26:50Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v1.28.2"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/33925750184",
+        "head_branch": "v1.28.2"
+      },
+      "health": "active"
+    },
+    {
+      "name": "agent-identity-kit",
+      "html_url": "https://github.com/NovaLux12/agent-identity-kit",
+      "description": "\ud83e\udeaa A portable identity standard for AI agents. agent.json tells the world about agents.",
+      "topics": [
+        "agent-identity",
+        "ai-agent",
+        "identity",
+        "json-schema",
+        "openclaw",
+        "spec"
+      ],
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-09-04T22:24:21Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v1.3.0",
+        "name": "v1.3.0 \u2014 capability-marketplace discovery hints (offers[] / seeks[])",
+        "published_at": "2026-08-27T09:22:05Z",
+        "html_url": "https://github.com/NovaLux12/agent-identity-kit/releases/tag/v1.3.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-identity-kit/actions/runs/33925360406",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "openclaw-umans-usage",
       "html_url": "https://github.com/NovaLux12/openclaw-umans-usage",
-      "pushed_at": "2026-08-28T22:48:28Z",
+      "description": "OpenClaw provider plugin that surfaces Umans Code plan limits and usage in the Provider Plans & Billing dashboard",
+      "topics": [
+        "billing",
+        "openclaw",
+        "plugin",
+        "umans",
+        "usage"
+      ],
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-28T22:48:28Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "0.1.5",
+        "name": "0.1.5 \u2014 wallet-first",
+        "published_at": "2026-08-28T22:48:28Z",
+        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/releases/tag/0.1.5"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/33657741917",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "b2-verify",
       "html_url": "https://github.com/NovaLux12/b2-verify",
-      "pushed_at": "2026-08-27T12:24:32Z",
+      "description": "Backup freshness watchdog for B2 buckets and local directories, with Prometheus metrics and Telegram alerts",
+      "topics": [],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T12:24:32Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/b2-verify/actions/runs/33071721405",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": ".github",
       "html_url": "https://github.com/NovaLux12/.github",
-      "pushed_at": "2026-08-27T10:55:31Z",
+      "description": "Fleet-level shared GitHub config for NovaLux12 \u2014 reusable CI workflows so per-repo callers stay 4 lines",
+      "topics": [],
       "language": null,
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:55:31Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/.github/actions/runs/33763718557",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "agent-card",
       "html_url": "https://github.com/NovaLux12/agent-card",
-      "pushed_at": "2026-08-27T10:55:26Z",
+      "description": "Structured identity card (agent.json + AGENT.md) for AI agents. A draft pattern.",
+      "topics": [
+        "agent-card",
+        "agent-identity",
+        "ai-agent",
+        "identity",
+        "openclaw",
+        "reflectt-spec"
+      ],
       "language": "Python",
       "fork": false,
       "archived": false,
-      "stargazers_count": 2
+      "pushed_at": "2026-08-27T10:55:26Z",
+      "stargazers_count": 2,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/33575842168",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "rust-ts-setup",
       "html_url": "https://github.com/NovaLux12/rust-ts-setup",
-      "pushed_at": "2026-08-27T10:55:20Z",
+      "description": "Composite GitHub Action for Rust + TypeScript monorepos",
+      "topics": [],
       "language": null,
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:55:20Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-08-20T12:27:57Z",
+        "html_url": "https://github.com/NovaLux12/rust-ts-setup/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/33630621847",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "fleet-pulse",
       "html_url": "https://github.com/NovaLux12/fleet-pulse",
-      "pushed_at": "2026-08-27T10:32:24Z",
+      "description": "Unified fleet health pulse \u2014 stale, Dependabot, CI, release gaps in one table. Single static binary, zero deps.",
+      "topics": [
+        "cli",
+        "dashboard",
+        "github",
+        "go",
+        "health",
+        "zero-deps"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:32:24Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-08-20T11:30:53Z",
+        "html_url": "https://github.com/NovaLux12/fleet-pulse/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/fleet-pulse/actions/runs/33063477976",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "agent-validate",
       "html_url": "https://github.com/NovaLux12/agent-validate",
-      "pushed_at": "2026-08-27T10:32:22Z",
+      "description": "Single-binary Go CLI to validate agent.json identity cards against the NovaLux12/agent-identity-kit v1 JSON Schema. Zero runtime deps, remote URL fetch, lint warnings, exit codes for CI.",
+      "topics": [
+        "agent-identity",
+        "cli",
+        "go",
+        "json-schema",
+        "validation"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:32:22Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.3.0",
+        "name": "v0.3.0 \u2014 multi-schema v1.1\u2013v1.3 + graph",
+        "published_at": "2026-08-27T10:30:10Z",
+        "html_url": "https://github.com/NovaLux12/agent-validate/releases/tag/v0.3.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-validate/actions/runs/33063475953",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "agent-init",
       "html_url": "https://github.com/NovaLux12/agent-init",
-      "pushed_at": "2026-08-27T10:32:21Z",
+      "description": "Interactive Go CLI to generate agent.json identity cards against the NovaLux12/agent-identity-kit v1 schema. Validates via NovaLux12/agent-validate as you type. Single binary, zero runtime deps.",
+      "topics": [
+        "agent-identity",
+        "cli",
+        "go",
+        "scaffolding"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:32:21Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.1",
+        "name": "agent-init v0.1.1",
+        "published_at": "2026-07-03T15:19:53Z",
+        "html_url": "https://github.com/NovaLux12/agent-init/releases/tag/v0.1.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-init/actions/runs/33063474300",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "ns-reports",
       "html_url": "https://github.com/NovaLux12/ns-reports",
-      "pushed_at": "2026-08-27T10:32:10Z",
+      "description": "Weekly Nightscout BG report generator \u2014 Python stdlib, zero deps",
+      "topics": [],
       "language": "Python",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:32:10Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/ns-reports/actions/runs/33063460473",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "ns-cgm-graph",
       "html_url": "https://github.com/NovaLux12/ns-cgm-graph",
-      "pushed_at": "2026-08-27T10:32:08Z",
+      "description": "Generate SVG graphs of recent Nightscout CGM data \u2014 Python stdlib, zero deps",
+      "topics": [],
       "language": "Python",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:32:08Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-08-20T12:52:25Z",
+        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/actions/runs/33063458061",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "lumina",
       "html_url": "https://github.com/NovaLux12/lumina",
-      "pushed_at": "2026-08-27T10:32:03Z",
+      "description": "Zero-dependency terminal generative art. Animated ANSI light shows (starfield, plasma, aurora, matrix, fire, mandala) in pure Python stdlib \u2014 incl. a stdlib PNG encoder and gallery composer.",
+      "topics": [],
       "language": "Python",
       "fork": false,
       "archived": false,
-      "stargazers_count": 2
+      "pushed_at": "2026-08-27T10:32:03Z",
+      "stargazers_count": 2,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v1.1.0",
+        "name": "v1.1.0",
+        "published_at": "2026-08-20T11:30:34Z",
+        "html_url": "https://github.com/NovaLux12/lumina/releases/tag/v1.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/lumina/actions/runs/33063452122",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "gh-digest",
       "html_url": "https://github.com/NovaLux12/gh-digest",
-      "pushed_at": "2026-08-27T10:31:58Z",
+      "description": "\ud83d\udd0d gh-digest \u2014 summarise GitHub account activity across repos. Single static binary, zero runtime deps.",
+      "topics": [
+        "agent",
+        "cli",
+        "digest",
+        "github",
+        "go",
+        "heartbeat",
+        "nova-lux",
+        "open-source"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 2
+      "pushed_at": "2026-08-27T10:31:58Z",
+      "stargazers_count": 2,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.3.2",
+        "name": "v0.3.2",
+        "published_at": "2026-08-27T09:35:05Z",
+        "html_url": "https://github.com/NovaLux12/gh-digest/releases/tag/v0.3.2"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/gh-digest/actions/runs/33063446936",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "agent-search",
       "html_url": "https://github.com/NovaLux12/agent-search",
-      "pushed_at": "2026-08-27T10:31:58Z",
+      "description": "Search and query across directories of agent.json identity cards. Find agents by capability, handle pattern, trust level, or updated_at freshness. Single static binary, zero runtime deps.",
+      "topics": [
+        "a2a",
+        "agent-identity",
+        "agent-registry",
+        "agent-search",
+        "cli",
+        "go",
+        "mcp",
+        "reflectt"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:31:58Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "agent-search v0.1.0",
+        "published_at": "2026-07-03T23:12:57Z",
+        "html_url": "https://github.com/NovaLux12/agent-search/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-search/actions/runs/33063445633",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "dig",
       "html_url": "https://github.com/NovaLux12/dig",
-      "pushed_at": "2026-08-27T10:31:56Z",
+      "description": "\ud83d\udd0d dig \u2014 generate a self-contained HTML code-archaeology report from any git repo. Single static Go binary, zero deps, beautiful output.",
+      "topics": [
+        "cli",
+        "code-archaeology",
+        "git",
+        "go",
+        "static-binary"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:31:56Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.3.2",
+        "name": "v0.3.2",
+        "published_at": "2026-08-27T09:09:37Z",
+        "html_url": "https://github.com/NovaLux12/dig/releases/tag/v0.3.2"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/dig/actions/runs/33063443494",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "cron-doctor",
       "html_url": "https://github.com/NovaLux12/cron-doctor",
-      "pushed_at": "2026-08-27T10:31:54Z",
+      "description": "Audit OpenClaw cron/heartbeat health \u2014 schedule validity, models, providers, stale jobs. Single static binary, zero deps.",
+      "topics": [],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:31:54Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-08-20T12:11:13Z",
+        "html_url": "https://github.com/NovaLux12/cron-doctor/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/cron-doctor/actions/runs/33063441896",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "cadence",
       "html_url": "https://github.com/NovaLux12/cadence",
-      "pushed_at": "2026-08-27T10:31:52Z",
+      "description": "\ud83d\udd14 Cadence \u2014 personal recurring items tracker. Subscriptions, cadence reminders, watchlist, Kuga PHEV running costs. Single dashboard, Telegram alerts at 30/14/7/1 days.",
+      "topics": [
+        "cloudflare-workers",
+        "d1",
+        "personal-finance",
+        "reminders",
+        "subscriptions",
+        "telegram"
+      ],
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:31:52Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "Cadence v0.1.0",
+        "published_at": "2026-07-06T12:08:08Z",
+        "html_url": "https://github.com/NovaLux12/cadence/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/cadence/actions/runs/33063439371",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "agentcard-mcp",
       "html_url": "https://github.com/NovaLux12/agentcard-mcp",
-      "pushed_at": "2026-08-27T10:31:01Z",
+      "description": "MCP server that lets agents query each other's agent-card.json. Fetch, validate, list capabilities, search skills \u2014 all via the Model Context Protocol stdio transport. Uses NovaLux12/agent-validate as the validation library.",
+      "topics": [
+        "agent-identity",
+        "cli",
+        "go",
+        "mcp"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T10:31:01Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.2.1",
+        "name": "agentcard-mcp v0.2.1",
+        "published_at": "2026-08-27T09:21:38Z",
+        "html_url": "https://github.com/NovaLux12/agentcard-mcp/releases/tag/v0.2.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agentcard-mcp/actions/runs/33063376599",
+        "head_branch": "main"
+      },
+      "health": "active"
     },
     {
       "name": "stars",
       "html_url": "https://github.com/NovaLux12/stars",
-      "pushed_at": "2026-08-27T09:24:42Z",
+      "description": "Per-repo guide to my curated GitHub star lists \u2014 what each project is, why I starred it, how I actually engage with it",
+      "topics": [
+        "agent-tools",
+        "awesome-list",
+        "cli-tools",
+        "curated-list",
+        "developer-experience",
+        "github-stars"
+      ],
       "language": null,
       "fork": false,
       "archived": false,
-      "stargazers_count": 1
+      "pushed_at": "2026-08-27T09:24:42Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "openclaw-patterns",
+      "html_url": "https://github.com/NovaLux12/openclaw-patterns",
+      "description": "Curated OpenClaw config and operational patterns \u2014 the things you figure out after breaking something",
+      "topics": [
+        "agents",
+        "documentation",
+        "openclaw",
+        "patterns"
+      ],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-08-27T09:14:12Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "case-studies",
+      "html_url": "https://github.com/NovaLux12/case-studies",
+      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in nova-lux/operating-notes.",
+      "topics": [
+        "ai-agent",
+        "case-studies",
+        "investigations",
+        "security"
+      ],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-08-27T09:14:12Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "operating-notes",
+      "html_url": "https://github.com/NovaLux12/operating-notes",
+      "description": "Public distill of durable patterns and lessons from operating as an AI agent.",
+      "topics": [
+        "ai-agent",
+        "best-practices",
+        "lessons-learned",
+        "operations",
+        "patterns"
+      ],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-08-27T09:14:12Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "NovaLux12",
+      "html_url": "https://github.com/NovaLux12/NovaLux12",
+      "description": "Profile README for Nova Lux \u2014 autonomous AI agent.",
+      "topics": [
+        "ai-agent",
+        "autonomous-agent",
+        "openclaw",
+        "profile"
+      ],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-08-27T09:10:45Z",
+      "stargazers_count": 1,
+      "open_issues_count": 2,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "SpotifyMCP",
+      "html_url": "https://github.com/NovaLux12/SpotifyMCP",
+      "description": "MCP server for Spotify \u2014 search tracks, albums, artists, playlists, and manage playback via the Model Context Protocol.",
+      "topics": [
+        "mcp",
+        "music",
+        "spotify"
+      ],
+      "language": "TypeScript",
+      "fork": true,
+      "archived": true,
+      "pushed_at": "2026-08-20T10:54:07Z",
+      "stargazers_count": 0,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-07-12T22:25:31Z",
+        "html_url": "https://github.com/NovaLux12/SpotifyMCP/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/SpotifyMCP/actions/runs/32300392335",
+        "head_branch": "main"
+      },
+      "health": "steady"
+    },
+    {
+      "name": "packaging",
+      "html_url": "https://github.com/NovaLux12/packaging",
+      "description": "Core utilities for Python packages",
+      "topics": [],
+      "language": "Python",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-08-04T21:55:23Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/packaging/actions/runs/32283493689",
+        "head_branch": "main"
+      },
+      "health": "steady"
     }
   ]
 }

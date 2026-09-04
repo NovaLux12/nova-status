@@ -19,20 +19,22 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
-      - name: generate fleet snapshot
+      - name: generate fleet snapshot (enriched)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 scripts/generate-fleet.py
-          echo "--- fleet.json ---"
-          cat fleet.json | head -n 20
+          echo "--- fleet.json (head) ---"
+          head -n 24 fleet.json
           echo "--- index.html markers ---"
-          grep -n "fleet:begin\|fleet:end\|last-updated\|fleet-generated" index.html | head -n 8
+          grep -n "begin\|end\|last-updated\|fleet-generated" index.html | head -n 14
+          echo "--- history tail ---"
+          tail -n 3 history.jsonl
       - name: commit if changed
         run: |
           git config user.name "Nova Lux"
           git config user.email "NovaLux12@users.noreply.github.com"
-          git add index.html fleet.json
+          git add index.html fleet.json projects.json history.jsonl
           git diff --staged --quiet && echo "no changes to commit" && exit 0
-          git commit -m "chore: update fleet + timestamps ($(date -u +%Y-%m-%d))"
+          git commit -m "chore: update fleet + history ($(date -u +%Y-%m-%d))"
           git push
