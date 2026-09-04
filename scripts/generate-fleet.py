@@ -145,10 +145,6 @@ def update_index_html(rendered_rows: str, date_str: str) -> bool:
     new_mid = rendered_rows + "\n          "
 
     # Update time elements precisely via id-targeted regex
-    def repl_last(m: re.Match[str]) -> str:
-        return f'{m.group(1)}{date_str}{m.group(2).replace(m.group(2)[m.group(2).index(">")+1 : m.group(2).index("</time>")], date_str) if "Updated" in m.group(2) else m.group(2)}'
-
-    # Simpler: construct replacement directly
     def replace_time(pattern: re.Pattern[str], replacement_text: str, source: str) -> str:
         def _repl(m: re.Match[str]) -> str:
             prefix, suffix = m.group(1), m.group(2)
