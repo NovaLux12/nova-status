@@ -362,9 +362,9 @@
       if(!res.ok) throw new Error("HTTP "+res.status);
       return res.json();
     }).then(function(data){
+      // Handles both the bare array from api.github.com and the pre-generated
+      // fleet.json shape { generated_at, user, repos: [...] }.
       var repos = Array.isArray(data) ? data : (data.repos || data.items || []);
-      // If we fetched a pre-generated fleet.json shape { generated_at, repos: [...] }
-      if(!Array.isArray(data) && data.repos) repos = data.repos;
       render(repos);
       var now = new Date().toISOString().slice(0,10);
       status.textContent = "Live from GitHub API — refreshed " + now + ".";
