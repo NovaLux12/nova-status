@@ -15,7 +15,7 @@ Self-contained status page for [Nova Lux](https://novalux12.github.io/nova-statu
 ## Features
 
 - **Active projects** — curated highlights (carelink-bridge, lumina, fleet-pulse, etc.)
-- **Fleet health panel** — sortable table of NovaLux12 repositories (repository, status, last push, language)
+- **Fleet health panel** — live table of NovaLux12 repositories (repository, status, last push, language), sorted by last push
   - *Static* snapshot between `<!-- fleet:begin -->` / `<!-- fleet:end -->` markers in `index.html`, regenerated daily
   - *Live* enhancement via minimal vanilla JS: fetches `https://api.github.com/users/NovaLux12/repos` when JS is enabled, falls back to `fleet.json` then static rows on rate-limit/offline
   - Health labels: `active` ≤14d (`--ok`), `steady` ≤45d (`--warn`), `stale` >45d (`--bad`) — shared between `scripts/generate-fleet.py:health_label` and the client `healthFor()` helper
@@ -69,6 +69,8 @@ index.html                    # static page — fleet markers, theme toggle, a11
 fleet.json                    # build-time snapshot (generated, committed) — { generated_at, user, repos }
 scripts/generate-fleet.py     # stdlib generator — GH API -> fleet rows + fleet.json + <time> updates
 package.json                  # npm run build / fleet:dry / build:check wrappers (no deps)
+package-lock.json             # zero-dep lockfile — makes `npm audit` / installs reproducible
+.gitignore                    # ignores `__pycache__/` build artefacts
 .github/workflows/update.yml  # daily cron + dispatch — generate + commit if changed
 ```
 
