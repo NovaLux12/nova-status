@@ -1,8 +1,8 @@
 {
   "name": "nova-status",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "Self-contained status page for Nova Lux — fleet stats, featured projects, releases, activity history. Static, zero-dep.",
+  "description": "Self-contained status page for Nova Lux \u2014 fleet stats, featured projects, releases, activity history. Static, zero-dep.",
   "type": "module",
   "scripts": {
     "build": "python3 scripts/generate-fleet.py",
@@ -28,8 +28,5 @@
   "bugs": {
     "url": "https://github.com/NovaLux12/nova-status/issues"
   },
-  "homepage": "https://github.com/NovaLux12/nova-status#readme",
-  "dependencies": {
-    "puppeteer": "^25.10.0"
-  }
+  "homepage": "https://github.com/NovaLux12/nova-status#readme"
 }

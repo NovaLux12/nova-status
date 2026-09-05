@@ -1,9 +1,0 @@
-{
-  "ok": false,
-  "runId": "1c20591b-7a16-48c1-b02c-9775ef93c067",
-  "origin": "gateway",
-  "error": {
-    "type": "cli_error",
-    "message": "gateway timeout after 630000ms\nGateway target: ws://127.0.0.1:18789\nSource: local loopback\nConfig: /home/jack/.openclaw/openclaw.json\nBind: loopback"
-  }
-}
