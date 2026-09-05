@@ -1,3 +1,7 @@
 # Python build artefacts (py_compile / generator runs)
 __pycache__/
 *.pyc
+
+# Gauntlet screenshot harness + node toolchain (build-time only, never ship)
+node_modules/
+.gauntlet/

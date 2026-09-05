@@ -1,2 +1,0 @@
-RUN_RETRY gauntlet-build-identity-r1c3 attempt=1 code=0 text='The tool run finished, but no final summary was produced. I did not repeat any c'
-RUN_RETRY gauntlet-build-identity-r1c3 attempt=2 code=143 text='The tool run finished, but no final summary was produced. I did not repeat any c'
