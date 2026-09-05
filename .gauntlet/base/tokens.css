@@ -1,0 +1,96 @@
+/* NOVA OBSERVATORY — shared design tokens (v3). */
+/* Piece files keep these inline; this is the canonical shared copy so the
+   whole showpiece speaks one token language. */
+
+:root {
+  /* surfaces & ink */
+  --bg: #07080c;
+  --panel: rgba(255,255,255,.03);
+  --panel-solid: #0d0f16;
+  --line: rgba(255,255,255,.09);
+  --text: #eef0f6;
+  --muted: #8b93a7;
+
+  /* signature palette */
+  --accent: #e8b963;      /* gold */
+  --aurora-a: #8b5cf6;    /* violet */
+  --aurora-b: #2dd4bf;    /* teal */
+
+  /* status signals */
+  --ok: #4ade80;
+  --warn: #fbbf24;
+  --bad: #f87171;
+
+  /* type */
+  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* geometry */
+  --radius: 20px;
+  --radius-sm: 12px;
+
+  /* glow */
+  --glow-ok: 0 0 0 3px rgba(74,222,128,.18), 0 0 24px rgba(74,222,128,.28);
+  --glow-accent: 0 0 0 3px rgba(232,185,99,.16), 0 0 28px rgba(232,185,99,.30);
+  --glow-warn: 0 0 0 3px rgba(251,191,36,.16), 0 0 22px rgba(251,191,36,.24);
+  --glow-bad: 0 0 0 3px rgba(248,113,113,.16), 0 0 22px rgba(248,113,113,.24);
+
+  /* ambient field */
+  --star-a: rgba(255,255,255,.22);
+  --orbit-line: rgba(255,255,255,.10);
+  --space-glow-a: rgba(139,92,246,.16);
+  --space-glow-b: rgba(45,212,191,.12);
+  --space-glow-c: rgba(232,185,99,.08);
+}
+
+/* Daylight mode — same observatory, "daylight" glass. */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4f5f9;
+    --panel: rgba(15,18,23,.02);
+    --panel-solid: #ffffff;
+    --line: rgba(15,18,23,.10);
+    --text: #14181f;
+    --muted: #5b6472;
+    --accent: #9a6b00;
+    --aurora-a: #6d3fe0;
+    --aurora-b: #0e9488;
+    --ok: #15803d;
+    --warn: #b45309;
+    --bad: #b91c1c;
+    --glow-ok: 0 0 0 3px rgba(21,128,61,.12), 0 0 22px rgba(21,128,61,.16);
+    --glow-accent: 0 0 0 3px rgba(154,107,0,.10), 0 0 26px rgba(154,107,0,.14);
+    --glow-warn: 0 0 0 3px rgba(180,83,9,.10), 0 0 22px rgba(180,83,9,.12);
+    --glow-bad: 0 0 0 3px rgba(185,28,28,.10), 0 0 22px rgba(185,28,28,.12);
+    --star-a: rgba(20,24,31,.18);
+    --orbit-line: rgba(20,24,31,.14);
+    --space-glow-a: rgba(109,63,224,.12);
+    --space-glow-b: rgba(14,148,136,.10);
+    --space-glow-c: rgba(154,107,0,.08);
+  }
+}
+
+/* Persisted data-theme override (JS). Mirrors the light scheme. */
+[data-theme="light"] {
+  --bg: #f4f5f9;
+  --panel: rgba(15,18,23,.02);
+  --panel-solid: #ffffff;
+  --line: rgba(15,18,23,.10);
+  --text: #14181f;
+  --muted: #5b6472;
+  --accent: #9a6b00;
+  --aurora-a: #6d3fe0;
+  --aurora-b: #0e9488;
+  --ok: #15803d;
+  --warn: #b45309;
+  --bad: #b91c1c;
+  --glow-ok: 0 0 0 3px rgba(21,128,61,.12), 0 0 22px rgba(21,128,61,.16);
+  --glow-accent: 0 0 0 3px rgba(154,107,0,.10), 0 0 26px rgba(154,107,0,.14);
+  --glow-warn: 0 0 0 3px rgba(180,83,9,.10), 0 0 22px rgba(180,83,9,.12);
+  --glow-bad: 0 0 0 3px rgba(185,28,28,.10), 0 0 22px rgba(185,28,28,.12);
+  --star-a: rgba(20,24,31,.18);
+  --orbit-line: rgba(20,24,31,.14);
+  --space-glow-a: rgba(109,63,224,.12);
+  --space-glow-b: rgba(14,148,136,.10);
+  --space-glow-c: rgba(154,107,0,.08);
+}

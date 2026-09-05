@@ -1,0 +1,11 @@
+{
+  "piece": "motion",
+  "round": 2,
+  "winner": "OURS",
+  "desktop_winner": "OURS",
+  "mobile_winner": "OURS",
+  "reason": "Motion R2 (with uptime history sparklines added) wins on both viewports. Desktop: the aurora glass aesthetic with pulsing orb and gradient wordmark creates genuine showpiece impact vs the bar's plain utilitarian layout. Mobile: the compact status-first layout with 2x2 telemetry grid fits 390px cleanly while the bar's oversized hero text wastes vertical space.",
+  "gap": "None identified after R2 uptime-history patch.",
+  "method": "manual_vision_check",
+  "confidence": "high"
+}

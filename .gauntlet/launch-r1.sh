@@ -1,0 +1,10 @@
+#!/bin/bash
+set -m
+bash -c 'cd /tmp/gauntlet-status && timeout 1500 openclaw agent --agent hex-work --model opencode-go/deepseek-v4-flash-vision-exp --session-key gauntlet-build-hero-r1 --message-file /tmp/gauntlet-status/.gauntlet/prompts/hero-r1.txt --json > .gauntlet/out/hero-r1.json 2>/dev/null; echo $? > .gauntlet/out/hero-r1.exit' &
+bash -c 'cd /tmp/gauntlet-status && timeout 1500 openclaw agent --agent hex-work --model opencode-go/deepseek-v4-flash-vision-exp --session-key gauntlet-build-identity-r1 --message-file /tmp/gauntlet-status/.gauntlet/prompts/identity-r1.txt --json > .gauntlet/out/identity-r1.json 2>/dev/null; echo $? > .gauntlet/out/identity-r1.exit' &
+bash -c 'cd /tmp/gauntlet-status && timeout 1500 openclaw agent --agent hex-work --model opencode-go/deepseek-v4-flash-vision-exp --session-key gauntlet-build-stats-r1 --message-file /tmp/gauntlet-status/.gauntlet/prompts/stats-r1.txt --json > .gauntlet/out/stats-r1.json 2>/dev/null; echo $? > .gauntlet/out/stats-r1.exit' &
+bash -c 'cd /tmp/gauntlet-status && timeout 1500 openclaw agent --agent hex-work --model opencode-go/deepseek-v4-flash-vision-exp --session-key gauntlet-build-fleet-r1 --message-file /tmp/gauntlet-status/.gauntlet/prompts/fleet-r1.txt --json > .gauntlet/out/fleet-r1.json 2>/dev/null; echo $? > .gauntlet/out/fleet-r1.exit' &
+bash -c 'cd /tmp/gauntlet-status && timeout 1500 openclaw agent --agent hex-work --model opencode-go/deepseek-v4-flash-vision-exp --session-key gauntlet-build-motion-r1 --message-file /tmp/gauntlet-status/.gauntlet/prompts/motion-r1.txt --json > .gauntlet/out/motion-r1.json 2>/dev/null; echo $? > .gauntlet/out/motion-r1.exit' &
+bash -c 'cd /tmp/gauntlet-status && timeout 1500 openclaw agent --agent hex-work --model opencode-go/deepseek-v4-flash-vision-exp --session-key gauntlet-build-mobile-r1 --message-file /tmp/gauntlet-status/.gauntlet/prompts/mobile-r1.txt --json > .gauntlet/out/mobile-r1.json 2>/dev/null; echo $? > .gauntlet/out/mobile-r1.exit' &
+wait
+echo ALL_BUILDERS_DONE

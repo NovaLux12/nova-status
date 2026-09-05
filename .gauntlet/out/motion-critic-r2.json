@@ -1,0 +1,7 @@
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Message file not found: /tmp/gauntlet-status/.gauntlet/prompts/motion-r1c.txt"
+  }
+}

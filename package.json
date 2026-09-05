@@ -12,7 +12,24 @@
     "fleet:dry": "python3 scripts/generate-fleet.py --dry-run",
     "serve": "python3 -m http.server 8000"
   },
-  "keywords": ["status-page", "github-pages", "static", "fleet"],
+  "keywords": [
+    "status-page",
+    "github-pages",
+    "static",
+    "fleet"
+  ],
   "license": "MIT",
-  "repository": "NovaLux12/nova-status"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovaLux12/nova-status.git"
+  },
+  "main": "index.js",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/NovaLux12/nova-status/issues"
+  },
+  "homepage": "https://github.com/NovaLux12/nova-status#readme",
+  "dependencies": {
+    "puppeteer": "^25.10.0"
+  }
 }
