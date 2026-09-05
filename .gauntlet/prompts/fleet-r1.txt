@@ -1,0 +1,21 @@
+You are the BUILDER for the "fleet" piece of a showpiece redesign of the Nova Lux status page.
+
+THE BAR: Upptime's live demo status site (a clean, light, mint/teal open-source status page with incident cards). Your piece is judged BLIND against it — if a harsh critic prefers the bar, your piece gets rebuilt. Aim to win decisively at BOTH desktop (1440x900) and mobile (390x844). Make it unmistakably different at first glance and unmistakably better.
+
+ENVIRONMENT (you have shell access; verify everything yourself):
+- Repo root: /tmp/gauntlet-status  (git clone of NovaLux12/nova-status; a static GitHub Pages status site)
+- Local server already serves it: http://127.0.0.1:8137/<path>
+- Screenshot helper (chromium headless, ready): NODE_PATH=/home/jack/worldmonitor/node_modules node /tmp/gauntlet-status/.gauntlet/shot.cjs <url> <out.png> <width> <height> <wait_ms> [fullPage=1]
+  Then LOOK at your screenshots with the read tool. Iterate on what you actually see until it is showpiece-grade. Never submit without looking.
+- Real content/data to copy: read /tmp/gauntlet-status/fleet.json, /tmp/gauntlet-status/projects.json, /tmp/gauntlet-status/history.jsonl, and /tmp/gauntlet-status/index.html (the current page). Use REAL repo names, star counts, languages, dates, releases. Never invent repo names.
+- BAR SCREENSHOTS (the thing you must beat blind): /tmp/gauntlet-status/.gauntlet/shots/bar-desktop.png (1440x900) and bar-mobile.png (390x844) — VIEW BOTH FIRST with the read tool before designing anything.
+- CONCEPT: read /tmp/gauntlet-status/.gauntlet/CONCEPT.md — the "NOVA OBSERVATORY" direction. If /tmp/gauntlet-status/.gauntlet/base/tokens.css exists, read it and reuse its tokens (embed a copy in your self-contained file).
+- RULES: fully self-contained HTML, inline CSS only, ZERO external requests (the screenshot browser blocks fonts/CDN), system font stack, no JS required for the still screenshot to look right (progressive enhancement only), all motion wrapped in @media (prefers-reduced-motion: no-preference), support both dark and light with prefers-color-scheme, use the shared CSS variable names (--bg, --panel, --line, --text, --muted, --accent, --ok, --warn, --bad, plus --font-display, --font-mono, --radius, --glow-* as needed).
+- IMPECCABLE at 1440x900 AND 390x844 (mobile: stack, no horizontal overflow, touch-friendly).
+
+YOUR PIECE — "fleet": The fleet registry: search input + language filter chips + a real semantic <table> (Repository, Status, Last push, Stars, Language, Latest release) with sortable headers, status orbs, CI dots, hover-glow rows, sticky table header, and release tags. 20+ real repos from fleet.json. At 390px it must transform into card-like rows (same data, same semantics — keep table markup, restyle responsively) with no horizontal overflow. This is the workhorse section: density + craft + legibility.
+
+OUTPUT: write a fully self-contained HTML file to /tmp/gauntlet-status/.gauntlet/pieces/fleet.html
+Then screenshot it yourself at desktop AND mobile (URL http://127.0.0.1:8137/.gauntlet/pieces/fleet.html), view the results, and iterate until you are proud of it.
+Write your design notes (one short paragraph: what you did + anything the judge should watch for) to /tmp/gauntlet-status/.gauntlet/notes/fleet.md
+End your reply with exactly: BUILD_DONE fleet

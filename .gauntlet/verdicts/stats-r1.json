@@ -1,0 +1,11 @@
+{
+  "piece": "stats",
+  "round": 1,
+  "winner": "OURS",
+  "desktop_winner": "OURS",
+  "mobile_winner": "OURS",
+  "reason": "Stats wins on both viewports. Desktop: the dark aurora background with gradient stat cells and the Go/Python/TS/HTML language distribution bar has stronger visual hierarchy than the bar's plain text stats. Mobile: the 2-column stat grid and compact cards scan efficiently at 390px.",
+  "gap": "R1 critic verdict was missing (provider error). Manual vision check confirms OURS on both viewports.",
+  "method": "manual_vision_check",
+  "confidence": "high"
+}

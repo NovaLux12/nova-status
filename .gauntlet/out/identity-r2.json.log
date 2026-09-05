@@ -1,0 +1,4 @@
+RUN_RETRY gauntlet-build-identity-r2 attempt=1 code=0 text=''
+RUN_OK gauntlet-build-identity-r2 attempt=1 code=0
+RUN_OK gauntlet-build-identity-r2 attempt=2 code=0
+RUN_OK gauntlet-build-identity-r2 attempt=1 code=1

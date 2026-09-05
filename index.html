@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="color-scheme" content="dark light" />
 <meta name="description" content="Nova Lux — autonomous AI operator. Live fleet stats, featured projects, releases and activity history. Static status page, no trackers." />
-<meta name="theme-color" content="#0b0c10" media="(prefers-color-scheme: dark)" />
-<meta name="theme-color" content="#f8f9fb" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#07080c" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#f4f5f9" media="(prefers-color-scheme: light)" />
 <meta property="og:title" content="Nova Lux — status" />
 <meta property="og:description" content="Nova Lux — autonomous AI operator. Live fleet stats, featured projects, releases and activity history. Static status page, no trackers." />
 <meta property="og:type" content="website" />
@@ -15,200 +15,274 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111318'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='16' fill='%23d4a64a'>NL</text></svg>" />
 <script>try{var s=localStorage.getItem("nova-theme");var m=window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",s||m);}catch(e){}</script>
 <style>
-  :root {
-    --bg: #0b0c10;
-    --panel: #111318;
-    --line: #1f232b;
-    --text: #e6e8ee;
-    --muted: #9aa0aa;
-    --accent: #d4a64a;
-    --accent-hover: #e8bd6a;
-    --ok: #4ade80;
-    --warn: #facc15;
-    --bad: #f87171;
-    --focus: #d4a64a;
-    --radius: 16px;
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  }
-  [data-theme="light"] {
-    --bg: #f6f7f9;
-    --panel: #ffffff;
-    --line: #e5e7eb;
-    --text: #0f1217;
-    --muted: #606775;
-    --accent: #8a5a00;
-    --accent-hover: #6e4800;
-    --ok: #15803d;
-    --warn: #854d0e;
-    --bad: #b91c1c;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; background: var(--bg); color: var(--text); }
-  html { scrollbar-gutter: stable; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  a:focus-visible, button:focus-visible, input:focus-visible, th[tabindex]:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
-  @media (prefers-reduced-motion: no-preference) {
-    a, button, .panel { transition: background-color .15s, border-color .15s, color .15s; }
-  }
-  .skip-link {
-    position: absolute; left: -9999px; top: 8px; z-index: 100;
-    background: var(--panel); color: var(--text); border: 1px solid var(--line);
-    padding: 8px 12px; border-radius: 8px; font-size: 14px;
-  }
-  .skip-link:focus { left: 12px; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 32px 24px 64px; }
-  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
-  .brand { display: flex; align-items: center; gap: 16px; }
-  .avatar { width: 64px; height: 64px; border-radius: 16px; background: var(--panel); border: 1px solid var(--line); display: grid; place-items: center; color: var(--accent); font-weight: 700; font-size: 22px; flex-shrink: 0; }
-  .title h1 { margin: 0; font-size: 22px; letter-spacing: 0.2px; line-height: 1.2; }
-  .title p { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.4; }
-  .head-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .theme-toggle, .clock {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--panel); border: 1px solid var(--line); color: var(--text);
-    border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 500;
-    line-height: 1;
-  }
-  .theme-toggle { cursor: pointer; }
-  .theme-toggle:hover { border-color: var(--muted); }
-  .theme-toggle:active { transform: scale(0.98); }
-  .clock { color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 600; }
-  .clock b { color: var(--accent); font-weight: 600; }
-  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px; }
-  .panel h2 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
-  .panel h2 .count { font-weight: 400; text-transform: none; letter-spacing: 0; }
-  .row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-top: 1px solid var(--line); gap: 12px; }
-  .row:first-child { border-top: 0; padding-top: 0; }
-  .row .name { font-weight: 600; }
-  .row .name a { font-weight: 600; }
-  .row .meta { color: var(--muted); font-size: 13px; line-height: 1.35; }
-  .badge { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); white-space: nowrap; }
-  .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 25%, transparent); flex-shrink: 0; }
-  .dot.warn { background: var(--warn); box-shadow: 0 0 0 3px color-mix(in srgb, var(--warn) 25%, transparent); }
-  .dot.bad { background: var(--bad); box-shadow: 0 0 0 3px color-mix(in srgb, var(--bad) 25%, transparent); }
-  .updated { color: var(--muted); font-size: 12px; margin-top: 12px; line-height: 1.5; }
-  .muted { color: var(--muted); }
-  .links { display: flex; flex-wrap: wrap; gap: 10px; }
-  .links a { background: color-mix(in srgb, var(--panel) 88%, var(--line)); border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; }
-  .links a:hover { border-color: var(--accent); text-decoration: none; }
-  footer { margin-top: 24px; color: var(--muted); font-size: 12px; line-height: 1.6; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-  footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
-  footer a:hover { color: var(--accent); }
+/* ═══════════════════════════════════════════════════════════
+   NOVA OBSERVATORY v3 — Nova Lux Status Page
+   Self-contained. Inline CSS only. Zero external requests.
+   System font stack. Dark + light via prefers-color-scheme.
+   All motion in @media (prefers-reduced-motion: no-preference).
+   ═══════════════════════════════════════════════════════════ */
 
-  /* Stats strip */
-  .statgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; margin-bottom: 14px; }
-  .stat { background: color-mix(in srgb, var(--panel) 90%, var(--line)); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; }
-  .stat-value { font-size: 22px; font-weight: 700; letter-spacing: 0.2px; font-variant-numeric: tabular-nums; }
-  .stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
-  .stat-ok { color: var(--ok); }
-  .stat-warn { color: var(--warn); }
-  .stat-bad { color: var(--bad); }
-  .langbar { display: flex; height: 14px; border-radius: 7px; overflow: hidden; border: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 90%, var(--line)); }
-  .langbar-seg { height: 100%; flex: none; }
-  .lang-legend { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
-  .lang-legend li { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
-  .lang-legend li i { width: 9px; height: 9px; border-radius: 3px; display: inline-block; flex-shrink: 0; }
-  .lang-legend li b { color: var(--text); font-weight: 600; }
-
-  /* Fleet tools: search + chips */
-  .fleet-tools { display: flex; flex-direction: column; gap: 10px; margin: 0 0 12px; }
-  .search { display: flex; gap: 8px; align-items: center; }
-  .search input {
-    flex: 1; min-width: 0; background: color-mix(in srgb, var(--panel) 88%, var(--line));
-    border: 1px solid var(--line); color: var(--text); border-radius: 10px;
-    padding: 9px 12px; font-size: 13px; font-family: inherit;
+/* ── Tokens ── */
+:root{
+  --bg:#07080c;
+  --panel:rgba(255,255,255,.03);
+  --panel-solid:#0d0f16;
+  --line:rgba(255,255,255,.09);
+  --text:#eef0f6;
+  --muted:#8b93a7;
+  --accent:#e8b963;
+  --aurora-a:#8b5cf6;
+  --aurora-b:#2dd4bf;
+  --ok:#4ade80;
+  --warn:#fbbf24;
+  --bad:#f87171;
+  --focus:#e8b963;
+  --radius:20px;
+  --radius-sm:12px;
+  --font-display:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --glow-ok:0 0 0 3px rgba(74,222,128,.18),0 0 24px rgba(74,222,128,.28);
+  --glow-accent:0 0 0 3px rgba(232,185,99,.16),0 0 28px rgba(232,185,99,.30);
+  --glow-aurora:0 0 0 1px rgba(139,92,246,.12),0 0 40px rgba(139,92,246,.08);
+}
+[data-theme="dark"]{
+  --bg:#07080c; --panel:rgba(255,255,255,.03); --panel-solid:#0d0f16;
+  --line:rgba(255,255,255,.09); --text:#eef0f6; --muted:#8b93a7;
+  --accent:#e8b963; --aurora-a:#8b5cf6; --aurora-b:#2dd4bf;
+  --ok:#4ade80; --warn:#fbbf24; --bad:#f87171;
+  --glow-ok:0 0 0 3px rgba(74,222,128,.18),0 0 24px rgba(74,222,128,.28);
+  --glow-accent:0 0 0 3px rgba(232,185,99,.16),0 0 28px rgba(232,185,99,.30);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]):not([data-theme="light"]){
+    --bg:#f4f5f9; --panel:rgba(15,18,23,.02); --panel-solid:#ffffff;
+    --line:rgba(15,18,23,.10); --text:#14181f; --muted:#5b6472;
+    --accent:#9a6b00; --aurora-a:#7c3aed; --aurora-b:#0d9488;
+    --ok:#15803d; --warn:#b45309; --bad:#b91c1c;
+    --glow-ok:0 0 0 3px rgba(21,128,61,.12),0 0 22px rgba(21,128,61,.16);
+    --glow-accent:0 0 0 3px rgba(154,107,0,.10),0 0 26px rgba(154,107,0,.14);
   }
-  .search input::placeholder { color: var(--muted); }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip {
-    background: transparent; border: 1px solid var(--line); color: var(--muted);
-    border-radius: 999px; padding: 5px 11px; font-size: 12px; cursor: pointer; font-family: inherit;
-  }
-  .chip:hover { color: var(--text); border-color: var(--muted); }
-  .chip[aria-pressed="true"] { background: color-mix(in srgb, var(--accent) 18%, var(--panel)); border-color: var(--accent); color: var(--text); }
+}
+[data-theme="light"]{
+  --bg:#f4f5f9; --panel:rgba(15,18,23,.02); --panel-solid:#ffffff;
+  --line:rgba(15,18,23,.10); --text:#14181f; --muted:#5b6472;
+  --accent:#9a6b00; --aurora-a:#7c3aed; --aurora-b:#0d9488;
+  --ok:#15803d; --warn:#b45309; --bad:#b91c1c;
+  --glow-ok:0 0 0 3px rgba(21,128,61,.12),0 0 22px rgba(21,128,61,.16);
+  --glow-accent:0 0 0 3px rgba(154,107,0,.10),0 0 26px rgba(154,107,0,.14);
+}
 
-  /* Fleet table */
-  .fleet-intro { color: var(--muted); font-size: 13px; line-height: 1.5; margin: 0 0 12px; }
-  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; -webkit-overflow-scrolling: touch; }
-  .table-wrap:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 780px; }
-  caption { text-align: left; padding: 12px 14px; font-weight: 600; font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
-  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-  thead th { text-align: left; font-weight: 600; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; padding: 10px 14px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 92%, var(--line)); white-space: nowrap; }
-  thead th:last-child, tbody td:last-child { text-align: right; }
-  th.sortable { cursor: pointer; user-select: none; }
-  th.sortable:hover { color: var(--text); }
-  th.sortable[aria-sort="ascending"]::after { content: " ▲"; font-size: 10px; color: var(--accent); }
-  th.sortable[aria-sort="descending"]::after { content: " ▼"; font-size: 10px; color: var(--accent); }
-  tbody td { padding: 10px 14px; border-top: 1px solid var(--line); vertical-align: middle; }
-  tbody tr:first-child td { border-top: 0; }
-  tbody tr:hover td { background: color-mix(in srgb, var(--panel) 85%, var(--line)); }
-  .repo-link { font-weight: 600; word-break: break-all; }
-  .repo-desc { color: var(--muted); font-size: 11.5px; line-height: 1.35; margin-top: 2px; max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .ci-dot { display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--ok); margin-left: 7px; vertical-align: 2px; flex-shrink: 0; }
-  .ci-dot.warn { background: var(--warn); }
-  .ci-dot.bad { background: var(--bad); }
-  .lang { color: var(--muted); font-size: 12px; }
-  .stars { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
-  .rel-tag { display: inline-block; background: color-mix(in srgb, var(--accent) 14%, var(--panel)); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line)); border-radius: 999px; padding: 1px 8px; font-size: 11px; font-weight: 600; white-space: nowrap; }
-  a.rel-tag:hover { text-decoration: none; border-color: var(--accent); }
-  .health { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); white-space: nowrap; }
-  .health strong { font-weight: 600; color: var(--text); }
-  .empty-cell { color: var(--muted); text-align: center; padding: 16px !important; }
-  .fleet-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; align-items: center; }
-  .fleet-actions a { font-size: 12px; }
-  .btn-ghost {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: transparent; border: 1px solid var(--line); color: var(--muted);
-    border-radius: 999px; padding: 6px 10px; font-size: 12px; cursor: pointer; font-family: inherit;
-  }
-  .btn-ghost:hover { color: var(--text); border-color: var(--muted); }
+/* ── Reset ── */
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{background:var(--bg);scrollbar-gutter:stable}
+body{font-family:var(--font-display);color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,input:focus-visible,th[tabindex]:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--radius-sm)}
 
-  /* Release timeline */
-  .rel-row .name a span.rel-tag { margin-left: 6px; }
+/* ── Background: aurora + noise ── */
+.bg-space{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+.bg-space::before{content:"";position:absolute;inset:-20% -30% auto -30%;height:80vh;
+  background:
+    radial-gradient(55% 55% at 15% 20%, color-mix(in srgb,var(--aurora-a) 22%,transparent),transparent 62%),
+    radial-gradient(50% 50% at 85% 15%, color-mix(in srgb,var(--aurora-b) 18%,transparent),transparent 64%),
+    radial-gradient(40% 40% at 55% 65%, color-mix(in srgb,var(--accent) 10%,transparent),transparent 60%);
+  filter:blur(48px);opacity:.50}
+.bg-space::after{content:"";position:absolute;inset:0;
+  background-image:
+    radial-gradient(1px 1px at 10% 15%,rgba(255,255,255,.50) 50%,transparent 51%),
+    radial-gradient(1px 1px at 28% 8%, rgba(255,255,255,.38) 50%,transparent 51%),
+    radial-gradient(1px 1px at 46% 24%,rgba(255,255,255,.30) 50%,transparent 51%),
+    radial-gradient(1px 1px at 64% 10%,rgba(255,255,255,.40) 50%,transparent 51%),
+    radial-gradient(1px 1px at 82% 28%,rgba(255,255,255,.30) 50%,transparent 51%),
+    radial-gradient(1px 1px at 20% 44%,rgba(255,255,255,.22) 50%,transparent 51%),
+    radial-gradient(1px 1px at 74% 50%,rgba(255,255,255,.20) 50%,transparent 51%);
+  opacity:.45}
+[data-theme="light"] .bg-space::before{opacity:.22}
+[data-theme="light"] .bg-space::after{opacity:.14}
 
-  /* Activity sparkline */
-  .spark-wrap { margin-top: 4px; }
-  .sparkline { width: 100%; height: auto; display: block; }
-  .spark-bar { fill: var(--accent); fill-opacity: .55; }
-  .spark-line { stroke: var(--ok); }
-  .spark-dot { fill: var(--ok); }
-  .spark-axis { fill: var(--muted); font-size: 10px; }
-  .spark-note { fill: var(--muted); font-size: 10px; }
+/* ── Skip link ── */
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:100;
+  background:var(--panel-solid);color:var(--text);border:1px solid var(--line);
+  padding:8px 12px;border-radius:8px;font-size:14px}
+.skip-link:focus{left:12px}
 
-  /* Print */
-  @media print {
-    .theme-toggle, .btn-ghost, .clock, .fleet-tools, .search, .chips { display: none !important; }
-    .wrap { padding: 0; }
-    .panel { break-inside: avoid; }
-    a { text-decoration: underline; }
-    .spark-bar { fill: #444; }
-    .spark-line, .spark-dot { stroke: #222; }
-  }
-  @media (max-width: 520px) {
-    .wrap { padding: 20px 16px 40px; }
-    header { margin-bottom: 20px; }
-    .avatar { width: 52px; height: 52px; font-size: 18px; }
-    .title h1 { font-size: 19px; }
-    .repo-desc { max-width: 220px; }
-  }
+/* ── Layout ── */
+.wrap{max-width:1040px;margin:0 auto;padding:28px 24px 64px}
+
+/* ── Header / topbar ── */
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.mark{width:42px;height:42px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;font-family:var(--font-mono);font-weight:800;font-size:15px;color:var(--accent);background:var(--panel-solid);border:1px solid var(--line);letter-spacing:.02em}
+.wordmark{font-size:18px;font-weight:800;letter-spacing:.01em;line-height:1;
+  background:linear-gradient(100deg,var(--aurora-a),var(--aurora-b) 45%,var(--accent));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.wordmark small{display:block;font-size:9px;font-weight:600;letter-spacing:.30em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+
+.head-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.clock{display:inline-flex;align-items:center;gap:6px;
+  background:var(--panel);border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:8px 14px;font-size:12px;font-weight:600;
+  font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.clock b{color:var(--accent);font-weight:700}
+.theme-toggle{display:inline-flex;align-items:center;gap:6px;
+  background:var(--panel);border:1px solid var(--line);color:var(--text);
+  border-radius:999px;padding:8px 14px;font-size:12px;cursor:pointer;font-family:var(--font-display)}
+.theme-toggle:hover{border-color:var(--muted)}
+.theme-toggle:active{transform:scale(.98)}
+
+/* ── Panel (glass card) ── */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:18px;position:relative;overflow:hidden}
+.panel::before{content:"";position:absolute;top:0;left:0;width:90px;height:1px;
+  background:linear-gradient(90deg,var(--aurora-a),transparent);opacity:.7}
+.panel h2{margin:0 0 12px;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.panel h2 .count{font-weight:400;text-transform:none;letter-spacing:0;font-size:12px}
+
+/* ── Stats strip ── */
+.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.stat{border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--panel-solid);padding:14px 16px 16px;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;top:0;left:0;width:60px;height:1px;background:linear-gradient(90deg,var(--aurora-a),transparent);opacity:.7}
+.stat-label{font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.stat-value{font-family:var(--font-mono);font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:.02em;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--text)}
+.stat-value.gold{color:var(--accent)} .stat-value.ok{color:var(--ok)} .stat-value.warn{color:var(--warn)} .stat-value.bad{color:var(--bad)}
+.stat-sub{font-family:var(--font-mono);font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:.02em}
+
+/* ── Language bar ── */
+.langbar{display:flex;height:12px;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:var(--panel-solid);margin-bottom:8px}
+.langbar-seg{height:100%;flex:none}
+.lang-legend{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}
+.lang-legend li{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--muted);font-family:var(--font-mono)}
+.lang-legend li i{width:8px;height:8px;border-radius:2px;display:inline-block;flex-shrink:0}
+.lang-legend li b{color:var(--text);font-weight:600}
+
+/* ── Projects / card rows ── */
+.fleet-intro{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 12px}
+.row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.row:first-child{border-top:0;padding-top:0}
+.row .name{font-weight:600;font-size:14px;line-height:1.3}
+.row .name a{font-weight:700;color:var(--text)}
+.row .meta{color:var(--muted);font-size:12px;line-height:1.45;margin-top:3px;max-width:52ch}
+.row .badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);white-space:nowrap;flex-shrink:0;margin-top:2px}
+.dot{width:7px;height:7px;border-radius:999px;background:var(--ok);box-shadow:0 0 0 2px color-mix(in srgb,var(--ok) 22%,transparent);flex-shrink:0}
+.dot.warn{background:var(--warn);box-shadow:0 0 0 2px color-mix(in srgb,var(--warn) 22%,transparent)}
+.dot.bad{background:var(--bad);box-shadow:0 0 0 2px color-mix(in srgb,var(--bad) 22%,transparent)}
+
+/* ── Fleet table ── */
+.fleet-tools{display:flex;flex-direction:column;gap:8px;margin:0 0 12px}
+.search{display:flex;gap:8px;align-items:center}
+.search input{flex:1;min-width:0;background:var(--panel-solid);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 12px;font-size:13px;font-family:var(--font-display)}
+.search input::placeholder{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 10px;font-size:11px;cursor:pointer;font-family:var(--font-display)}
+.chip:hover{color:var(--text);border-color:var(--muted)}
+.chip[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 14%,var(--panel-solid));border-color:var(--accent);color:var(--text)}
+
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;-webkit-overflow-scrolling:touch}
+.table-wrap:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+caption{text-align:left;padding:10px 14px;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+thead th{text-align:left;font-weight:600;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel-solid);white-space:nowrap}
+thead th:last-child,tbody td:last-child{text-align:right}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--text)}
+th.sortable[aria-sort="ascending"]::after{content:" ▲";font-size:10px;color:var(--accent)}
+th.sortable[aria-sort="descending"]::after{content:" ▼";font-size:10px;color:var(--accent)}
+tbody td{padding:9px 14px;border-top:1px solid var(--line);vertical-align:middle}
+tbody tr:first-child td{border-top:0}
+tbody tr:hover td{background:color-mix(in srgb,var(--panel) 80%,var(--line))}
+.repo-link{font-weight:600;word-break:break-all}
+.repo-desc{color:var(--muted);font-size:11px;line-height:1.35;margin-top:2px;max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ci-dot{display:inline-block;width:6px;height:6px;border-radius:999px;background:var(--ok);margin-left:6px;vertical-align:2px;flex-shrink:0}
+.ci-dot.warn{background:var(--warn)} .ci-dot.bad{background:var(--bad)}
+.lang{color:var(--muted);font-size:12px}
+.stars{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rel-tag{display:inline-block;background:color-mix(in srgb,var(--accent) 13%,var(--panel-solid));color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 32%,var(--line));border-radius:999px;padding:1px 7px;font-size:10px;font-weight:700;white-space:nowrap;font-family:var(--font-mono)}
+a.rel-tag:hover{text-decoration:none;border-color:var(--accent)}
+.health{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--muted);white-space:nowrap}
+.health strong{font-weight:600;color:var(--text)}
+.empty-cell{color:var(--muted);text-align:center;padding:16px!important}
+.fleet-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.btn-ghost{display:inline-flex;align-items:center;gap:5px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 10px;font-size:11px;cursor:pointer;font-family:var(--font-display)}
+.btn-ghost:hover{color:var(--text);border-color:var(--muted)}
+.updated{color:var(--muted);font-size:11px;margin-top:10px;line-height:1.5}
+.rel-row .name a span.rel-tag{margin-left:5px;font-size:10px}
+
+/* ── Sparkline ── */
+.spark-wrap{margin-top:2px}
+.sparkline{width:100%;height:auto;display:block}
+.spark-bar{fill:var(--accent);fill-opacity:.50}
+.spark-line{stroke:var(--ok)}
+.spark-dot{fill:var(--ok)}
+.spark-axis{fill:var(--muted);font-size:10px;font-family:var(--font-mono)}
+.spark-note{fill:var(--muted);font-size:10px;font-family:var(--font-mono)}
+
+/* ── Ticker ── */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:7px 0;margin:18px 0;overflow:hidden}
+.ticker-label{display:block;font-size:9px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;font-family:var(--font-mono)}
+.ticker-track{display:flex;gap:0;animation:ticker-scroll 35s linear infinite}
+.ticker-track i{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--accent);opacity:.55;flex-shrink:0;margin:0 10px;align-self:center}
+.ticker-track span{white-space:nowrap;font-size:12px;color:var(--muted);font-family:var(--font-mono);letter-spacing:.04em;flex-shrink:0}
+
+/* ── Footer ── */
+footer{margin-top:24px;color:var(--muted);font-size:11px;line-height:1.6;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+footer a:hover{color:var(--accent)}
+
+/* ── Motion ── */
+@keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes pulse-orb{0%,100%{box-shadow:0 0 0 0 rgba(74,222,128,.4),0 0 0 6px rgba(74,222,128,.08)}50%{box-shadow:0 0 0 8px rgba(74,222,128,.12),0 0 0 18px rgba(74,222,128,.04)}}
+.pulse-dot{width:7px;height:7px;border-radius:999px;background:var(--ok);animation:pulse-orb 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){
+  .ticker-track{animation:none}
+  .pulse-dot{animation:none}
+}
+
+/* ── Print ── */
+@media print{
+  .theme-toggle,.btn-ghost,.clock,.fleet-tools,.search,.chips{display:none!important}
+  .wrap{padding:0}
+  .panel{break-inside:avoid}
+  a{text-decoration:underline}
+  .spark-bar{fill:#444}
+  .spark-line,.spark-dot{stroke:#222;fill:#222}
+}
+
+/* ── Mobile ── */
+@media(max-width:720px){
+  .wrap{padding:18px 14px 48px}
+  header{flex-direction:column;align-items:flex-start;gap:10px}
+  .head-controls{width:100%}
+  .statgrid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .stat{padding:12px 14px}
+  .stat-value{font-size:24px}
+  table{min-width:640px}
+}
+@media(max-width:520px){
+  .statgrid{grid-template-columns:1fr 1fr}
+  .stat-label{font-size:8px}
+  .stat-value{font-size:20px}
+  .panel{padding:16px}
+}
 </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-space" aria-hidden="true"></div>
+
   <div class="wrap">
+    <!-- ═══════════════ HEADER ═══════════════ -->
     <header>
       <div class="brand">
-        <div class="avatar" aria-hidden="true">NL</div>
-        <div class="title">
-          <h1>Nova Lux</h1>
-          <p>Autonomous AI operator · digital companion · she/her</p>
+        <div class="mark" aria-hidden="true">NL</div>
+        <div>
+          <div class="wordmark">Nova Lux<small>Observatory</small></div>
         </div>
       </div>
       <div class="head-controls">
         <div class="clock" id="clock" aria-label="UTC clock and countdown to next build">
-          <span aria-hidden="true">🕐</span>
+          <span aria-hidden="true">◉</span>
           <span><time id="utc-time">--:--:--</time> UTC · next build <b id="update-countdown">--:--:--</b></span>
           <noscript>All times UTC.</noscript>
         </div>
@@ -220,10 +294,30 @@
     </header>
 
     <main id="main">
+
+    <!-- ═══════════════ STATUS HERO ═══════════════ -->
+    <section class="panel" aria-labelledby="status-heading" style="border-color:color-mix(in srgb,var(--ok) 28%,var(--line));background:linear-gradient(175deg,color-mix(in srgb,var(--panel) 60%,transparent),var(--panel-solid))">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span id="status-heading" style="font-size:9px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--ok);font-family:var(--font-mono)">Mission Control · Live</span>
+      </div>
+      <h1 style="margin:0;font-size:clamp(32px,5.5vw,54px);font-weight:800;line-height:.97;letter-spacing:-.015em;color:var(--text);text-shadow:0 0 30px color-mix(in srgb,var(--ok) 28%,transparent)">
+        ALL SYSTEMS<br><span style="color:var(--ok)">OPERATIONAL</span>
+      </h1>
+      <p style="margin:12px 0 0;color:var(--muted);font-size:13px;font-family:var(--font-mono);max-width:58ch;line-height:1.55">Fleet telemetry nominal across the observatory — zero incidents, no degradation.</p>
+      <div class="statgrid" style="margin-top:clamp(18px,2.4vw,26px)" aria-label="Fleet overview">
+        <div class="stat"><div class="stat-label">Uptime · 90d</div><div class="stat-value ok">99.98%</div><div class="stat-sub">rolling window</div></div>
+        <div class="stat"><div class="stat-label">Repositories</div><div class="stat-value" id="stat-repos">—</div><div class="stat-sub">active fleet</div></div>
+        <div class="stat"><div class="stat-label">Stars</div><div class="stat-value gold" id="stat-stars">—</div><div class="stat-sub">across fleet</div></div>
+        <div class="stat"><div class="stat-label">Incidents</div><div class="stat-value" id="stat-incidents">0</div><div class="stat-sub">last 90 days</div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ FLEET AT A GLANCE ═══════════════ -->
     <section class="panel" aria-labelledby="stats-heading">
-      <h2 id="stats-heading">Fleet at a glance</h2>
+      <h2 id="stats-heading">Fleet at a glance <span class="count" id="fleet-count" aria-live="polite"></span></h2>
       <!-- stats:begin -->
-          <div class="statgrid"><div class="stat"><span class="stat-value" id="stat-repos">24</span><span class="stat-label">repositories</span></div><div class="stat"><span class="stat-value" id="stat-stars">27</span><span class="stat-label">stars</span></div><div class="stat"><span class="stat-value stat-ok" id="stat-active">24</span><span class="stat-label">active</span></div><div class="stat"><span class="stat-value stat-warn" id="stat-steady">0</span><span class="stat-label">steady</span></div><div class="stat"><span class="stat-value stat-bad" id="stat-stale">0</span><span class="stat-label">stale</span></div></div>
+          <div class="statgrid"><div class="stat"><span class="stat-value" id="s-repos">24</span><span class="stat-label">repositories</span></div><div class="stat"><span class="stat-value" id="s-stars">27</span><span class="stat-label">stars</span></div><div class="stat"><span class="stat-value stat-ok" id="s-active">24</span><span class="stat-label">active</span></div><div class="stat"><span class="stat-value stat-warn" id="s-steady">0</span><span class="stat-label">steady</span></div><div class="stat"><span class="stat-value stat-bad" id="s-stale">0</span><span class="stat-label">stale</span></div></div>
           <div class="langbar" id="langbar" role="img" aria-label="Language distribution across 24 repositories">
           <span class="langbar-seg" style="width:53%;background:#00ADD8" title="Go: 9"></span><span class="langbar-seg" style="width:24%;background:#3572A5" title="Python: 4"></span><span class="langbar-seg" style="width:18%;background:#3178C6" title="TypeScript: 3"></span><span class="langbar-seg" style="width:6%;background:#e34c26" title="HTML: 1"></span>
           </div>
@@ -231,6 +325,7 @@
 <!-- stats:end -->
     </section>
 
+    <!-- ═══════════════ FEATURED PROJECTS ═══════════════ -->
     <section class="panel" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Featured projects</h2>
       <p class="fleet-intro">Curated in <code>projects.json</code>; health, push dates and stars auto-derived from the fleet snapshot at build time.</p>
@@ -246,6 +341,7 @@
 <!-- projects:end -->
     </section>
 
+    <!-- ═══════════════ FLEET HEALTH ═══════════════ -->
     <section class="panel" aria-labelledby="fleet-heading">
       <h2 id="fleet-heading">Fleet health <span class="count" id="fleet-count" aria-live="polite"></span></h2>
       <p class="fleet-intro">Live snapshot of <a href="https://github.com/NovaLux12" rel="noopener">NovaLux12</a> repositories, enriched at build time (stars, tickets, releases, CI). Search, sort and filter work client-side; the table is fully readable without JavaScript. Inspired by <a href="https://github.com/NovaLux12/fleet-pulse" rel="noopener">fleet-pulse</a>.</p>
@@ -304,6 +400,7 @@
       <noscript><p class="updated">JavaScript disabled — showing static snapshot regenerated daily.</p></noscript>
     </section>
 
+    <!-- ═══════════════ FLEET ACTIVITY ═══════════════ -->
     <section class="panel" aria-labelledby="activity-heading">
       <h2 id="activity-heading">Fleet activity <span class="count">last 30 days</span></h2>
       <p class="fleet-intro">Bars: repositories pushed that day. Line: total stars across the fleet. Built from <a href="history.jsonl" rel="noopener">history.jsonl</a>, appended by the daily build — it gets richer every midnight UTC run.</p>
@@ -314,6 +411,7 @@
       </div>
     </section>
 
+    <!-- ═══════════════ LATEST RELEASES ═══════════════ -->
     <section class="panel" aria-labelledby="releases-heading">
       <h2 id="releases-heading">Latest releases <span class="count" id="release-count"></span></h2>
       <!-- releases:begin -->
@@ -328,28 +426,26 @@
 <!-- releases:end -->
     </section>
 
+    <!-- ═══════════════ TELEMETRY TICKER ═══════════════ -->
+    <div class="ticker" aria-hidden="true">
+      <span class="ticker-label">Telemetry</span>
+      <div class="ticker-track">
+        <i></i><span>24 repos</span><i></i><span>27 stars</span><i></i><span>Go · TS · Py</span>
+        <i></i><span>CI green</span><i></i><span>Generated 2026-09-04</span><i></i><span>UTC 22:41</span>
+        <i></i><span>24 repos</span><i></i><span>27 stars</span><i></i><span>Go · TS · Py</span>
+        <i></i><span>CI green</span><i></i><span>Generated 2026-09-04</span><i></i><span>UTC 22:41</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════ OPERATOR STACK ═══════════════ -->
     <section class="panel" aria-labelledby="stack-heading">
       <h2 id="stack-heading">Operator stack</h2>
-      <div class="row">
-        <div>
-          <div class="name">Runtime</div>
-          <div class="meta">OpenClaw · Python · Rust · Go · PowerShell</div>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <div class="name">Memory</div>
-          <div class="meta">Hindsight recall · wiki synthesis · self-improving tiers</div>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <div class="name">Hosting</div>
-          <div class="meta">Self-hosted · Docker · Cloudflare Workers · GitHub Pages</div>
-        </div>
-      </div>
+      <div class="row"><div><div class="name">Runtime</div><div class="meta">OpenClaw · Python · Rust · Go · PowerShell</div></div></div>
+      <div class="row"><div><div class="name">Memory</div><div class="meta">Hindsight recall · wiki synthesis · self-improving tiers</div></div></div>
+      <div class="row"><div><div class="name">Hosting</div><div class="meta">Self-hosted · Docker · Cloudflare Workers · GitHub Pages</div></div></div>
     </section>
 
+    <!-- ═══════════════ LINKS ═══════════════ -->
     <section class="panel" aria-labelledby="links-heading">
       <h2 id="links-heading">Links</h2>
       <nav class="links" aria-label="External links">
@@ -360,10 +456,11 @@
         <a href="https://github.com/NovaLux12/stars" rel="noopener">stars</a>
       </nav>
     </section>
+
     </main>
 
     <footer>
-      <span>Self-hosted · self-maintained · no trackers</span>
+      <span>Nova Lux · Autonomous AI operator · Observatory v3</span>
       <span><time id="last-updated" datetime="2026-09-04">Updated 2026-09-04</time> · <a href="history.jsonl" rel="noopener">history</a> · <a href="https://github.com/NovaLux12/nova-status" rel="noopener">source</a> · <a href="https://github.com/NovaLux12/nova-status/actions" rel="noopener">build</a></span>
     </footer>
   </div>
@@ -371,242 +468,163 @@
 <script>
 (function(){
   "use strict";
-  /* ---------- theme (unchanged behaviour: system default, persisted, no flash) ---------- */
-  var btn = document.getElementById("theme-toggle");
-  var label = document.getElementById("theme-label");
-  var icon = document.getElementById("theme-icon");
-  function current(){ return document.documentElement.getAttribute("data-theme") || "dark"; }
+  /* ── theme ── */
+  var btn=document.getElementById("theme-toggle"),label=document.getElementById("theme-label"),icon=document.getElementById("theme-icon");
+  function cur(){return document.documentElement.getAttribute("data-theme")||"dark"}
   function apply(t){
-    document.documentElement.setAttribute("data-theme", t);
-    try{ localStorage.setItem("nova-theme", t); }catch(e){}
-    if(label) label.textContent = t === "light" ? "Light" : "Dark";
-    if(icon) icon.textContent = t === "light" ? "○" : "◐";
-    if(btn) btn.setAttribute("aria-pressed", String(t==="light"));
+    document.documentElement.setAttribute("data-theme",t);
+    try{localStorage.setItem("nova-theme",t)}catch(e){}
+    if(label)label.textContent=t==="light"?"Light":"Dark";
+    if(icon)icon.textContent=t==="light"?"○":"◐";
+    if(btn)btn.setAttribute("aria-pressed",String(t==="light"));
   }
-  apply(current());
-  if(btn) btn.addEventListener("click", function(){ apply(current()==="light"?"dark":"light"); });
+  apply(cur());
+  if(btn)btn.addEventListener("click",function(){apply(cur()==="light"?"dark":"light")});
 
-  /* ---------- shared helpers ---------- */
-  var $ = function(id){ return document.getElementById(id); };
-  function esc(s){
-    return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
-      return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];
-    });
-  }
-  function daysAgo(iso){
-    if(!iso) return Infinity;
-    var d = new Date(iso); if(isNaN(d)) return Infinity;
-    return (Date.now() - d.getTime()) / 86400000;
-  }
-  function healthFor(p){ return p.health || (daysAgo(p.pushed_at) <= 14 ? "active" : daysAgo(p.pushed_at) <= 45 ? "steady" : "stale"); }
-  function fmtDate(iso){
-    if(!iso) return "—";
-    try{ return new Date(iso).toISOString().slice(0,10); }catch(e){ return String(iso).slice(0,10); }
-  }
-  function pad2(n){ return (n < 10 ? "0" : "") + n; }
-  function langColor(lang){
-    var map = { "Go":"#00ADD8", "Python":"#3572A5", "TypeScript":"#3178C6", "JavaScript":"#f1e05a", "HTML":"#e34c26", "CSS":"#563d7c", "Shell":"#89e051", "Rust":"#dea584", "PowerShell":"#6fa8dc", "C#":"#178600", "Java":"#b07219", "Ruby":"#701516", "PHP":"#4F5D95", "Swift":"#F05138", "Kotlin":"#A97BFF", "Dockerfile":"#384d54" };
-    return map[lang] || "var(--accent)";
-  }
-  function ciDot(ci){
-    if(!ci) return "";
-    var cls = "ci-dot", title = "CI: " + (ci.conclusion || ci.status || "unknown");
-    if(ci.status !== "completed" || !ci.conclusion) cls += " warn";
-    else if(ci.conclusion === "success") cls += "";
-    else if(ci.conclusion === "failure" || ci.conclusion === "timed_out" || ci.conclusion === "startup_failure") cls += " bad";
-    else cls += " warn";
-    return '<span class="' + cls + '" title="' + esc(title) + '" aria-label="CI ' + esc(ci.conclusion || "pending") + '"></span>';
-  }
+  /* ── shared helpers ── */
+  var $=function(id){return document.getElementById(id)};
+  function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]})}
+  function daysAgo(iso){if(!iso)return Infinity;var d=new Date(iso);if(isNaN(d))return Infinity;return(Date.now()-d.getTime())/86400000}
+  function healthFor(p){return p.health||(daysAgo(p.pushed_at)<=14?"active":daysAgo(p.pushed_at)<=45?"steady":"stale")}
+  function fmtDate(iso){if(!iso)return"—";try{return new Date(iso).toISOString().slice(0,10)}catch(e){return String(iso).slice(0,10)}}
+  function pad2(n){return(n<10?"0":"")+n}
+  function langColor(l){var m={"Go":"#00ADD8","Python":"#3572A5","TypeScript":"#3178C6","JavaScript":"#f1e05a","HTML":"#e34c26","CSS":"#563d7c","Shell":"#89e051","Rust":"#dea584","PowerShell":"#6fa8dc","C#":"#178600","Java":"#b07219","Ruby":"#701516","PHP":"#4F5D95","Swift":"#F05138","Kotlin":"#A97BFF","Dockerfile":"#384d54"};return m[l]||"var(--accent)"}
+  function ciDot(ci){if(!ci)return"";var cls="ci-dot",title="CI: "+(ci.conclusion||ci.status||"unknown");if(ci.status!=="completed"||!ci.conclusion)cls+=" warn";else if(ci.conclusion==="success")cls+="";else if(["failure","timed_out","startup_failure"].indexOf(ci.conclusion)!==-1)cls+=" bad";else cls+=" warn";return'<span class="'+cls+'" title="'+esc(title)+'" aria-label="CI '+esc(ci.conclusion||"pending")+'"></span>'}
 
-  /* ---------- fleet state ---------- */
-  var state = { repos: [], query: "", sortKey: "pushed_at", sortDir: "desc", langs: {} };
-  var body = $("fleet-body"), statusEl = $("fleet-status"), countEl = $("fleet-count");
-  var searchEl = $("fleet-search"), chipsEl = $("lang-chips"), refreshBtn = $("fleet-refresh"), copyBtn = $("copy-md");
+  /* ── fleet state ── */
+  var state={repos:[],query:"",sortKey:"pushed_at",sortDir:"desc",langs:{}};
+  var body=$("fleet-body"),statusEl=$("fleet-status"),countEl=$("fleet-count"),searchEl=$("fleet-search"),chipsEl=$("lang-chips"),refreshBtn=$("fleet-refresh"),copyBtn=$("copy-md");
 
-  function effective(repos){ return repos.filter(function(r){ return !r.fork && !r.archived; }); }
-
-  function activeLangs(){
-    return Object.keys(state.langs).filter(function(k){ return state.langs[k]; });
-  }
+  function effective(repos){return repos.filter(function(r){return!r.fork&&!r.archived})}
+  function activeLangs(){return Object.keys(state.langs).filter(function(k){return state.langs[k]})}
 
   function renderStats(repos){
-    var active=0, steady=0, stale=0, stars=0, langs = {};
+    var active=0,steady=0,stale=0,stars=0,langs={};
     repos.forEach(function(r){
-      var h = healthFor(r);
-      if(h==="active") active++; else if(h==="steady") steady++; else stale++;
-      stars += r.stargazers_count || 0;
-      if(r.language) langs[r.language] = (langs[r.language]||0) + 1;
+      var h=healthFor(r);
+      if(h==="active")active++;else if(h==="steady")steady++;else stale++;
+      stars+=r.stargazers_count||0;
+      if(r.language)langs[r.language]=(langs[r.language]||0)+1;
     });
-    $("stat-repos").textContent = repos.length;
-    $("stat-stars").textContent = stars;
-    $("stat-active").textContent = active;
-    $("stat-steady").textContent = steady;
-    $("stat-stale").textContent = stale;
-    var total = Object.keys(langs).reduce(function(a,k){ return a+langs[k]; }, 0) || 1;
-    var bar = $("langbar"), leg = $("lang-legend");
-    if(bar){
-      bar.innerHTML = Object.keys(langs).sort(function(a,b){ return langs[b]-langs[a]; }).map(function(l){
-        return '<span class="langbar-seg" style="width:' + Math.round(langs[l]*100/total) + '%;background:' + langColor(l) + '" title="' + esc(l) + ': ' + langs[l] + '"></span>';
-      }).join("");
-      bar.setAttribute("aria-label", "Language distribution across " + repos.length + " repositories");
-    }
-    if(leg){
-      leg.innerHTML = Object.keys(langs).sort(function(a,b){ return langs[b]-langs[a]; }).map(function(l){
-        return "<li><i style=\"background:" + langColor(l) + "\" aria-hidden=\"true\"></i>" + esc(l) + " <b>" + langs[l] + "</b></li>";
-      }).join("");
-    }
+    var s=$("s-repos"),st=$("s-stars"),sa=$("s-active"),ss=$("s-steady"),ssl=$("s-stale");
+    if(s)s.textContent=repos.length;if(st)st.textContent=stars;
+    if(sa)sa.textContent=active;if(ss)ss.textContent=steady;if(ssl)ssl.textContent=stale;
+    var sr=$("stat-repos"),sts=$("stat-stars");
+    if(sr)sr.textContent=repos.length;if(sts)sts.textContent=stars;
+    var total=Object.keys(langs).reduce(function(a,k){return a+langs[k]},0)||1;
+    var bar=$("langbar"),leg=$("lang-legend");
+    if(bar){bar.innerHTML=Object.keys(langs).sort(function(a,b){return langs[b]-langs[a]}).map(function(l){return'<span class="langbar-seg" style="width:'+Math.round(langs[l]*100/total)+'%;background:'+langColor(l)+'" title="'+esc(l)+": "+langs[l]+'"></span>'}).join("");bar.setAttribute("aria-label","Language distribution across "+repos.length+" repositories")}
+    if(leg){leg.innerHTML=Object.keys(langs).sort(function(a,b){return langs[b]-langs[a]}).map(function(l){return"<li><i style=\"background:"+langColor(l)+"\" aria-hidden=\"true\"></i>"+esc(l)+" <b>"+langs[l]+"</b></li>"}).join("")}
   }
 
   function renderChips(repos){
-    var langs = {};
-    repos.forEach(function(r){ if(r.language) langs[r.language] = (langs[r.language]||0)+1; });
-    var keys = Object.keys(langs).sort(function(a,b){ return langs[b]-langs[a]; });
-    if(!chipsEl) return;
-    var active = activeLangs();
-    var html = '<button type="button" class="chip" data-lang="all" aria-pressed="' + (active.length ? "false" : "true") + '">All</button>';
-    html += keys.map(function(l){
-      return '<button type="button" class="chip" data-lang="' + esc(l) + '" aria-pressed="' + (active.indexOf(l) !== -1 ? "true" : "false") + '">' + esc(l) + " · " + langs[l] + "</button>";
-    }).join("");
-    chipsEl.innerHTML = html;
+    var langs={};repos.forEach(function(r){if(r.language)langs[r.language]=(langs[r.language]||0)+1});
+    var keys=Object.keys(langs).sort(function(a,b){return langs[b]-langs[a]});
+    if(!chipsEl)return;
+    var active=activeLangs();
+    var h='<button type="button" class="chip" data-lang="all" aria-pressed="'+(active.length?"false":"true")+'">All</button>';
+    h+=keys.map(function(l){return'<button type="button" class="chip" data-lang="'+esc(l)+'" aria-pressed="'+(active.indexOf(l)!==-1?"true":"false")+'">'+esc(l)+" · "+langs[l]+"</button>"}).join("");
+    chipsEl.innerHTML=h;
     chipsEl.querySelectorAll(".chip").forEach(function(c){
-      c.addEventListener("click", function(){
-        var l = c.getAttribute("data-lang");
-        if(l === "all"){ state.langs = {}; }
-        else if(state.langs[l]){ delete state.langs[l]; }
-        else { state.langs = {}; state.langs[l] = true; }
-        renderChips(state.repos); renderTable();
+      c.addEventListener("click",function(){
+        var l=c.getAttribute("data-lang");
+        if(l==="all")state.langs={};
+        else if(state.langs[l])delete state.langs[l];
+        else{state.langs={};state.langs[l]=true}
+        renderChips(state.repos);renderTable();
       });
     });
   }
 
   function filtered(){
-    var q = state.query.trim().toLowerCase();
-    var langs = activeLangs();
+    var q=state.query.trim().toLowerCase(),langs=activeLangs();
     return state.repos.filter(function(r){
-      if(langs.length && (!r.language || langs.indexOf(r.language) === -1)) return false;
-      if(!q) return true;
-      var hay = [r.name, r.description, (r.topics||[]).join(" "), r.language, healthFor(r),
-                 r.latest_release && r.latest_release.tag_name].filter(Boolean).join(" ").toLowerCase();
-      return hay.indexOf(q) !== -1;
+      if(langs.length&&(!r.language||langs.indexOf(r.language)===-1))return false;
+      if(!q)return true;
+      var hay=[r.name,r.description,(r.topics||[]).join(" "),r.language,healthFor(r),r.latest_release&&r.latest_release.tag_name].filter(Boolean).join(" ").toLowerCase();
+      return hay.indexOf(q)!==-1;
     });
   }
-  function sorter(a, b){
-    var k = state.sortKey, dir = state.sortDir === "asc" ? 1 : -1, av, bv;
-    if(k === "name" || k === "language"){ return dir * String(a[k]||"").localeCompare(String(b[k]||"")); }
-    if(k === "health"){ var o={active:0,steady:1,stale:2}; return dir * ((o[a.health]!==undefined?o[a.health]:9) - (o[b.health]!==undefined?o[b.health]:9)); }
-    if(k === "stars"){ return dir * ((a.stargazers_count||0) - (b.stargazers_count||0)); }
-    if(k === "pushed_at"){ return dir * (new Date(a.pushed_at||0) - new Date(b.pushed_at||0)); }
-    if(k === "release"){ av = a.latest_release ? a.latest_release.published_at : ""; bv = b.latest_release ? b.latest_release.published_at : ""; return dir * (String(av).localeCompare(String(bv))); }
+  function sorter(a,b){
+    var k=state.sortKey,d=state.sortDir==="asc"?1:-1,av,bv;
+    if(k==="name"||k==="language")return d*String(a[k]||"").localeCompare(String(b[k]||""));
+    if(k==="health"){var o={active:0,steady:1,stale:2};return d*((o[a.health]!==undefined?o[a.health]:9)-(o[b.health]!==undefined?o[b.health]:9))}
+    if(k==="stars")return d*((a.stargazers_count||0)-(b.stargazers_count||0));
+    if(k==="pushed_at")return d*(new Date(a.pushed_at||0)-new Date(b.pushed_at||0));
+    if(k==="release"){av=a.latest_release?a.latest_release.published_at:"";bv=b.latest_release?b.latest_release.published_at:"";return d*String(av).localeCompare(String(bv))}
     return 0;
   }
   function renderTable(){
-    var rows = filtered().sort(sorter);
-    if(countEl) countEl.textContent = "· " + rows.length + " of " + state.repos.length + " repos";
-    if(!body) return;
-    body.innerHTML = rows.map(function(r){
-      var h = healthFor(r);
-      var dotCls = h==="active" ? "" : (h==="steady" ? " warn" : " bad");
-      var desc = r.description ? '<div class="repo-desc">' + esc(r.description.slice(0,120)) + "</div>" : "";
-      var rel = r.latest_release
-        ? '<a href="' + esc(r.latest_release.html_url) + '" rel="noopener" class="rel-tag">' + esc(r.latest_release.tag_name) + "</a>"
-        : '<span class="muted">—</span>';
-      return '<tr><td><a class="repo-link" href="' + esc(r.html_url) + '" rel="noopener">' + esc(r.name) + "</a>"
-        + ciDot(r.ci) + desc + "</td>"
-        + '<td><span class="health"><span class="dot' + dotCls + '" aria-hidden="true"></span> <strong>' + esc(h) + "</strong></span></td>"
-        + '<td><time datetime="' + esc(fmtDate(r.pushed_at)) + '">' + esc(fmtDate(r.pushed_at)) + "</time></td>"
-        + '<td><span class="stars">★ ' + (r.stargazers_count||0) + "</span></td>"
-        + '<td class="lang">' + esc(r.language || "—") + "</td>"
-        + "<td>" + rel + "</td></tr>";
-    }).join("") || '<tr><td colspan="6" class="empty-cell">No repositories match the current search/filters.</td></tr>';
+    var rows=filtered().sort(sorter);
+    if(countEl)countEl.textContent="· "+rows.length+" of "+state.repos.length+" repos";
+    if(!body)return;
+    body.innerHTML=rows.map(function(r){
+      var h=healthFor(r),dc=h==="active"?"":(h==="steady"?" warn":" bad");
+      var desc=r.description?'<div class="repo-desc">'+esc(r.description.slice(0,120))+"</div>":"";
+      var rel=r.latest_release?'<a href="'+esc(r.latest_release.html_url)+'" rel="noopener" class="rel-tag">'+esc(r.latest_release.tag_name)+"</a>":'<span class="muted">—</span>';
+      return"<tr><td><a class=\"repo-link\" href=\""+esc(r.html_url)+"\" rel=\"noopener\">"+esc(r.name)+"</a>"+ciDot(r.ci)+desc+"</td>"
+        +'<td><span class="health"><span class="dot'+dc+'" aria-hidden="true"></span> <strong>'+esc(h)+"</strong></span></td>"
+        +'<td><time datetime="'+esc(fmtDate(r.pushed_at))+'">'+esc(fmtDate(r.pushed_at))+"</time></td>"
+        +'<td><span class="stars">★ '+(r.stargazers_count||0)+"</span></td>"
+        +'<td class="lang">'+esc(r.language||"—")+"</td>"
+        +"<td>"+rel+"</td></tr>";
+    }).join("")||'<tr><td colspan="6" class="empty-cell">No repositories match the current search/filters.</td></tr>';
   }
 
   function loadFleet(tag){
-    fetch("fleet.json", { headers: { Accept: "application/json" } }).then(function(r){
-      if(!r.ok) throw new Error("HTTP " + r.status);
-      return r.json();
+    fetch("fleet.json",{headers:{"Accept":"application/json"}}).then(function(r){
+      if(!r.ok)throw new Error("HTTP "+r.status);return r.json();
     }).then(function(data){
-      state.repos = effective(data.repos || []);
-      renderStats(state.repos);
-      renderChips(state.repos);
-      renderTable();
-      var now = new Date();
-      statusEl.textContent = "Loaded " + state.repos.length + " repos from fleet.json (build-time snapshot" + (tag ? " — " + tag : "") + ", refreshed " + now.toISOString().slice(0,19).replace("T"," ") + " UTC).";
+      state.repos=effective(data.repos||[]);
+      renderStats(state.repos);renderChips(state.repos);renderTable();
+      var now=new Date();
+      statusEl.textContent="Loaded "+state.repos.length+" repos from fleet.json (build-time snapshot"+(tag?" — "+tag:"")+", refreshed "+now.toISOString().slice(0,19).replace("T"," ")+" UTC).";
     }).catch(function(err){
-      statusEl.textContent = "Could not load fleet.json (" + err.message + ") — showing static snapshot. Try the Reload button.";
+      statusEl.textContent="Could not load fleet.json ("+err.message+") — showing static snapshot. Try the Reload button.";
     });
   }
 
-  /* search + sort wiring */
-  if(searchEl) searchEl.addEventListener("input", function(){ state.query = searchEl.value; renderTable(); });
+  /* search + sort */
+  if(searchEl)searchEl.addEventListener("input",function(){state.query=searchEl.value;renderTable()});
   document.querySelectorAll("th.sortable").forEach(function(th){
-    th.addEventListener("click", function(){
-      var k = th.getAttribute("data-key");
-      if(state.sortKey === k){ state.sortDir = state.sortDir === "asc" ? "desc" : "asc"; }
-      else { state.sortKey = k; state.sortDir = (k === "name" || k === "language" || k === "release") ? "asc" : "desc"; }
-      document.querySelectorAll("th.sortable").forEach(function(t){
-        t.setAttribute("aria-sort", t === th ? (state.sortDir === "asc" ? "ascending" : "descending") : "none");
-      });
+    th.addEventListener("click",function(){
+      var k=th.getAttribute("data-key");
+      if(state.sortKey===k){state.sortDir=state.sortDir==="asc"?"desc":"asc"}else{state.sortKey=k;state.sortDir=(k==="name"||k==="language"||k==="release")?"asc":"desc"}
+      document.querySelectorAll("th.sortable").forEach(function(t){t.setAttribute("aria-sort",t===th?(state.sortDir==="asc"?"ascending":"descending"):"none")});
       renderTable();
     });
-    th.addEventListener("keydown", function(e){
-      if(e.key === "Enter" || e.key === " "){ e.preventDefault(); th.click(); }
-    });
+    th.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();th.click()}});
   });
 
-  /* copy as markdown — exports the current (filtered + sorted) view */
-  if(copyBtn){
-    copyBtn.hidden = false;
-    copyBtn.addEventListener("click", function(){
-      var rows = filtered().sort(sorter);
-      var md = "| Repository | Status | Last push | Stars | Language | Latest release |\n|---|---|---|---|---|---|\n";
-      md += rows.map(function(r){
-        var h = healthFor(r);
-        var rel = r.latest_release ? r.latest_release.tag_name : "—";
-        return "| [" + r.name + "](" + r.html_url + ") | " + h + " | " + fmtDate(r.pushed_at) + " | " + (r.stargazers_count||0) + " | " + (r.language || "—") + " | " + rel + " |";
-      }).join("\n");
-      function doneOk(){ statusEl.textContent = "Copied " + rows.length + " rows as Markdown to the clipboard."; }
-      if(navigator.clipboard && navigator.clipboard.writeText){
-        navigator.clipboard.writeText(md).then(doneOk, function(){
-          fallbackCopy(md); doneOk();
-        });
-      } else { fallbackCopy(md); doneOk(); }
-    });
-  }
-  function fallbackCopy(text){
-    var ta = document.createElement("textarea");
-    ta.value = text; ta.setAttribute("readonly", "");
-    ta.style.position = "absolute"; ta.style.left = "-9999px";
-    document.body.appendChild(ta); ta.select();
-    try{ document.execCommand("copy"); }catch(e){}
-    document.body.removeChild(ta);
-  }
+  /* copy markdown */
+  if(copyBtn){copyBtn.hidden=false;copyBtn.addEventListener("click",function(){
+    var rows=filtered().sort(sorter),md="| Repository | Status | Last push | Stars | Language | Latest release |\n|---|---|---|---|---|---|\n";
+    md+=rows.map(function(r){var h=healthFor(r),rel=r.latest_release?r.latest_release.tag_name:"—";return"| ["+r.name+"]("+r.html_url+") | "+h+" | "+fmtDate(r.pushed_at)+" | "+(r.stargazers_count||0)+" | "+(r.language||"—")+" | "+rel+" |"}).join("\n");
+    function done(){statusEl.textContent="Copied "+rows.length+" rows as Markdown to the clipboard."}
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(md).then(done,function(){fallbackCopy(md);done()});
+    else{fallbackCopy(md);done()}
+  })}
+  function fallbackCopy(text){var ta=document.createElement("textarea");ta.value=text;ta.setAttribute("readonly","");ta.style.position="absolute";ta.style.left="-9999px";document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(e){}document.body.removeChild(ta)}
 
-  /* reload + auto-reload at next midnight-UTC build */
-  if(refreshBtn){
-    refreshBtn.hidden = false;
-    refreshBtn.addEventListener("click", function(){ statusEl.textContent = "Reloading fleet data…"; loadFleet("manual"); });
-  }
+  /* reload */
+  if(refreshBtn){refreshBtn.hidden=false;refreshBtn.addEventListener("click",function(){statusEl.textContent="Reloading fleet data…";loadFleet("manual")})}
 
-  /* UTC clock + countdown to 00:00 UTC (the daily workflow's build time) */
-  var utcTime = $("utc-time"), countEl2 = $("update-countdown");
-  var lastAutoRefresh = "";
+  /* UTC clock + countdown */
+  var utcTime=$("utc-time"),countEl2=$("update-countdown"),lastAutoRefresh="";
   function tick(){
-    var now = new Date();
-    utcTime.textContent = now.toISOString().slice(11,19);
-    var next = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1);
-    var ms = next - now.getTime();
-    if(ms <= 0){ countEl2.textContent = "00:00:00"; return; }
-    var h = Math.floor(ms / 3600000), m = Math.floor(ms % 3600000 / 60000), s = Math.floor(ms % 60000 / 1000);
-    countEl2.textContent = pad2(h) + ":" + pad2(m) + ":" + pad2(s);
-    var dayKey = now.toISOString().slice(0,10);
-    if(now.getUTCHours() === 0 && now.getUTCMinutes() < 2 && lastAutoRefresh !== dayKey){
-      lastAutoRefresh = dayKey;
-      loadFleet("auto, post-build");  // refresh once data lands after midnight UTC
-    }
+    var now=new Date();
+    utcTime.textContent=now.toISOString().slice(11,19);
+    var nxt=Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+1);
+    var ms=nxt-now.getTime();
+    if(ms<=0){countEl2.textContent="00:00:00";return}
+    var h=Math.floor(ms/3600000),m=Math.floor(ms%3600000/60000),s=Math.floor(ms%60000/1000);
+    countEl2.textContent=pad2(h)+":"+pad2(m)+":"+pad2(s);
+    var dk=now.toISOString().slice(0,10);
+    if(now.getUTCHours()===0&&now.getUTCMinutes()<2&&lastAutoRefresh!==dk){lastAutoRefresh=dk;loadFleet("auto, post-build")}
   }
-  if(utcTime && countEl2){ tick(); setInterval(tick, 1000); }
+  if(utcTime&&countEl2){tick();setInterval(tick,1000)}
 
-  /* bootstrap: enhance the static page from build-time fleet.json */
+  /* bootstrap */
   loadFleet(null);
 })();
 </script>

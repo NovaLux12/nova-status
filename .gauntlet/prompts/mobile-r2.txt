@@ -1,0 +1,28 @@
+You are the BUILDER for the "mobile" piece of a showpiece redesign of the Nova Lux status page.
+
+THE BAR: Upptime's live demo status site (a clean, light, mint/teal open-source status page with incident cards). Your piece is judged BLIND against it — if a harsh critic prefers the bar, your piece gets rebuilt. Aim to win decisively at BOTH desktop (1440x900) and mobile (390x844). Make it unmistakably different at first glance and unmistakably better.
+
+ENVIRONMENT (you have shell access; verify everything yourself):
+- Repo root: /tmp/gauntlet-status  (git clone of NovaLux12/nova-status; a static GitHub Pages status site)
+- Local server already serves it: http://127.0.0.1:8137/<path>
+- Screenshot helper (chromium headless, ready): NODE_PATH=/home/jack/worldmonitor/node_modules node /tmp/gauntlet-status/.gauntlet/shot.cjs <url> <out.png> <width> <height> <wait_ms> [fullPage=1]
+  Then LOOK at your screenshots with the read tool. Iterate on what you actually see until it is showpiece-grade. Never submit without looking.
+- Real content/data to copy: read /tmp/gauntlet-status/fleet.json, /tmp/gauntlet-status/projects.json, /tmp/gauntlet-status/history.jsonl, and /tmp/gauntlet-status/index.html (the current page). Use REAL repo names, star counts, languages, dates, releases. Never invent repo names.
+- BAR SCREENSHOTS (the thing you must beat blind): /tmp/gauntlet-status/.gauntlet/shots/bar-desktop.png (1440x900) and bar-mobile.png (390x844) — VIEW BOTH FIRST with the read tool before designing anything.
+- CONCEPT: read /tmp/gauntlet-status/.gauntlet/CONCEPT.md — the "NOVA OBSERVATORY" direction. If /tmp/gauntlet-status/.gauntlet/base/tokens.css exists, read it and reuse its tokens (embed a copy in your self-contained file).
+- RULES: fully self-contained HTML, inline CSS only, ZERO external requests (the screenshot browser blocks fonts/CDN), system font stack, no JS required for the still screenshot to look right (progressive enhancement only), all motion wrapped in @media (prefers-reduced-motion: no-preference), support both dark and light with prefers-color-scheme, use the shared CSS variable names (--bg, --panel, --line, --text, --muted, --accent, --ok, --warn, --bad, plus --font-display, --font-mono, --radius, --glow-* as needed).
+- IMPECCABLE at 1440x900 AND 390x844 (mobile: stack, no horizontal overflow, touch-friendly).
+
+YOUR PIECE — "mobile": The ENTIRE assembled page as it must appear at 390x844: compact hero (smaller mark, tight status line), stacked telemetry grid, project cards, the fleet as card rows, activity trace, releases, ticker, footer — a single continuous, beautiful, thumb-friendly scroll. Everything the other pieces defined, composed. Judge it as a mobile-first whole: whitespace, touch targets >=40px, no overflow, no fiddly text.
+
+OUTPUT: write a fully self-contained HTML file to /tmp/gauntlet-status/.gauntlet/pieces/mobile.html
+Then screenshot it yourself at desktop AND mobile (URL http://127.0.0.1:8137/.gauntlet/pieces/mobile.html), view the results, and iterate until you are proud of it.
+Write your design notes (one short paragraph: what you did + anything the judge should watch for) to /tmp/gauntlet-status/.gauntlet/notes/mobile.md
+End your reply with exactly: BUILD_DONE mobile
+
+ROUND 2 — THE PIECE YOU ARE BUILDING: "mobile".
+The ENTIRE assembled page at 390x844: compact hero, stacked telemetry grid, project cards, fleet as card rows, activity trace, releases, ticker, footer — a single continuous, thumb-friendly scroll. Touch targets >=40px, no overflow, no fiddly text.
+
+CRITIC (blind, anonymous): B takes it: at 390px it reflows into a coherent mobile-native layout — 2x2 telemetry grid, no horizontal overflow, status block prioritised at top — while A ships a genuine mobile defect (nav link clipped mid-word, desktop-scale hero eating ~35% of the viewport) and on desktop reads as an unstyled GitHub-Pages template with flat red incident cards, axis-less sparklines, and inconsistent link treatment. B holds one disciplined dark design language across both viewports (1px luminous borders, dot-status chips, segmented language bar with a proper legend) and feels like a showpiece where A is disciplined but forgettable. B's deductions are real — cramped header rhythm, muddled all-caps hierarchy, zero-valued STEADY/STALE stats that look like broken data — but on mobile execution, cross-viewport consistency, and craft it is clearly ahead. — GAP TO FIX: Fix the muted secondary-text contrast on the dark theme: project descriptions and card labels sit near-illegible against the near-black background — lift them to a WCAG-AA-compliant tone so body copy stops reading as placeholder.
+
+STRICT PROTOCOL: write the COMPLETE file in ONE write call to /tmp/gauntlet-status/.gauntlet/pieces/mobile.html, verify with ls -la (must be >2KB), screenshot desktop+mobile (NODE_PATH=/home/jack/worldmonitor/node_modules node /tmp/gauntlet-status/.gauntlet/shot.cjs http://127.0.0.1:8137/.gauntlet/pieces/mobile.html <out> 1440 900 2000, and 390 844), view both with the read tool, fix AT MOST twice, then final-verify and reply exactly: BUILD_DONE mobile

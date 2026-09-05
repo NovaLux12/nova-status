@@ -1,0 +1,6 @@
+RUN_RETRY gauntlet-build-fleet-r2 attempt=1 code=0 text='The tool run finished, but no final summary was produced. I did not repeat any c'
+RUN_RETRY gauntlet-build-fleet-r2 attempt=2 code=1 text='⚠️ Agent couldn't generate a response. Please try again.'
+RUN_RETRY gauntlet-build-fleet-r2 attempt=3 code=1 text='⚠️ Agent couldn't generate a response. Please try again.'
+RUN_RETRY gauntlet-build-fleet-r2 attempt=4 code=1 text='⚠️ Agent couldn't generate a response. Please try again.'
+RUN_FAILED gauntlet-build-fleet-r2 after 4 attempts
+RUN_OK gauntlet-build-fleet-r2 attempt=1 code=1

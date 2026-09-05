@@ -1,0 +1,11 @@
+{
+  "piece": "mobile",
+  "round": 2,
+  "winner": "OURS",
+  "desktop_winner": "BAR",
+  "mobile_winner": "OURS",
+  "reason": "Mobile R2 (muted contrast lifted #8b93a7\u2192#a8b4c8) wins on 390px mobile: the compact 2x2 telemetry grid, dark status-first hero, and thumb-friendly card layout fit the viewport cleanly with no horizontal overflow. On desktop it reads as a dense dashboard vs the bar's clean light layout.",
+  "gap": "Desktop mobile-piece: add more whitespace between sections and a wider max-width container so it reads as a proper desktop page rather than a blown-up mobile layout.",
+  "method": "manual_vision_check",
+  "confidence": "high"
+}

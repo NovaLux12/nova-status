@@ -1,0 +1,9 @@
+{
+  "ok": false,
+  "runId": "c29c383d-5634-4f02-8b47-c0bb666ceb71",
+  "origin": "gateway",
+  "error": {
+    "type": "cli_error",
+    "message": "Inline API key for provider \"opencode-go\" is temporarily disabled after a provider auth/billing failure. Retry after about 298 minutes, or switch to a different auth profile/API key."
+  }
+}

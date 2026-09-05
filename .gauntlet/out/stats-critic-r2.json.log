@@ -1,0 +1,5 @@
+RUN_RETRY gauntlet-critic-stats-r2 attempt=1 code=1 text=''
+RUN_RETRY gauntlet-critic-stats-r2 attempt=2 code=1 text=''
+RUN_RETRY gauntlet-critic-stats-r2 attempt=3 code=1 text=''
+RUN_RETRY gauntlet-critic-stats-r2 attempt=4 code=1 text=''
+RUN_FAILED gauntlet-critic-stats-r2 after 4 attempts
