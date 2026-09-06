@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05",
-  "generated_ts": "2026-09-05T03:49:41.756314+00:00",
+  "generated_at": "2026-09-06",
+  "generated_ts": "2026-09-06T03:53:49.758626+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -11,13 +11,46 @@
       "stale": 0
     },
     "languages": {
-      "HTML": 1,
       "TypeScript": 3,
+      "HTML": 1,
       "Go": 9,
       "Python": 4
     }
   },
   "repos": [
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-05T21:51:22Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v1.29.0",
+        "name": "v1.29.0",
+        "published_at": "2026-09-05T21:51:22Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v1.29.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/33994241034",
+        "head_branch": "v1.29.0"
+      },
+      "health": "active"
+    },
     {
       "name": "nova-status",
       "html_url": "https://github.com/NovaLux12/nova-status",
@@ -26,7 +59,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-09-05T01:02:36Z",
+      "pushed_at": "2026-09-05T08:14:21Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": {
@@ -38,7 +71,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/33942905966",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/34010124242",
         "head_branch": "main"
       },
       "health": "active"
@@ -97,39 +130,6 @@
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/hindsight/actions/runs/33925653710",
         "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-04T22:26:50Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v1.28.2",
-        "name": "v1.28.2",
-        "published_at": "2026-09-04T22:26:50Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v1.28.2"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/33925750184",
-        "head_branch": "v1.28.2"
       },
       "health": "active"
     },
