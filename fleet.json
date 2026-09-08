@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07",
-  "generated_ts": "2026-09-07T03:53:19.646211+00:00",
+  "generated_at": "2026-09-08",
+  "generated_ts": "2026-09-08T03:56:00.614569+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -11,38 +11,13 @@
       "stale": 0
     },
     "languages": {
-      "HTML": 1,
       "TypeScript": 3,
+      "HTML": 1,
       "Go": 9,
       "Python": 4
     }
   },
   "repos": [
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-06T03:53:50Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/34081137579",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
     {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
@@ -59,9 +34,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-09-05T21:51:22Z",
+      "pushed_at": "2026-09-08T02:24:21Z",
       "stargazers_count": 1,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "latest_release": {
         "tag_name": "v1.29.0",
         "name": "v1.29.0",
@@ -69,10 +44,10 @@
         "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v1.29.0"
       },
       "ci": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/33994241034",
-        "head_branch": "v1.29.0"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/34179942380",
+        "head_branch": "dependabot/npm_and_yarn/dev-dependencies-eaf15d0723"
       },
       "health": "active"
     },
@@ -96,9 +71,9 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-09-04T22:32:00Z",
+      "pushed_at": "2026-09-07T16:45:32Z",
       "stargazers_count": 2,
-      "open_issues_count": 4,
+      "open_issues_count": 6,
       "latest_release": {
         "tag_name": "v0.2.0",
         "name": "carelink-bridge v0.2.0",
@@ -108,7 +83,32 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/33925901925",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/34144723178",
+        "head_branch": "dependabot/npm_and_yarn/vitest-5.0.0"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-07T03:53:20Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/34185183135",
         "head_branch": "main"
       },
       "health": "active"
