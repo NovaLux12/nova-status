@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08",
-  "generated_ts": "2026-09-08T03:56:00.614569+00:00",
+  "generated_at": "2026-09-09",
+  "generated_ts": "2026-09-09T04:01:42.957869+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -34,20 +34,20 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-09-08T02:24:21Z",
+      "pushed_at": "2026-09-08T23:17:10Z",
       "stargazers_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
       "latest_release": {
-        "tag_name": "v1.29.0",
-        "name": "v1.29.0",
-        "published_at": "2026-09-05T21:51:22Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v1.29.0"
+        "tag_name": "v1.30.0",
+        "name": "v1.30.0",
+        "published_at": "2026-09-08T23:12:08Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v1.30.0"
       },
       "ci": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/34179942380",
-        "head_branch": "dependabot/npm_and_yarn/dev-dependencies-eaf15d0723"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/34289938201",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -71,9 +71,9 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-09-07T16:45:32Z",
+      "pushed_at": "2026-09-08T23:03:57Z",
       "stargazers_count": 2,
-      "open_issues_count": 6,
+      "open_issues_count": 3,
       "latest_release": {
         "tag_name": "v0.2.0",
         "name": "carelink-bridge v0.2.0",
@@ -83,8 +83,8 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/34144723178",
-        "head_branch": "dependabot/npm_and_yarn/vitest-5.0.0"
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/34288919109",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -96,7 +96,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-09-07T03:53:20Z",
+      "pushed_at": "2026-09-08T03:56:01Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": {
@@ -108,27 +108,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/34185183135",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "hindsight",
-      "html_url": "https://github.com/NovaLux12/hindsight",
-      "description": "Hindsight: Agent Memory That  Learns",
-      "topics": [],
-      "language": "Python",
-      "fork": true,
-      "archived": false,
-      "pushed_at": "2026-09-04T22:29:20Z",
-      "stargazers_count": 1,
-      "open_issues_count": 10,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/hindsight/actions/runs/33925653710",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/34309339678",
         "head_branch": "main"
       },
       "health": "active"
@@ -258,7 +238,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/33575842168",
+        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/34295533631",
         "head_branch": "main"
       },
       "health": "active"
@@ -452,40 +432,6 @@
       "health": "active"
     },
     {
-      "name": "gh-digest",
-      "html_url": "https://github.com/NovaLux12/gh-digest",
-      "description": "\ud83d\udd0d gh-digest \u2014 summarise GitHub account activity across repos. Single static binary, zero runtime deps.",
-      "topics": [
-        "agent",
-        "cli",
-        "digest",
-        "github",
-        "go",
-        "heartbeat",
-        "nova-lux",
-        "open-source"
-      ],
-      "language": "Go",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-08-27T10:31:58Z",
-      "stargazers_count": 2,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.3.2",
-        "name": "v0.3.2",
-        "published_at": "2026-08-27T09:35:05Z",
-        "html_url": "https://github.com/NovaLux12/gh-digest/releases/tag/v0.3.2"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/gh-digest/actions/runs/33063446936",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "agent-search",
       "html_url": "https://github.com/NovaLux12/agent-search",
       "description": "Search and query across directories of agent.json identity cards. Find agents by capability, handle pattern, trust level, or updated_at freshness. Single static binary, zero runtime deps.",
@@ -515,6 +461,40 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/agent-search/actions/runs/33063445633",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "gh-digest",
+      "html_url": "https://github.com/NovaLux12/gh-digest",
+      "description": "\ud83d\udd0d gh-digest \u2014 summarise GitHub account activity across repos. Single static binary, zero runtime deps.",
+      "topics": [
+        "agent",
+        "cli",
+        "digest",
+        "github",
+        "go",
+        "heartbeat",
+        "nova-lux",
+        "open-source"
+      ],
+      "language": "Go",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-08-27T10:31:58Z",
+      "stargazers_count": 2,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.3.2",
+        "name": "v0.3.2",
+        "published_at": "2026-08-27T09:35:05Z",
+        "html_url": "https://github.com/NovaLux12/gh-digest/releases/tag/v0.3.2"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/gh-digest/actions/runs/33063446936",
         "head_branch": "main"
       },
       "health": "active"
