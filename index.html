@@ -348,7 +348,7 @@ footer a:hover{color:var(--accent)}
       <div class="fleet-tools" id="fleet-tools">
         <div class="search">
           <label class="sr-only" for="fleet-search">Search repositories</label>
-          <input id="fleet-search" type="search" placeholder="Search name, description, topics, language…" autocomplete="off" />
+          <input id="fleet-search" type="search" placeholder="Search name, description, topics, language… (press /)" autocomplete="off" />
         </div>
         <div class="chips" id="lang-chips" role="group" aria-label="Filter by language"></div>
         <noscript><p class="fleet-intro">Search, sort and filters need JavaScript — the static snapshot below is complete.</p></noscript>
@@ -586,6 +586,13 @@ footer a:hover{color:var(--accent)}
 
   /* search + sort */
   if(searchEl)searchEl.addEventListener("input",function(){state.query=searchEl.value;renderTable()});
+  /* "/" focuses search unless already typing (roadmap: keyboard shortcut for search) */
+  document.addEventListener("keydown",function(e){
+    if(e.key!=="/"||e.ctrlKey||e.metaKey||e.altKey)return;
+    var t=e.target,tag=t&&t.tagName?String(t.tagName).toLowerCase():"";
+    if(tag==="input"||tag==="textarea"||tag==="select"||(t&&t.isContentEditable))return;
+    if(searchEl){e.preventDefault();searchEl.focus()}
+  });
   document.querySelectorAll("th.sortable").forEach(function(th){
     th.addEventListener("click",function(){
       var k=th.getAttribute("data-key");

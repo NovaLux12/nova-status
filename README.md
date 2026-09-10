@@ -99,8 +99,8 @@ package-lock.json             # zero-dep lockfile — makes `npm audit` / instal
 ```bash
 python3 -m http.server 8000
 # open http://localhost:8000/
-# test: search ('agent'), sort columns (click headers), language chips, theme toggle, clock/countdown,
-# copy-as-markdown, Reload fleet data, and the no-JS fallback (disable JS in devtools)
+# test: search ('agent'), `/` focuses search, sort columns (click headers), language chips, theme toggle,
+# clock/countdown, copy-as-markdown, Reload fleet data, and the no-JS fallback (disable JS in devtools)
 # the static snapshot shows immediately — fleet.json enrichment loads over it
 ```
 
@@ -110,7 +110,6 @@ Dark mode: toggle via the pill button in the header (◐/○). System preference
 
 - OG image + richer share metadata
 - RSS feed of releases + history
-- `/` keyboard shortcut for search
 - 90-day "uptime grid" once history matures (the JSONL already stores daily counts per repo)
 - Optional: `fetch`-free full static render of the fleet (JS-disabled already works)
 
