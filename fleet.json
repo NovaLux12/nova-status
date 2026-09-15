@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14",
-  "generated_ts": "2026-09-14T04:16:22.009770+00:00",
+  "generated_at": "2026-09-15",
+  "generated_ts": "2026-09-15T04:16:45.681909+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -11,38 +11,13 @@
       "stale": 0
     },
     "languages": {
-      "HTML": 1,
       "TypeScript": 3,
+      "HTML": 1,
       "Python": 4,
       "Go": 9
     }
   },
   "repos": [
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-12T03:59:09Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/34805396127",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
     {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
@@ -59,9 +34,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-09-11T10:08:58Z",
+      "pushed_at": "2026-09-15T02:25:28Z",
       "stargazers_count": 1,
-      "open_issues_count": 0,
+      "open_issues_count": 2,
       "latest_release": {
         "tag_name": "v1.30.1",
         "name": "v1.30.1",
@@ -71,7 +46,69 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/34587759824",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/34921122626",
+        "head_branch": "dependabot/npm_and_yarn/dev-dependencies-724ce522ec"
+      },
+      "health": "active"
+    },
+    {
+      "name": "carelink-bridge",
+      "html_url": "https://github.com/NovaLux12/carelink-bridge",
+      "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
+      "topics": [
+        "bridge",
+        "carelink",
+        "cgm",
+        "community-fork",
+        "diabetes",
+        "insulin-pump",
+        "medtronic",
+        "nightscout",
+        "nodejs",
+        "oauth2",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-09-14T16:47:19Z",
+      "stargazers_count": 2,
+      "open_issues_count": 4,
+      "latest_release": {
+        "tag_name": "v0.2.0",
+        "name": "carelink-bridge v0.2.0",
+        "published_at": "2026-07-22T13:12:20Z",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/34870777487",
+        "head_branch": "dependabot/npm_and_yarn/minor-patch-724ce522ec"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-14T04:16:23Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/34928190812",
         "head_branch": "main"
       },
       "health": "active"
@@ -135,43 +172,6 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/34538057163",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "carelink-bridge",
-      "html_url": "https://github.com/NovaLux12/carelink-bridge",
-      "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
-      "topics": [
-        "bridge",
-        "carelink",
-        "cgm",
-        "community-fork",
-        "diabetes",
-        "insulin-pump",
-        "medtronic",
-        "nightscout",
-        "nodejs",
-        "oauth2",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": true,
-      "archived": false,
-      "pushed_at": "2026-09-10T22:33:44Z",
-      "stargazers_count": 2,
-      "open_issues_count": 3,
-      "latest_release": {
-        "tag_name": "v0.2.0",
-        "name": "carelink-bridge v0.2.0",
-        "published_at": "2026-07-22T13:12:20Z",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/34538053434",
         "head_branch": "main"
       },
       "health": "active"
