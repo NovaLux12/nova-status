@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-20",
-  "generated_ts": "2026-09-20T04:19:03.612819+00:00",
+  "generated_at": "2026-09-21",
+  "generated_ts": "2026-09-21T04:16:34.917462+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -11,13 +11,53 @@
       "stale": 0
     },
     "languages": {
-      "TypeScript": 3,
       "HTML": 1,
+      "TypeScript": 3,
       "Python": 4,
       "Go": 9
     }
   },
   "repos": [
+    {
+      "name": "PresenceJam-Desktop",
+      "html_url": "https://github.com/NovaLux12/PresenceJam-Desktop",
+      "description": "Windows desktop app syncing Spotify now-playing to Microsoft Teams status messages via Graph API (Tauri 2 + Svelte 5)",
+      "topics": [],
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-09-20T21:40:00Z",
+      "stargazers_count": 0,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-20T04:19:04Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/35560332599",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
@@ -52,31 +92,6 @@
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-19T04:00:16Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/35488821920",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "carelink-bridge",
       "html_url": "https://github.com/NovaLux12/carelink-bridge",
       "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
@@ -98,7 +113,7 @@
       "archived": false,
       "pushed_at": "2026-09-14T16:47:19Z",
       "stargazers_count": 2,
-      "open_issues_count": 4,
+      "open_issues_count": 5,
       "latest_release": {
         "tag_name": "v0.2.0",
         "name": "carelink-bridge v0.2.0",
