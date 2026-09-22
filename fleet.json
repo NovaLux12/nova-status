@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21",
-  "generated_ts": "2026-09-21T04:16:34.917462+00:00",
+  "generated_at": "2026-09-22",
+  "generated_ts": "2026-09-22T04:12:31.866409+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -11,53 +11,13 @@
       "stale": 0
     },
     "languages": {
-      "HTML": 1,
       "TypeScript": 3,
+      "HTML": 1,
       "Python": 4,
       "Go": 9
     }
   },
   "repos": [
-    {
-      "name": "PresenceJam-Desktop",
-      "html_url": "https://github.com/NovaLux12/PresenceJam-Desktop",
-      "description": "Windows desktop app syncing Spotify now-playing to Microsoft Teams status messages via Graph API (Tauri 2 + Svelte 5)",
-      "topics": [],
-      "language": null,
-      "fork": true,
-      "archived": false,
-      "pushed_at": "2026-09-20T21:40:00Z",
-      "stargazers_count": 0,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": null,
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-20T04:19:04Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/35560332599",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
     {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
@@ -74,9 +34,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-09-19T08:22:02Z",
+      "pushed_at": "2026-09-22T02:24:15Z",
       "stargazers_count": 1,
-      "open_issues_count": 370,
+      "open_issues_count": 366,
       "latest_release": {
         "tag_name": "v1.30.1",
         "name": "v1.30.1",
@@ -84,10 +44,10 @@
         "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v1.30.1"
       },
       "ci": {
-        "conclusion": "action_required",
+        "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/35431808478",
-        "head_branch": "release-please--branches--main--components--spotify-mcp"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/35679337051",
+        "head_branch": "dependabot/npm_and_yarn/dev-dependencies-56e245307c"
       },
       "health": "active"
     },
@@ -111,7 +71,7 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-09-14T16:47:19Z",
+      "pushed_at": "2026-09-21T16:46:20Z",
       "stargazers_count": 2,
       "open_issues_count": 5,
       "latest_release": {
@@ -123,9 +83,49 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/34870777487",
-        "head_branch": "dependabot/npm_and_yarn/minor-patch-724ce522ec"
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/35627738174",
+        "head_branch": "dependabot/npm_and_yarn/minor-patch-8dd6e1589b"
       },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-21T04:16:36Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/35685982697",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "PresenceJam-Desktop",
+      "html_url": "https://github.com/NovaLux12/PresenceJam-Desktop",
+      "description": "Windows desktop app syncing Spotify now-playing to Microsoft Teams status messages via Graph API (Tauri 2 + Svelte 5)",
+      "topics": [],
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-09-20T21:40:00Z",
+      "stargazers_count": 0,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
       "health": "active"
     },
     {
