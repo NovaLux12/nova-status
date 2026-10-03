@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-03",
-  "generated_ts": "2026-10-03T04:41:38.247229+00:00",
+  "generated_ts": "2026-10-03T07:02:16.653480+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -33,9 +33,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-02T20:09:06Z",
+      "pushed_at": "2026-10-03T07:00:29Z",
       "stargazers_count": 1,
-      "open_issues_count": 3,
+      "open_issues_count": 1,
       "latest_release": {
         "tag_name": "v0.2.0",
         "name": "Cadence v0.2.0",
@@ -45,8 +45,85 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/cadence/actions/runs/37058733098",
-        "head_branch": "dependabot/npm_and_yarn/multi-e9c2dce3b7"
+        "html_url": "https://github.com/NovaLux12/cadence/actions/runs/37104913746",
+        "head_branch": "dependabot/npm_and_yarn/hono-4.13.7"
+      },
+      "health": "active"
+    },
+    {
+      "name": "PresenceJam-Desktop",
+      "html_url": "https://github.com/NovaLux12/PresenceJam-Desktop",
+      "description": "Windows desktop app syncing Spotify now-playing to Microsoft Teams status messages via Graph API (Tauri 2 + Svelte 5)",
+      "topics": [],
+      "language": "Rust",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-10-03T06:59:04Z",
+      "stargazers_count": 0,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "carelink-bridge",
+      "html_url": "https://github.com/NovaLux12/carelink-bridge",
+      "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
+      "topics": [
+        "bridge",
+        "carelink",
+        "cgm",
+        "community-fork",
+        "diabetes",
+        "insulin-pump",
+        "medtronic",
+        "nightscout",
+        "nodejs",
+        "oauth2",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-10-03T06:58:31Z",
+      "stargazers_count": 2,
+      "open_issues_count": 4,
+      "latest_release": {
+        "tag_name": "v0.2.0",
+        "name": "carelink-bridge v0.2.0",
+        "published_at": "2026-07-22T13:12:20Z",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/37104794351",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-03T04:41:39Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37104988725",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -81,83 +158,6 @@
         "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37067167167",
         "head_branch": "main"
       },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-02T04:58:11Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37097363727",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "carelink-bridge",
-      "html_url": "https://github.com/NovaLux12/carelink-bridge",
-      "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
-      "topics": [
-        "bridge",
-        "carelink",
-        "cgm",
-        "community-fork",
-        "diabetes",
-        "insulin-pump",
-        "medtronic",
-        "nightscout",
-        "nodejs",
-        "oauth2",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": true,
-      "archived": false,
-      "pushed_at": "2026-09-28T16:45:53Z",
-      "stargazers_count": 2,
-      "open_issues_count": 5,
-      "latest_release": {
-        "tag_name": "v0.2.0",
-        "name": "carelink-bridge v0.2.0",
-        "published_at": "2026-07-22T13:12:20Z",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/36453395820",
-        "head_branch": "dependabot/npm_and_yarn/minor-patch-5d4fe14bff"
-      },
-      "health": "active"
-    },
-    {
-      "name": "PresenceJam-Desktop",
-      "html_url": "https://github.com/NovaLux12/PresenceJam-Desktop",
-      "description": "Windows desktop app syncing Spotify now-playing to Microsoft Teams status messages via Graph API (Tauri 2 + Svelte 5)",
-      "topics": [],
-      "language": null,
-      "fork": true,
-      "archived": false,
-      "pushed_at": "2026-09-20T21:40:00Z",
-      "stargazers_count": 0,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": null,
       "health": "active"
     },
     {
@@ -251,7 +251,7 @@
       "archived": false,
       "pushed_at": "2026-09-10T22:33:37Z",
       "stargazers_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
       "latest_release": null,
       "ci": {
         "conclusion": "success",
