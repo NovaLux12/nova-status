@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05",
-  "generated_ts": "2026-10-05T04:57:10.529084+00:00",
+  "generated_at": "2026-10-06",
+  "generated_ts": "2026-10-06T05:44:47.474301+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -11,13 +11,83 @@
       "stale": 0
     },
     "languages": {
-      "HTML": 1,
       "TypeScript": 3,
+      "HTML": 1,
       "Go": 9,
       "Python": 4
     }
   },
   "repos": [
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-06T02:24:23Z",
+      "stargazers_count": 1,
+      "open_issues_count": 9,
+      "latest_release": {
+        "tag_name": "v3.0.1",
+        "name": "v3.0.1",
+        "published_at": "2026-10-01T16:11:31Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.0.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37403969930",
+        "head_branch": "dependabot/npm_and_yarn/development-minor-patch-0d63bafd4c"
+      },
+      "health": "active"
+    },
+    {
+      "name": "carelink-bridge",
+      "html_url": "https://github.com/NovaLux12/carelink-bridge",
+      "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
+      "topics": [
+        "bridge",
+        "carelink",
+        "cgm",
+        "community-fork",
+        "diabetes",
+        "insulin-pump",
+        "medtronic",
+        "nightscout",
+        "nodejs",
+        "oauth2",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-10-05T16:46:27Z",
+      "stargazers_count": 2,
+      "open_issues_count": 5,
+      "latest_release": {
+        "tag_name": "v0.2.0",
+        "name": "carelink-bridge v0.2.0",
+        "published_at": "2026-07-22T13:12:20Z",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/37343405031",
+        "head_branch": "dependabot/npm_and_yarn/dotenv-18.0.5"
+      },
+      "health": "active"
+    },
     {
       "name": "nova-status",
       "html_url": "https://github.com/NovaLux12/nova-status",
@@ -26,7 +96,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-04T05:13:04Z",
+      "pushed_at": "2026-10-05T04:57:11Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": {
@@ -38,7 +108,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37265653116",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37420032807",
         "head_branch": "main"
       },
       "health": "active"
@@ -72,43 +142,6 @@
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/cadence/actions/runs/37104913746",
         "head_branch": "dependabot/npm_and_yarn/hono-4.13.7"
-      },
-      "health": "active"
-    },
-    {
-      "name": "carelink-bridge",
-      "html_url": "https://github.com/NovaLux12/carelink-bridge",
-      "description": "Community fork of domien-f/carelink-bridge \u2014 sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation. Maintained by @NovaLux12 while upstream is quiet.",
-      "topics": [
-        "bridge",
-        "carelink",
-        "cgm",
-        "community-fork",
-        "diabetes",
-        "insulin-pump",
-        "medtronic",
-        "nightscout",
-        "nodejs",
-        "oauth2",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": true,
-      "archived": false,
-      "pushed_at": "2026-10-03T07:08:59Z",
-      "stargazers_count": 2,
-      "open_issues_count": 3,
-      "latest_release": {
-        "tag_name": "v0.2.0",
-        "name": "carelink-bridge v0.2.0",
-        "published_at": "2026-07-22T13:12:20Z",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/37105387631",
-        "head_branch": "main"
       },
       "health": "active"
     },
@@ -234,39 +267,6 @@
       "open_issues_count": 0,
       "latest_release": null,
       "ci": null,
-      "health": "active"
-    },
-    {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-02T15:07:22Z",
-      "stargazers_count": 1,
-      "open_issues_count": 7,
-      "latest_release": {
-        "tag_name": "v3.0.1",
-        "name": "v3.0.1",
-        "published_at": "2026-10-01T16:11:31Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.0.1"
-      },
-      "ci": {
-        "conclusion": "failure",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37232561805",
-        "head_branch": "main"
-      },
       "health": "active"
     },
     {
