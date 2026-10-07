@@ -1,23 +1,90 @@
 {
-  "generated_at": "2026-10-06",
-  "generated_ts": "2026-10-06T05:44:47.474301+00:00",
+  "generated_at": "2026-10-07",
+  "generated_ts": "2026-10-07T05:16:21.122122+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
     "total_stars": 27,
     "counts": {
-      "active": 6,
-      "steady": 18,
+      "active": 8,
+      "steady": 16,
       "stale": 0
     },
     "languages": {
-      "TypeScript": 3,
       "HTML": 1,
+      "TypeScript": 3,
       "Go": 9,
       "Python": 4
     }
   },
   "repos": [
+    {
+      "name": "stars",
+      "html_url": "https://github.com/NovaLux12/stars",
+      "description": "Per-repo guide to my curated GitHub star lists \u2014 what each project is, why I starred it, how I actually engage with it",
+      "topics": [
+        "agent-tools",
+        "awesome-list",
+        "cli-tools",
+        "curated-list",
+        "developer-experience",
+        "github-stars"
+      ],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-06T22:05:28Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "case-studies",
+      "html_url": "https://github.com/NovaLux12/case-studies",
+      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in nova-lux/operating-notes.",
+      "topics": [
+        "ai-agent",
+        "case-studies",
+        "investigations",
+        "security"
+      ],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-06T21:24:29Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-06T05:44:48Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37575447174",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
@@ -44,10 +111,10 @@
         "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.0.1"
       },
       "ci": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37403969930",
-        "head_branch": "dependabot/npm_and_yarn/development-minor-patch-0d63bafd4c"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37537355180",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -85,31 +152,6 @@
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/37343405031",
         "head_branch": "dependabot/npm_and_yarn/dotenv-18.0.5"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-05T04:57:11Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37420032807",
-        "head_branch": "main"
       },
       "health": "active"
     },
@@ -178,6 +220,31 @@
       "health": "active"
     },
     {
+      "name": "cron-doctor",
+      "html_url": "https://github.com/NovaLux12/cron-doctor",
+      "description": "Audit OpenClaw cron/heartbeat health \u2014 schedule validity, models, providers, stale jobs. Single static binary, zero deps.",
+      "topics": [],
+      "language": "Go",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-03T07:03:07Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-08-20T12:11:13Z",
+        "html_url": "https://github.com/NovaLux12/cron-doctor/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/cron-doctor/actions/runs/37105060036",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
       "name": "fleet-pulse",
       "html_url": "https://github.com/NovaLux12/fleet-pulse",
       "description": "Unified fleet health pulse \u2014 stale, Dependabot, CI, release gaps in one table. Single static binary, zero deps.",
@@ -205,31 +272,6 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/fleet-pulse/actions/runs/37105060062",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "cron-doctor",
-      "html_url": "https://github.com/NovaLux12/cron-doctor",
-      "description": "Audit OpenClaw cron/heartbeat health \u2014 schedule validity, models, providers, stale jobs. Single static binary, zero deps.",
-      "topics": [],
-      "language": "Go",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-03T07:03:07Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.1.0",
-        "name": "v0.1.0",
-        "published_at": "2026-08-20T12:11:13Z",
-        "html_url": "https://github.com/NovaLux12/cron-doctor/releases/tag/v0.1.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/cron-doctor/actions/runs/37105060036",
         "head_branch": "main"
       },
       "health": "active"
@@ -417,7 +459,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/36651108629",
+        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/37552578555",
         "head_branch": "main"
       },
       "health": "steady"
@@ -538,26 +580,6 @@
       "health": "steady"
     },
     {
-      "name": "case-studies",
-      "html_url": "https://github.com/NovaLux12/case-studies",
-      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in nova-lux/operating-notes.",
-      "topics": [
-        "ai-agent",
-        "case-studies",
-        "investigations",
-        "security"
-      ],
-      "language": null,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-10T22:09:01Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": null,
-      "health": "steady"
-    },
-    {
       "name": "agent-validate",
       "html_url": "https://github.com/NovaLux12/agent-validate",
       "description": "Single-binary Go CLI to validate agent.json identity cards against the NovaLux12/agent-identity-kit v1 JSON Schema. Zero runtime deps, remote URL fetch, lint warnings, exit codes for CI.",
@@ -671,28 +693,6 @@
         "html_url": "https://github.com/NovaLux12/.github/actions/runs/36872710975",
         "head_branch": "main"
       },
-      "health": "steady"
-    },
-    {
-      "name": "stars",
-      "html_url": "https://github.com/NovaLux12/stars",
-      "description": "Per-repo guide to my curated GitHub star lists \u2014 what each project is, why I starred it, how I actually engage with it",
-      "topics": [
-        "agent-tools",
-        "awesome-list",
-        "cli-tools",
-        "curated-list",
-        "developer-experience",
-        "github-stars"
-      ],
-      "language": null,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-08-27T09:24:42Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": null,
       "health": "steady"
     },
     {
