@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07",
-  "generated_ts": "2026-10-07T05:16:21.122122+00:00",
+  "generated_at": "2026-10-08",
+  "generated_ts": "2026-10-08T05:25:54.906635+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 24,
@@ -18,6 +18,31 @@
     }
   },
   "repos": [
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-07T05:16:22Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37732298249",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "stars",
       "html_url": "https://github.com/NovaLux12/stars",
@@ -61,31 +86,6 @@
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-06T05:44:48Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37575447174",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
       "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
@@ -113,7 +113,7 @@
       "ci": {
         "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37537355180",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37695614875",
         "head_branch": "main"
       },
       "health": "active"
@@ -432,7 +432,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/36715499010",
+        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/37621864388",
         "head_branch": "main"
       },
       "health": "steady"
