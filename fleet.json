@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09",
-  "generated_ts": "2026-10-09T05:29:38.979265+00:00",
+  "generated_at": "2026-10-10",
+  "generated_ts": "2026-10-10T05:13:41.059494+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 25,
@@ -11,8 +11,8 @@
       "stale": 0
     },
     "languages": {
-      "TypeScript": 3,
       "CSS": 1,
+      "TypeScript": 3,
       "Python": 4,
       "HTML": 1,
       "Go": 9
@@ -20,36 +20,18 @@
   },
   "repos": [
     {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
+      "name": "loopwise.uk",
+      "html_url": "https://github.com/NovaLux12/loopwise.uk",
+      "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
+      "topics": [],
+      "language": "CSS",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-08T23:59:39Z",
-      "stargazers_count": 1,
+      "pushed_at": "2026-10-09T18:28:42Z",
+      "stargazers_count": 0,
       "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.1.0",
-        "name": "v3.1.0",
-        "published_at": "2026-10-08T23:59:39Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37862443557",
-        "head_branch": "v3.1.0"
-      },
+      "latest_release": null,
+      "ci": null,
       "health": "active"
     },
     {
@@ -76,9 +58,9 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-10-08T20:57:45Z",
+      "pushed_at": "2026-10-09T16:22:03Z",
       "stargazers_count": 2,
-      "open_issues_count": 11,
+      "open_issues_count": 8,
       "latest_release": {
         "tag_name": "v0.2.0",
         "name": "carelink-bridge v0.2.0",
@@ -88,24 +70,42 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/37843328603",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/37936877654",
         "head_branch": "main"
       },
       "health": "active"
     },
     {
-      "name": "loopwise.uk",
-      "html_url": "https://github.com/NovaLux12/loopwise.uk",
-      "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
-      "topics": [],
-      "language": "CSS",
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-08T17:27:02Z",
-      "stargazers_count": 0,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": null,
+      "pushed_at": "2026-10-09T13:34:40Z",
+      "stargazers_count": 1,
+      "open_issues_count": 4,
+      "latest_release": {
+        "tag_name": "v3.1.0",
+        "name": "v3.1.0",
+        "published_at": "2026-10-08T23:59:39Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.0"
+      },
+      "ci": {
+        "conclusion": "failure",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37996365385",
+        "head_branch": "main"
+      },
       "health": "active"
     },
     {
@@ -127,7 +127,7 @@
       "language": "Python",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-08T09:49:38Z",
+      "pushed_at": "2026-10-09T11:02:23Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": {
@@ -139,7 +139,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/actions/runs/37759336068",
+        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/actions/runs/37921281778",
         "head_branch": "main"
       },
       "health": "active"
@@ -162,14 +162,14 @@
       "language": "Python",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-08T09:49:36Z",
+      "pushed_at": "2026-10-09T11:02:15Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": null,
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/ns-reports/actions/runs/37759334105",
+        "html_url": "https://github.com/NovaLux12/ns-reports/actions/runs/37921267394",
         "head_branch": "main"
       },
       "health": "active"
@@ -182,7 +182,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-08T05:25:56Z",
+      "pushed_at": "2026-10-09T05:29:40Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": {
@@ -194,7 +194,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/37888788458",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/38026761543",
         "head_branch": "main"
       },
       "health": "active"
