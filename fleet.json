@@ -1,24 +1,55 @@
 {
-  "generated_at": "2026-10-10",
-  "generated_ts": "2026-10-10T05:13:41.059494+00:00",
+  "generated_at": "2026-10-11",
+  "generated_ts": "2026-10-11T05:04:08.523520+00:00",
   "user": "NovaLux12",
   "stats": {
-    "total_repos": 25,
+    "total_repos": 26,
     "total_stars": 27,
     "counts": {
-      "active": 11,
+      "active": 12,
       "steady": 14,
       "stale": 0
     },
     "languages": {
+      "Shell": 1,
       "CSS": 1,
-      "TypeScript": 3,
       "Python": 4,
       "HTML": 1,
+      "TypeScript": 3,
       "Go": 9
     }
   },
   "repos": [
+    {
+      "name": "carelink-api-research",
+      "html_url": "https://github.com/NovaLux12/carelink-api-research",
+      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "topics": [
+        "api",
+        "carelink",
+        "defensive-security",
+        "documentation",
+        "medtronic",
+        "nightscout",
+        "research",
+        "reverse-engineering",
+        "security"
+      ],
+      "language": "Shell",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-11T00:08:05Z",
+      "stargazers_count": 0,
+      "open_issues_count": 1,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "failure",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/38097388209",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "loopwise.uk",
       "html_url": "https://github.com/NovaLux12/loopwise.uk",
@@ -27,7 +58,7 @@
       "language": "CSS",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-09T18:28:42Z",
+      "pushed_at": "2026-10-10T23:43:49Z",
       "stargazers_count": 0,
       "open_issues_count": 0,
       "latest_release": null,
@@ -58,7 +89,7 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-10-09T16:22:03Z",
+      "pushed_at": "2026-10-10T23:22:41Z",
       "stargazers_count": 2,
       "open_issues_count": 8,
       "latest_release": {
@@ -70,7 +101,98 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/37936877654",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/38094813797",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "ns-cgm-graph",
+      "html_url": "https://github.com/NovaLux12/ns-cgm-graph",
+      "description": "Part of Loopwise Health (loopwise.uk) \u2014 SVG graphs of Nightscout CGM data. Python stdlib, zero deps.",
+      "topics": [
+        "cgm",
+        "data-visualization",
+        "diabetes",
+        "loopwise",
+        "loopwise-health",
+        "nightscout",
+        "python",
+        "stdlib",
+        "svg",
+        "type1-diabetes"
+      ],
+      "language": "Python",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-10T17:28:34Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-08-20T12:52:25Z",
+        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/releases/tag/v0.1.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/actions/runs/38071887709",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "ns-reports",
+      "html_url": "https://github.com/NovaLux12/ns-reports",
+      "description": "Part of Loopwise Health (loopwise.uk) \u2014 weekly Nightscout report generator. Python stdlib, zero deps.",
+      "topics": [
+        "cgm",
+        "diabetes",
+        "loopwise",
+        "loopwise-health",
+        "nightscout",
+        "python",
+        "reporting",
+        "stdlib",
+        "type1-diabetes"
+      ],
+      "language": "Python",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-10T17:28:30Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/ns-reports/actions/runs/38071883241",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-10T05:13:42Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/38113564239",
         "head_branch": "main"
       },
       "health": "active"
@@ -103,98 +225,7 @@
       "ci": {
         "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/37996365385",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "ns-cgm-graph",
-      "html_url": "https://github.com/NovaLux12/ns-cgm-graph",
-      "description": "Part of Loopwise Health (loopwise.uk) \u2014 SVG graphs of Nightscout CGM data. Python stdlib, zero deps.",
-      "topics": [
-        "cgm",
-        "data-visualization",
-        "diabetes",
-        "loopwise",
-        "loopwise-health",
-        "nightscout",
-        "python",
-        "stdlib",
-        "svg",
-        "type1-diabetes"
-      ],
-      "language": "Python",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-09T11:02:23Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.1.0",
-        "name": "v0.1.0",
-        "published_at": "2026-08-20T12:52:25Z",
-        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/releases/tag/v0.1.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/ns-cgm-graph/actions/runs/37921281778",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "ns-reports",
-      "html_url": "https://github.com/NovaLux12/ns-reports",
-      "description": "Part of Loopwise Health (loopwise.uk) \u2014 weekly Nightscout report generator. Python stdlib, zero deps.",
-      "topics": [
-        "cgm",
-        "diabetes",
-        "loopwise",
-        "loopwise-health",
-        "nightscout",
-        "python",
-        "reporting",
-        "stdlib",
-        "type1-diabetes"
-      ],
-      "language": "Python",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-09T11:02:15Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/ns-reports/actions/runs/37921267394",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-09T05:29:40Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/38026761543",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/38085104246",
         "head_branch": "main"
       },
       "health": "active"
