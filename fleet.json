@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-14",
-  "generated_ts": "2026-10-14T04:18:31.295103+00:00",
+  "generated_at": "2026-10-15",
+  "generated_ts": "2026-10-15T04:00:32.257926+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
-    "total_stars": 27,
+    "total_stars": 28,
     "counts": {
       "active": 12,
       "steady": 11,
@@ -12,10 +12,10 @@
     },
     "languages": {
       "C": 1,
+      "TypeScript": 3,
       "HTML": 1,
       "CSS": 1,
       "Python": 4,
-      "TypeScript": 3,
       "Go": 9
     }
   },
@@ -38,15 +38,73 @@
       "language": "C",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-14T04:09:45Z",
-      "stargazers_count": 0,
-      "open_issues_count": 13,
+      "pushed_at": "2026-10-15T00:22:19Z",
+      "stargazers_count": 1,
+      "open_issues_count": 5,
       "latest_release": null,
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/38509972136",
-        "head_branch": "research/s6-headliner"
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/38659644500",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-14T13:35:09Z",
+      "stargazers_count": 1,
+      "open_issues_count": 7,
+      "latest_release": {
+        "tag_name": "v3.1.0",
+        "name": "v3.1.0",
+        "published_at": "2026-10-08T23:59:39Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.0"
+      },
+      "ci": {
+        "conclusion": "failure",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/38637079488",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-14T04:18:32Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/38679158118",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -88,31 +146,6 @@
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/38464720588",
         "head_branch": "dependabot/npm_and_yarn/minor-patch-d9fab2b9ab"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-13T06:16:48Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/38510684542",
-        "head_branch": "main"
       },
       "health": "active"
     },
@@ -193,39 +226,6 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/ns-reports/actions/runs/38071883241",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-09T13:34:40Z",
-      "stargazers_count": 1,
-      "open_issues_count": 4,
-      "latest_release": {
-        "tag_name": "v3.1.0",
-        "name": "v3.1.0",
-        "published_at": "2026-10-08T23:59:39Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.0"
-      },
-      "ci": {
-        "conclusion": "failure",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/38474864671",
         "head_branch": "main"
       },
       "health": "active"
@@ -337,21 +337,33 @@
       "health": "active"
     },
     {
-      "name": "b2-verify",
-      "html_url": "https://github.com/NovaLux12/b2-verify",
-      "description": "Backup freshness watchdog for B2 buckets and local directories, with Prometheus metrics and Telegram alerts",
-      "topics": [],
+      "name": "fleet-pulse",
+      "html_url": "https://github.com/NovaLux12/fleet-pulse",
+      "description": "Unified fleet health pulse \u2014 stale, Dependabot, CI, release gaps in one table. Single static binary, zero deps.",
+      "topics": [
+        "cli",
+        "dashboard",
+        "github",
+        "go",
+        "health",
+        "zero-deps"
+      ],
       "language": "Go",
       "fork": false,
       "archived": false,
       "pushed_at": "2026-10-03T07:03:07Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
-      "latest_release": null,
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "published_at": "2026-08-20T11:30:53Z",
+        "html_url": "https://github.com/NovaLux12/fleet-pulse/releases/tag/v0.1.0"
+      },
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/b2-verify/actions/runs/37105059513",
+        "html_url": "https://github.com/NovaLux12/fleet-pulse/actions/runs/37105060062",
         "head_branch": "main"
       },
       "health": "active"
@@ -382,33 +394,21 @@
       "health": "active"
     },
     {
-      "name": "fleet-pulse",
-      "html_url": "https://github.com/NovaLux12/fleet-pulse",
-      "description": "Unified fleet health pulse \u2014 stale, Dependabot, CI, release gaps in one table. Single static binary, zero deps.",
-      "topics": [
-        "cli",
-        "dashboard",
-        "github",
-        "go",
-        "health",
-        "zero-deps"
-      ],
+      "name": "b2-verify",
+      "html_url": "https://github.com/NovaLux12/b2-verify",
+      "description": "Backup freshness watchdog for B2 buckets and local directories, with Prometheus metrics and Telegram alerts",
+      "topics": [],
       "language": "Go",
       "fork": false,
       "archived": false,
       "pushed_at": "2026-10-03T07:03:07Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.1.0",
-        "name": "v0.1.0",
-        "published_at": "2026-08-20T11:30:53Z",
-        "html_url": "https://github.com/NovaLux12/fleet-pulse/releases/tag/v0.1.0"
-      },
+      "latest_release": null,
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/fleet-pulse/actions/runs/37105060062",
+        "html_url": "https://github.com/NovaLux12/b2-verify/actions/runs/37105059513",
         "head_branch": "main"
       },
       "health": "active"
@@ -454,7 +454,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/36747507092",
+        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/38630506552",
         "head_branch": "main"
       },
       "health": "steady"
@@ -504,7 +504,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/37621864388",
+        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/38624683989",
         "head_branch": "main"
       },
       "health": "steady"
@@ -531,7 +531,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/37552578555",
+        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/38616435104",
         "head_branch": "main"
       },
       "health": "steady"
