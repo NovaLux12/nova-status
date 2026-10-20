@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19",
-  "generated_ts": "2026-10-19T04:02:59.995487+00:00",
+  "generated_at": "2026-10-20",
+  "generated_ts": "2026-10-20T04:16:12.355729+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -11,15 +11,45 @@
       "stale": 2
     },
     "languages": {
-      "TypeScript": 3,
-      "Go": 9,
-      "HTML": 1,
       "C": 1,
+      "TypeScript": 3,
+      "HTML": 1,
+      "Go": 9,
       "CSS": 1,
       "Python": 4
     }
   },
   "repos": [
+    {
+      "name": "carelink-api-research",
+      "html_url": "https://github.com/NovaLux12/carelink-api-research",
+      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "topics": [
+        "api",
+        "carelink",
+        "defensive-security",
+        "documentation",
+        "medtronic",
+        "nightscout",
+        "research",
+        "reverse-engineering",
+        "security"
+      ],
+      "language": "C",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-20T03:44:55Z",
+      "stargazers_count": 1,
+      "open_issues_count": 7,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/39365941862",
+        "head_branch": "research/sl1-servedness"
+      },
+      "health": "active"
+    },
     {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
@@ -36,9 +66,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-18T21:18:12Z",
+      "pushed_at": "2026-10-20T02:24:19Z",
       "stargazers_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 3,
       "latest_release": {
         "tag_name": "v3.1.1",
         "name": "v3.1.1",
@@ -48,28 +78,8 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/39167235832",
-        "head_branch": "v3.1.1"
-      },
-      "health": "active"
-    },
-    {
-      "name": "b2-verify",
-      "html_url": "https://github.com/NovaLux12/b2-verify",
-      "description": "Backup freshness watchdog for B2 buckets and local directories, with Prometheus metrics and Telegram alerts",
-      "topics": [],
-      "language": "Go",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-18T20:38:36Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/b2-verify/actions/runs/39164238050",
-        "head_branch": "main"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/39358727153",
+        "head_branch": "dependabot/npm_and_yarn/development-minor-patch-dc64001db2"
       },
       "health": "active"
     },
@@ -97,9 +107,9 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-10-18T20:37:24Z",
+      "pushed_at": "2026-10-19T16:45:34Z",
       "stargazers_count": 2,
-      "open_issues_count": 7,
+      "open_issues_count": 8,
       "latest_release": {
         "tag_name": "v0.2.0",
         "name": "carelink-bridge v0.2.0",
@@ -109,7 +119,52 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/39164148210",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/39288165737",
+        "head_branch": "dependabot/npm_and_yarn/minor-patch-188bf76f80"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-19T04:03:01Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/39368645995",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "b2-verify",
+      "html_url": "https://github.com/NovaLux12/b2-verify",
+      "description": "Backup freshness watchdog for B2 buckets and local directories, with Prometheus metrics and Telegram alerts",
+      "topics": [],
+      "language": "Go",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-18T20:38:36Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/b2-verify/actions/runs/39164238050",
         "head_branch": "main"
       },
       "health": "active"
@@ -167,61 +222,6 @@
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-18T03:54:21Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/39197523003",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "carelink-api-research",
-      "html_url": "https://github.com/NovaLux12/carelink-api-research",
-      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
-      "topics": [
-        "api",
-        "carelink",
-        "defensive-security",
-        "documentation",
-        "medtronic",
-        "nightscout",
-        "research",
-        "reverse-engineering",
-        "security"
-      ],
-      "language": "C",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-17T23:55:32Z",
-      "stargazers_count": 1,
-      "open_issues_count": 8,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/39125597286",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "loopwise.uk",
       "html_url": "https://github.com/NovaLux12/loopwise.uk",
       "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
@@ -236,7 +236,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/39123156589",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/39262174812",
         "head_branch": "main"
       },
       "health": "active"
