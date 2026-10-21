@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-20",
-  "generated_ts": "2026-10-20T04:16:12.355729+00:00",
+  "generated_at": "2026-10-21",
+  "generated_ts": "2026-10-21T04:04:31.676385+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
     "total_stars": 28,
     "counts": {
-      "active": 11,
-      "steady": 13,
+      "active": 9,
+      "steady": 15,
       "stale": 2
     },
     "languages": {
       "C": 1,
-      "TypeScript": 3,
       "HTML": 1,
+      "TypeScript": 3,
       "Go": 9,
       "CSS": 1,
       "Python": 4
@@ -38,15 +38,40 @@
       "language": "C",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-20T03:44:55Z",
+      "pushed_at": "2026-10-20T04:42:17Z",
       "stargazers_count": 1,
       "open_issues_count": 7,
       "latest_release": null,
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/39365941862",
-        "head_branch": "research/sl1-servedness"
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/39424191305",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-20T04:16:13Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/39541980918",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -78,8 +103,8 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/39358727153",
-        "head_branch": "dependabot/npm_and_yarn/development-minor-patch-dc64001db2"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/39496336503",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -121,31 +146,6 @@
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/39288165737",
         "head_branch": "dependabot/npm_and_yarn/minor-patch-188bf76f80"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-19T04:03:01Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/39368645995",
-        "head_branch": "main"
       },
       "health": "active"
     },
@@ -236,7 +236,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/39262174812",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/39418066331",
         "head_branch": "main"
       },
       "health": "active"
@@ -327,7 +327,7 @@
       "open_issues_count": 0,
       "latest_release": null,
       "ci": null,
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "case-studies",
@@ -347,7 +347,7 @@
       "open_issues_count": 0,
       "latest_release": null,
       "ci": null,
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "agent-identity-kit",
@@ -556,7 +556,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/38616435104",
+        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/39521995871",
         "head_branch": "main"
       },
       "health": "steady"
