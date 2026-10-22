@@ -1,76 +1,102 @@
 {
-  "generated_at": "2026-10-21",
-  "generated_ts": "2026-10-21T04:04:31.676385+00:00",
+  "generated_at": "2026-10-22",
+  "generated_ts": "2026-10-22T04:04:56.367079+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
     "total_stars": 28,
     "counts": {
-      "active": 9,
-      "steady": 15,
-      "stale": 2
+      "active": 12,
+      "steady": 13,
+      "stale": 1
     },
     "languages": {
-      "C": 1,
-      "HTML": 1,
-      "TypeScript": 3,
       "Go": 9,
+      "TypeScript": 3,
+      "HTML": 1,
+      "C": 1,
       "CSS": 1,
       "Python": 4
     }
   },
   "repos": [
     {
-      "name": "carelink-api-research",
-      "html_url": "https://github.com/NovaLux12/carelink-api-research",
-      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "name": "agentcard-mcp",
+      "html_url": "https://github.com/NovaLux12/agentcard-mcp",
+      "description": "MCP server that lets agents query each other's agent-card.json. Fetch, validate, list capabilities, search skills \u2014 all via the Model Context Protocol stdio transport. Uses NovaLux12/agent-validate as the validation library.",
       "topics": [
-        "api",
-        "carelink",
-        "defensive-security",
-        "documentation",
-        "medtronic",
-        "nightscout",
-        "research",
-        "reverse-engineering",
-        "security"
+        "agent-identity",
+        "cli",
+        "go",
+        "mcp"
       ],
-      "language": "C",
+      "language": "Go",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-20T04:42:17Z",
+      "pushed_at": "2026-10-21T22:32:22Z",
       "stargazers_count": 1,
-      "open_issues_count": 7,
-      "latest_release": null,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.2.2",
+        "name": "v0.2.2",
+        "published_at": "2026-10-21T22:33:22Z",
+        "html_url": "https://github.com/NovaLux12/agentcard-mcp/releases/tag/v0.2.2"
+      },
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/39424191305",
-        "head_branch": "main"
+        "html_url": "https://github.com/NovaLux12/agentcard-mcp/actions/runs/39687221304",
+        "head_branch": "v0.2.2"
       },
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [],
-      "language": "HTML",
+      "name": "agent-validate",
+      "html_url": "https://github.com/NovaLux12/agent-validate",
+      "description": "Single-binary Go CLI to validate agent.json identity cards against the NovaLux12/agent-identity-kit v1 JSON Schema. Zero runtime deps, remote URL fetch, lint warnings, exit codes for CI.",
+      "topics": [
+        "agent-identity",
+        "cli",
+        "go",
+        "json-schema",
+        "validation"
+      ],
+      "language": "Go",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-20T04:16:13Z",
+      "pushed_at": "2026-10-21T22:32:20Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+        "tag_name": "v0.3.1",
+        "name": "v0.3.1",
+        "published_at": "2026-10-21T22:33:21Z",
+        "html_url": "https://github.com/NovaLux12/agent-validate/releases/tag/v0.3.1"
       },
       "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/39541980918",
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-validate/actions/runs/39687218954",
+        "head_branch": "v0.3.1"
+      },
+      "health": "active"
+    },
+    {
+      "name": ".github",
+      "html_url": "https://github.com/NovaLux12/.github",
+      "description": "Fleet-level shared GitHub config for NovaLux12 \u2014 reusable CI workflows so per-repo callers stay 4 lines",
+      "topics": [],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-21T22:25:33Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/.github/actions/runs/38746582875",
         "head_branch": "main"
       },
       "health": "active"
@@ -91,9 +117,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-20T02:24:19Z",
+      "pushed_at": "2026-10-21T22:17:20Z",
       "stargazers_count": 1,
-      "open_issues_count": 3,
+      "open_issues_count": 0,
       "latest_release": {
         "tag_name": "v3.1.1",
         "name": "v3.1.1",
@@ -103,7 +129,39 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/39496336503",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/39685390793",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "cadence",
+      "html_url": "https://github.com/NovaLux12/cadence",
+      "description": "\ud83d\udd14 Cadence \u2014 personal recurring items tracker. Subscriptions, cadence reminders, watchlist, Kuga PHEV running costs. Single dashboard, Telegram alerts at 30/14/7/1 days.",
+      "topics": [
+        "cloudflare-workers",
+        "d1",
+        "personal-finance",
+        "reminders",
+        "subscriptions",
+        "telegram"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-21T21:51:11Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.2.1",
+        "name": "Cadence v0.2.1",
+        "published_at": "2026-10-03T07:09:03Z",
+        "html_url": "https://github.com/NovaLux12/cadence/releases/tag/v0.2.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/cadence/actions/runs/39682073719",
         "head_branch": "main"
       },
       "health": "active"
@@ -132,9 +190,9 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-10-19T16:45:34Z",
+      "pushed_at": "2026-10-21T08:41:50Z",
       "stargazers_count": 2,
-      "open_issues_count": 8,
+      "open_issues_count": 9,
       "latest_release": {
         "tag_name": "v0.2.0",
         "name": "carelink-bridge v0.2.0",
@@ -144,8 +202,69 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/39288165737",
-        "head_branch": "dependabot/npm_and_yarn/minor-patch-188bf76f80"
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/39571243368",
+        "head_branch": "dependabot/npm_and_yarn/vite-8.3.5"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-21T04:04:33Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/39720325428",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "carelink-api-research",
+      "html_url": "https://github.com/NovaLux12/carelink-api-research",
+      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "topics": [
+        "api",
+        "carelink",
+        "defensive-security",
+        "documentation",
+        "medtronic",
+        "nightscout",
+        "research",
+        "reverse-engineering",
+        "security"
+      ],
+      "language": "C",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-20T04:42:17Z",
+      "stargazers_count": 1,
+      "open_issues_count": 7,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/39603239456",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -165,38 +284,6 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/b2-verify/actions/runs/39164238050",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "cadence",
-      "html_url": "https://github.com/NovaLux12/cadence",
-      "description": "\ud83d\udd14 Cadence \u2014 personal recurring items tracker. Subscriptions, cadence reminders, watchlist, Kuga PHEV running costs. Single dashboard, Telegram alerts at 30/14/7/1 days.",
-      "topics": [
-        "cloudflare-workers",
-        "d1",
-        "personal-finance",
-        "reminders",
-        "subscriptions",
-        "telegram"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-18T20:33:18Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.2.1",
-        "name": "Cadence v0.2.1",
-        "published_at": "2026-10-03T07:09:03Z",
-        "html_url": "https://github.com/NovaLux12/cadence/releases/tag/v0.2.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/cadence/actions/runs/39163828431",
         "head_branch": "main"
       },
       "health": "active"
@@ -236,7 +323,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/39418066331",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/39596710940",
         "head_branch": "main"
       },
       "health": "active"
@@ -332,7 +419,7 @@
     {
       "name": "case-studies",
       "html_url": "https://github.com/NovaLux12/case-studies",
-      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in nova-lux/operating-notes.",
+      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in NovaLux12/operating-notes.",
       "topics": [
         "ai-agent",
         "case-studies",
@@ -442,7 +529,14 @@
       "name": "PresenceJam-Desktop",
       "html_url": "https://github.com/NovaLux12/PresenceJam-Desktop",
       "description": "Windows desktop app syncing Spotify now-playing to Microsoft Teams status messages via Graph API (Tauri 2 + Svelte 5)",
-      "topics": [],
+      "topics": [
+        "spotify",
+        "status-integration",
+        "svelte",
+        "tauri",
+        "teams",
+        "windows"
+      ],
       "language": "Rust",
       "fork": true,
       "archived": false,
@@ -479,7 +573,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/38630506552",
+        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/39638814922",
         "head_branch": "main"
       },
       "health": "steady"
@@ -529,7 +623,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/38624683989",
+        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/39600579219",
         "head_branch": "main"
       },
       "health": "steady"
@@ -557,36 +651,6 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/39521995871",
-        "head_branch": "main"
-      },
-      "health": "steady"
-    },
-    {
-      "name": "agentcard-mcp",
-      "html_url": "https://github.com/NovaLux12/agentcard-mcp",
-      "description": "MCP server that lets agents query each other's agent-card.json. Fetch, validate, list capabilities, search skills \u2014 all via the Model Context Protocol stdio transport. Uses NovaLux12/agent-validate as the validation library.",
-      "topics": [
-        "agent-identity",
-        "cli",
-        "go",
-        "mcp"
-      ],
-      "language": "Go",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-10T22:20:17Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.2.1",
-        "name": "agentcard-mcp v0.2.1",
-        "published_at": "2026-08-27T09:21:38Z",
-        "html_url": "https://github.com/NovaLux12/agentcard-mcp/releases/tag/v0.2.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agentcard-mcp/actions/runs/34536954663",
         "head_branch": "main"
       },
       "health": "steady"
@@ -677,37 +741,6 @@
       "health": "steady"
     },
     {
-      "name": "agent-validate",
-      "html_url": "https://github.com/NovaLux12/agent-validate",
-      "description": "Single-binary Go CLI to validate agent.json identity cards against the NovaLux12/agent-identity-kit v1 JSON Schema. Zero runtime deps, remote URL fetch, lint warnings, exit codes for CI.",
-      "topics": [
-        "agent-identity",
-        "cli",
-        "go",
-        "json-schema",
-        "validation"
-      ],
-      "language": "Go",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-09-10T22:08:23Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.3.0",
-        "name": "v0.3.0 \u2014 multi-schema v1.1\u2013v1.3 + graph",
-        "published_at": "2026-08-27T10:30:10Z",
-        "html_url": "https://github.com/NovaLux12/agent-validate/releases/tag/v0.3.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-validate/actions/runs/34535913306",
-        "head_branch": "main"
-      },
-      "health": "steady"
-    },
-    {
       "name": "dig",
       "html_url": "https://github.com/NovaLux12/dig",
       "description": "\ud83d\udd0d dig \u2014 generate a self-contained HTML code-archaeology report from any git repo. Single static Go binary, zero deps, beautiful output.",
@@ -771,26 +804,6 @@
         "head_branch": "main"
       },
       "health": "steady"
-    },
-    {
-      "name": ".github",
-      "html_url": "https://github.com/NovaLux12/.github",
-      "description": "Fleet-level shared GitHub config for NovaLux12 \u2014 reusable CI workflows so per-repo callers stay 4 lines",
-      "topics": [],
-      "language": null,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-08-27T10:55:31Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/.github/actions/runs/38746582875",
-        "head_branch": "main"
-      },
-      "health": "stale"
     },
     {
       "name": "openclaw-patterns",
