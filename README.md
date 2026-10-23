@@ -14,7 +14,7 @@ Self-contained status page for [Nova Lux](https://novalux12.github.io/nova-statu
 
 ## Features
 
-- **Fleet at a glance** — stats strip: repository count, total stars, `active` / `steady` / `stale` counts, and a language-distribution bar (pure CSS width segments + inline colours, no images).
+- **Fleet at a glance** — stats strip: repository count (own repos — forks and archived repos are excluded, and the public total is shown alongside), total stars, `active` / `steady` / `stale` counts, and a language-distribution bar (pure CSS width segments + inline colours, no images).
 - **Featured projects** — curated in `projects.json` (name, blurb, repo link); health, last-push date and stars are **auto-derived from the fleet snapshot** at build time, so the section can't rot.
 - **Fleet health panel** — real client-side **search** (name, description, topics, language, release tag), **sortable columns** (click any header; `aria-sort` + ▲▼ indicators), **language filter chips** (multi-select, `aria-pressed`).
   - *Static* snapshot between `<!-- fleet:begin -->` / `<!-- fleet:end -->` markers in `index.html`, regenerated daily — the no-JS fallback.
@@ -60,7 +60,7 @@ npm run serve        # -> python3 -m http.server 8000
 What a run produces:
 
 - `index.html` — five marker regions regenerated (`stats`, `projects`, `fleet`, `releases`, `sparkline`) + both `<time>` elements updated
-- `fleet.json` — enriched snapshot: `{ generated_at, generated_ts, user, stats, repos[] }`; each repo carries description, topics, language, stars, open issues, `health`, `latest_release` (or null) and `ci` (or null)
+- `fleet.json` — enriched snapshot: `{ generated_at, generated_ts, user, stats, repos[] }`; each repo carries description, topics, language, stars, open issues, `health`, `latest_release` (or null) and `ci` (or null). `stats.total_repos` is the effective fleet count (non-fork, non-archived); `stats.total_repos_all` is the full snapshot size, forks and archived repos included
 - `history.jsonl` — one JSON line per day: per-repo `pushed_at` + stars, plus daily health counts and total stars (idempotent — re-running the same day replaces that day's row)
 - `projects.json` — read, not rewritten (curated featured list)
 

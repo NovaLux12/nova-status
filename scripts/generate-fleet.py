@@ -4,7 +4,9 @@ Generate the nova-status v2 snapshot — one stdlib-only pass, everything cache-
 
 Renders, between their marker comments in index.html:
   - projects:    featured projects (from projects.json) with health auto-derived from pushed_at
-  - stats:       stats strip — repo count, total stars, active/steady/stale counts + language bar
+  - stats:       stats strip — repo count (own repos; forks/archived excluded, with
+                 the public total alongside), total stars, active/steady/stale counts
+                 + language bar
   - fleet:       static top-20 fleet rows (no-JS fallback; client JS renders the full fleet)
   - releases:    release timeline (latest release per repo, fleet-wide, newest first)
   - sparkline:   30-day fleet-activity SVG (repos pushed per day + total stars trend)
@@ -280,7 +282,14 @@ def render_projects(projects: list[dict], by_name: dict[str, dict], now: datetim
     return "\n".join(rows) if rows else "<!-- no projects configured -->"
 
 
-def render_stats(repos: list[dict], now: datetime.datetime) -> str:
+def render_stats(repos: list[dict], total_all: int, now: datetime.datetime) -> str:
+    """Render the stats strip.
+
+    `repos` is the effective fleet (non-fork, non-archived). `total_all` is the
+    full snapshot size including forks and archived repos. The stat shows the
+    effective count and states the total next to it, so "N repositories" is
+    never read as the account's total repo count.
+    """
     active = steady = stale = 0
     total_stars = 0
     langs: collections.Counter[str] = collections.Counter()
@@ -301,7 +310,8 @@ def render_stats(repos: list[dict], now: datetime.datetime) -> str:
     cards = (
         '<div class="statgrid">'
         f'<div class="stat"><span class="stat-value" id="stat-repos">{n}</span>'
-        '<span class="stat-label">repositories</span></div>'
+        '<span class="stat-label">repositories</span>'
+        f'<span class="stat-sub">own, non-archived — {total_all} public incl. forks</span></div>'
         f'<div class="stat"><span class="stat-value" id="stat-stars">{total_stars}</span>'
         '<span class="stat-label">stars</span></div>'
         f'<div class="stat"><span class="stat-value stat-ok" id="stat-active">{active}</span>'
@@ -330,7 +340,7 @@ def render_stats(repos: list[dict], now: datetime.datetime) -> str:
     bar = "\n".join(
         [
             '<div class="langbar" id="langbar" role="img" '
-            f'aria-label="Language distribution across {n} repositories">',
+            f'aria-label="Language distribution across {n} own repositories ({total_all} public incl. forks)">',
             "".join(segs),
             "</div>",
             '<ul class="lang-legend" id="lang-legend">' + "".join(legend) + "</ul>",
@@ -591,6 +601,7 @@ def write_fleet_json(repos: list[dict], date_str: str, now: datetime.datetime) -
     effective = effective_repos(repos)
     stats = {
         "total_repos": len(effective),
+        "total_repos_all": len(repos),
         "total_stars": sum(int(r.get("stargazers_count") or 0) for r in effective),
         "counts": {
             "active": sum(1 for r in effective if r.get("health") == "active"),
@@ -664,7 +675,7 @@ def build_and_write(repos: list[dict], date_str: str) -> None:
 
     sections = {
         "projects": render_projects(projects, by_name, now),
-        "stats": render_stats(effective_repos(repos), now),
+        "stats": render_stats(effective_repos(repos), len(repos), now),
         "fleet": render_fleet_rows(repos, date_str),
         "releases": render_releases(repos),
         "sparkline": render_sparkline(history, now),
