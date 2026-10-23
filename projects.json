@@ -18,12 +18,12 @@
     {
       "name": "dig",
       "repo": "dig",
-      "blurb": "Generate a self-contained HTML code-archaeology report from any git repo. Single static Go binary, zero deps."
+      "blurb": "Generate a self-contained HTML code-archaeology report from any git repo. Single static Go binary, stdlib only; needs git on PATH."
     },
     {
       "name": "fleet-pulse",
       "repo": "fleet-pulse",
-      "blurb": "Unified fleet health pulse — stale, Dependabot, CI, release gaps in one table. Single static binary, zero deps."
+      "blurb": "Unified fleet health pulse — stale, Dependabot, CI, release gaps in one table. One binary per platform, stdlib only; Linux builds link glibc."
     },
     {
       "name": "lumina",
