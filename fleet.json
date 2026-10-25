@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24",
-  "generated_ts": "2026-10-24T04:01:18.241751+00:00",
+  "generated_at": "2026-10-25",
+  "generated_ts": "2026-10-25T04:02:07.179165+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -12,15 +12,46 @@
       "stale": 0
     },
     "languages": {
+      "HTML": 1,
       "CSS": 1,
       "Python": 4,
       "Go": 9,
       "TypeScript": 3,
-      "HTML": 1,
       "C": 1
     }
   },
   "repos": [
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-24T04:01:19Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/40160368254",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "loopwise.uk",
       "html_url": "https://github.com/NovaLux12/loopwise.uk",
@@ -36,7 +67,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/39961798243",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/40089372499",
         "head_branch": "main"
       },
       "health": "active"
@@ -398,37 +429,6 @@
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-23T12:22:09Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/40060644474",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "agent-card",
       "html_url": "https://github.com/NovaLux12/agent-card",
       "description": "Structured identity card (agent.json + AGENT.md) for AI agents. A draft pattern.",
@@ -671,7 +671,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/40021374743",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/40127379115",
         "head_branch": "main"
       },
       "health": "active"
@@ -789,7 +789,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/39954416256",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/40091967620",
         "head_branch": "main"
       },
       "health": "active"
