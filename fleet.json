@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31",
-  "generated_ts": "2026-10-31T04:54:29.409870+00:00",
+  "generated_at": "2026-11-01",
+  "generated_ts": "2026-11-01T05:22:00.957453+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -12,15 +12,48 @@
       "stale": 0
     },
     "languages": {
+      "TypeScript": 3,
       "HTML": 1,
       "CSS": 1,
-      "TypeScript": 3,
       "Python": 4,
       "Go": 9,
       "C": 1
     }
   },
   "repos": [
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-31T23:28:58Z",
+      "stargazers_count": 1,
+      "open_issues_count": 3,
+      "latest_release": {
+        "tag_name": "v3.1.1",
+        "name": "v3.1.1",
+        "published_at": "2026-10-18T21:18:13Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
+      },
+      "ci": {
+        "conclusion": "failure",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/41252714969",
+        "head_branch": "dependabot/npm_and_yarn/body-parser-2.4.0"
+      },
+      "health": "active"
+    },
     {
       "name": "nova-status",
       "html_url": "https://github.com/NovaLux12/nova-status",
@@ -35,7 +68,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-10-30T05:08:34Z",
+      "pushed_at": "2026-10-31T04:54:30Z",
       "stargazers_count": 1,
       "open_issues_count": 0,
       "latest_release": {
@@ -47,7 +80,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/41170414704",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/41276642963",
         "head_branch": "main"
       },
       "health": "active"
@@ -89,7 +122,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/41061380531",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/41202837476",
         "head_branch": "main"
       },
       "health": "active"
@@ -732,39 +765,6 @@
       "health": "active"
     },
     {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-23T10:48:32Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.1.1",
-        "name": "v3.1.1",
-        "published_at": "2026-10-18T21:18:13Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/41133215121",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "carelink-api-research",
       "html_url": "https://github.com/NovaLux12/carelink-api-research",
       "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
@@ -789,7 +789,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/41068443811",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/41206256670",
         "head_branch": "main"
       },
       "health": "active"
