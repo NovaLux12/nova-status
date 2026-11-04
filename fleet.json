@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03",
-  "generated_ts": "2026-11-03T06:00:11.209133+00:00",
+  "generated_at": "2026-11-04",
+  "generated_ts": "2026-11-04T05:39:52.339746+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -12,15 +12,76 @@
       "stale": 0
     },
     "languages": {
-      "TypeScript": 3,
       "C": 1,
       "HTML": 1,
+      "TypeScript": 3,
       "CSS": 1,
       "Python": 4,
       "Go": 9
     }
   },
   "repos": [
+    {
+      "name": "carelink-api-research",
+      "html_url": "https://github.com/NovaLux12/carelink-api-research",
+      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "topics": [
+        "api",
+        "carelink",
+        "defensive-security",
+        "documentation",
+        "medtronic",
+        "nightscout",
+        "research",
+        "reverse-engineering",
+        "security"
+      ],
+      "language": "C",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-03T09:29:35Z",
+      "stargazers_count": 1,
+      "open_issues_count": 5,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/41659570773",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-03T06:00:12Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/41780580474",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
@@ -47,40 +108,10 @@
         "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
       },
       "ci": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/41565950548",
-        "head_branch": "dependabot/npm_and_yarn/production-minor-patch-be92b8a66c"
-      },
-      "health": "active"
-    },
-    {
-      "name": "carelink-api-research",
-      "html_url": "https://github.com/NovaLux12/carelink-api-research",
-      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
-      "topics": [
-        "api",
-        "carelink",
-        "defensive-security",
-        "documentation",
-        "medtronic",
-        "nightscout",
-        "research",
-        "reverse-engineering",
-        "security"
-      ],
-      "language": "C",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-03T00:42:49Z",
-      "stargazers_count": 1,
-      "open_issues_count": 8,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/41554808782",
-        "head_branch": "fix/report-list-236"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/41732487077",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -126,37 +157,6 @@
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-02T05:20:15Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/41587111172",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "stars",
       "html_url": "https://github.com/NovaLux12/stars",
       "description": "Per-repo guide to my curated GitHub star lists \u2014 what each project is, why I starred it, how I actually engage with it",
@@ -193,7 +193,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/41480440323",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/41654054329",
         "head_branch": "main"
       },
       "health": "active"
@@ -789,7 +789,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/40609550143",
+        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/41747760273",
         "head_branch": "main"
       },
       "health": "active"
