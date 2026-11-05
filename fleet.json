@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04",
-  "generated_ts": "2026-11-04T05:39:52.339746+00:00",
+  "generated_at": "2026-11-05",
+  "generated_ts": "2026-11-05T05:57:41.722983+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -12,15 +12,79 @@
       "stale": 0
     },
     "languages": {
-      "C": 1,
-      "HTML": 1,
       "TypeScript": 3,
+      "HTML": 1,
+      "C": 1,
       "CSS": 1,
       "Python": 4,
       "Go": 9
     }
   },
   "repos": [
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-04T17:49:33Z",
+      "stargazers_count": 1,
+      "open_issues_count": 5,
+      "latest_release": {
+        "tag_name": "v3.1.1",
+        "name": "v3.1.1",
+        "published_at": "2026-10-18T21:18:13Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/41929639594",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-04T05:39:53Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/41977224638",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "carelink-api-research",
       "html_url": "https://github.com/NovaLux12/carelink-api-research",
@@ -46,71 +110,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/41659570773",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-03T06:00:12Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/41780580474",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-03T02:24:41Z",
-      "stargazers_count": 1,
-      "open_issues_count": 4,
-      "latest_release": {
-        "tag_name": "v3.1.1",
-        "name": "v3.1.1",
-        "published_at": "2026-10-18T21:18:13Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
-      },
-      "ci": {
-        "conclusion": "failure",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/41732487077",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/41856942626",
         "head_branch": "main"
       },
       "health": "active"
@@ -193,7 +193,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/41654054329",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/41850384108",
         "head_branch": "main"
       },
       "health": "active"
@@ -308,7 +308,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/40968135465",
+        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/41872109946",
         "head_branch": "main"
       },
       "health": "active"
@@ -762,7 +762,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/40688873488",
+        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/41830399903",
         "head_branch": "main"
       },
       "health": "active"
