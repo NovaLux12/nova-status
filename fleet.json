@@ -1,55 +1,105 @@
 {
-  "generated_at": "2026-11-06",
-  "generated_ts": "2026-11-06T05:54:09.631085+00:00",
+  "generated_at": "2026-11-07",
+  "generated_ts": "2026-11-07T05:25:54.111283+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
     "total_repos_all": 29,
     "total_stars": 28,
     "counts": {
-      "active": 25,
-      "steady": 1,
+      "active": 21,
+      "steady": 5,
       "stale": 0
     },
     "languages": {
-      "HTML": 1,
+      "Go": 9,
       "TypeScript": 3,
+      "HTML": 1,
       "C": 1,
       "CSS": 1,
-      "Python": 4,
-      "Go": 9
+      "Python": 4
     }
   },
   "repos": [
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "name": "agent-init",
+      "html_url": "https://github.com/NovaLux12/agent-init",
+      "description": "Interactive Go CLI to generate agent.json identity cards against the NovaLux12/agent-identity-kit v1 schema. Validates via NovaLux12/agent-validate as you type. Single binary, zero runtime deps.",
       "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
+        "agent-identity",
+        "cli",
+        "go",
+        "scaffolding"
       ],
-      "language": "HTML",
+      "language": "Go",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-05T05:57:42Z",
+      "pushed_at": "2026-11-06T23:55:27Z",
       "stargazers_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
       "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+        "tag_name": "v0.1.1",
+        "name": "agent-init v0.1.1",
+        "published_at": "2026-07-03T15:19:53Z",
+        "html_url": "https://github.com/NovaLux12/agent-init/releases/tag/v0.1.1"
       },
       "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42171105648",
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-init/actions/runs/42315007943",
         "head_branch": "main"
       },
+      "health": "active"
+    },
+    {
+      "name": "agent-validate",
+      "html_url": "https://github.com/NovaLux12/agent-validate",
+      "description": "Single-binary Go CLI to validate agent.json identity cards against the NovaLux12/agent-identity-kit v1 JSON Schema. Zero runtime deps, remote URL fetch, lint warnings, exit codes for CI.",
+      "topics": [
+        "agent-identity",
+        "cli",
+        "go",
+        "json-schema",
+        "validation"
+      ],
+      "language": "Go",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-06T23:55:20Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": {
+        "tag_name": "v0.3.1",
+        "name": "v0.3.1",
+        "published_at": "2026-10-21T22:33:21Z",
+        "html_url": "https://github.com/NovaLux12/agent-validate/releases/tag/v0.3.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/agent-validate/actions/runs/42314995330",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "case-studies",
+      "html_url": "https://github.com/NovaLux12/case-studies",
+      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in NovaLux12/operating-notes.",
+      "topics": [
+        "ai-agent",
+        "case-studies",
+        "investigations",
+        "security"
+      ],
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-06T23:53:55Z",
+      "stargazers_count": 1,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": null,
       "health": "active"
     },
     {
@@ -68,9 +118,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-04T17:49:33Z",
+      "pushed_at": "2026-11-06T23:38:39Z",
       "stargazers_count": 1,
-      "open_issues_count": 5,
+      "open_issues_count": 0,
       "latest_release": {
         "tag_name": "v3.1.1",
         "name": "v3.1.1",
@@ -80,7 +130,38 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42125830802",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42313267064",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-06T05:54:10Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42342678569",
         "head_branch": "main"
       },
       "health": "active"
@@ -110,7 +191,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42054656717",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42238596654",
         "head_branch": "main"
       },
       "health": "active"
@@ -193,7 +274,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42048549757",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42234010715",
         "head_branch": "main"
       },
       "health": "active"
@@ -591,67 +672,6 @@
       "health": "active"
     },
     {
-      "name": "agent-validate",
-      "html_url": "https://github.com/NovaLux12/agent-validate",
-      "description": "Single-binary Go CLI to validate agent.json identity cards against the NovaLux12/agent-identity-kit v1 JSON Schema. Zero runtime deps, remote URL fetch, lint warnings, exit codes for CI.",
-      "topics": [
-        "agent-identity",
-        "cli",
-        "go",
-        "json-schema",
-        "validation"
-      ],
-      "language": "Go",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-29T22:43:36Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.3.1",
-        "name": "v0.3.1",
-        "published_at": "2026-10-21T22:33:21Z",
-        "html_url": "https://github.com/NovaLux12/agent-validate/releases/tag/v0.3.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-validate/actions/runs/40968030452",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "agent-init",
-      "html_url": "https://github.com/NovaLux12/agent-init",
-      "description": "Interactive Go CLI to generate agent.json identity cards against the NovaLux12/agent-identity-kit v1 schema. Validates via NovaLux12/agent-validate as you type. Single binary, zero runtime deps.",
-      "topics": [
-        "agent-identity",
-        "cli",
-        "go",
-        "scaffolding"
-      ],
-      "language": "Go",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-29T22:43:33Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.1.1",
-        "name": "agent-init v0.1.1",
-        "published_at": "2026-07-03T15:19:53Z",
-        "html_url": "https://github.com/NovaLux12/agent-init/releases/tag/v0.1.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-init/actions/runs/40968023115",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "agentcard-mcp",
       "html_url": "https://github.com/NovaLux12/agentcard-mcp",
       "description": "MCP server that lets agents query each other's agent-card.json. Fetch, validate, list capabilities, search skills \u2014 all via the Model Context Protocol stdio transport. Uses NovaLux12/agent-validate as the validation library.",
@@ -699,7 +719,7 @@
       "open_issues_count": 0,
       "latest_release": null,
       "ci": null,
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "operating-notes",
@@ -720,7 +740,7 @@
       "open_issues_count": 0,
       "latest_release": null,
       "ci": null,
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": ".github",
@@ -740,7 +760,7 @@
         "html_url": "https://github.com/NovaLux12/.github/actions/runs/42039826676",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "rust-ts-setup",
@@ -765,7 +785,7 @@
         "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/41830399903",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "agent-card",
@@ -792,26 +812,6 @@
         "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/41747760273",
         "head_branch": "main"
       },
-      "health": "active"
-    },
-    {
-      "name": "case-studies",
-      "html_url": "https://github.com/NovaLux12/case-studies",
-      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in NovaLux12/operating-notes.",
-      "topics": [
-        "ai-agent",
-        "case-studies",
-        "investigations",
-        "security"
-      ],
-      "language": null,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-06T21:24:29Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": null,
       "health": "steady"
     },
     {
