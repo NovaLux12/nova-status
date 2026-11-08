@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07",
-  "generated_ts": "2026-11-07T05:25:54.111283+00:00",
+  "generated_at": "2026-11-08",
+  "generated_ts": "2026-11-08T05:25:14.475119+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -12,15 +12,87 @@
       "stale": 0
     },
     "languages": {
+      "HTML": 1,
       "Go": 9,
       "TypeScript": 3,
-      "HTML": 1,
       "C": 1,
       "CSS": 1,
       "Python": 4
     }
   },
   "repos": [
+    {
+      "name": "carelink-bridge",
+      "html_url": "https://github.com/NovaLux12/carelink-bridge",
+      "description": "Part of Loopwise Health (loopwise.uk) \u2014 community fork sending Medtronic CareLink pump + CGM data to Nightscout. Maintained while upstream is quiet.",
+      "topics": [
+        "bridge",
+        "carelink",
+        "cgm",
+        "community-fork",
+        "diabetes",
+        "insulin-pump",
+        "loopwise",
+        "loopwise-health",
+        "medtronic",
+        "nightscout",
+        "nodejs",
+        "oauth2",
+        "t1d",
+        "type1-diabetes",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-11-08T01:25:38Z",
+      "stargazers_count": 2,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v0.2.0",
+        "name": "carelink-bridge v0.2.0",
+        "published_at": "2026-07-22T13:12:20Z",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/42434206200",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-07T05:25:55Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42450680107",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "agent-init",
       "html_url": "https://github.com/NovaLux12/agent-init",
@@ -130,38 +202,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42313267064",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-06T05:54:10Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42342678569",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42414496380",
         "head_branch": "main"
       },
       "health": "active"
@@ -191,49 +232,8 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42238596654",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42379195302",
         "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "carelink-bridge",
-      "html_url": "https://github.com/NovaLux12/carelink-bridge",
-      "description": "Part of Loopwise Health (loopwise.uk) \u2014 community fork sending Medtronic CareLink pump + CGM data to Nightscout. Maintained while upstream is quiet.",
-      "topics": [
-        "bridge",
-        "carelink",
-        "cgm",
-        "community-fork",
-        "diabetes",
-        "insulin-pump",
-        "loopwise",
-        "loopwise-health",
-        "medtronic",
-        "nightscout",
-        "nodejs",
-        "oauth2",
-        "t1d",
-        "type1-diabetes",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": true,
-      "archived": false,
-      "pushed_at": "2026-11-02T16:46:09Z",
-      "stargazers_count": 2,
-      "open_issues_count": 8,
-      "latest_release": {
-        "tag_name": "v0.2.0",
-        "name": "carelink-bridge v0.2.0",
-        "published_at": "2026-07-22T13:12:20Z",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/41484715017",
-        "head_branch": "dependabot/npm_and_yarn/minor-patch-b0b04b00f1"
       },
       "health": "active"
     },
@@ -274,7 +274,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42234010715",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42376445510",
         "head_branch": "main"
       },
       "health": "active"
