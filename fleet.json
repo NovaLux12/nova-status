@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-08",
-  "generated_ts": "2026-11-08T05:25:14.475119+00:00",
+  "generated_at": "2026-11-09",
+  "generated_ts": "2026-11-09T05:35:39.742898+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -12,15 +12,78 @@
       "stale": 0
     },
     "languages": {
+      "C": 1,
+      "TypeScript": 3,
       "HTML": 1,
       "Go": 9,
-      "TypeScript": 3,
-      "C": 1,
       "CSS": 1,
       "Python": 4
     }
   },
   "repos": [
+    {
+      "name": "carelink-api-research",
+      "html_url": "https://github.com/NovaLux12/carelink-api-research",
+      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "topics": [
+        "api",
+        "carelink",
+        "defensive-security",
+        "documentation",
+        "medtronic",
+        "nightscout",
+        "research",
+        "reverse-engineering",
+        "security"
+      ],
+      "language": "C",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-09T00:22:21Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42539827673",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-08T23:33:17Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.1.1",
+        "name": "v3.1.1",
+        "published_at": "2026-10-18T21:18:13Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42535765787",
+        "head_branch": "docs/v4-plan"
+      },
+      "health": "active"
+    },
     {
       "name": "carelink-bridge",
       "html_url": "https://github.com/NovaLux12/carelink-bridge",
@@ -45,7 +108,7 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-11-08T01:25:38Z",
+      "pushed_at": "2026-11-08T14:55:51Z",
       "stargazers_count": 2,
       "open_issues_count": 1,
       "latest_release": {
@@ -57,7 +120,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/42434206200",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/42492204059",
         "head_branch": "main"
       },
       "health": "active"
@@ -76,7 +139,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-07T05:25:55Z",
+      "pushed_at": "2026-11-08T05:25:15Z",
       "stargazers_count": 1,
       "open_issues_count": 1,
       "latest_release": {
@@ -88,7 +151,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42450680107",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42568168466",
         "head_branch": "main"
       },
       "health": "active"
@@ -175,69 +238,6 @@
       "health": "active"
     },
     {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-06T23:38:39Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v3.1.1",
-        "name": "v3.1.1",
-        "published_at": "2026-10-18T21:18:13Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42414496380",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "carelink-api-research",
-      "html_url": "https://github.com/NovaLux12/carelink-api-research",
-      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
-      "topics": [
-        "api",
-        "carelink",
-        "defensive-security",
-        "documentation",
-        "medtronic",
-        "nightscout",
-        "research",
-        "reverse-engineering",
-        "security"
-      ],
-      "language": "C",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-03T09:29:35Z",
-      "stargazers_count": 1,
-      "open_issues_count": 5,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42379195302",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "stars",
       "html_url": "https://github.com/NovaLux12/stars",
       "description": "Per-repo guide to my curated GitHub star lists \u2014 what each project is, why I starred it, how I actually engage with it",
@@ -274,7 +274,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42376445510",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42486064024",
         "head_branch": "main"
       },
       "health": "active"
