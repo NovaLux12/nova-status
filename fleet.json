@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09",
-  "generated_ts": "2026-11-09T05:35:39.742898+00:00",
+  "generated_at": "2026-11-10",
+  "generated_ts": "2026-11-10T06:45:50.083734+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -39,14 +39,14 @@
       "language": "C",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-09T00:22:21Z",
+      "pushed_at": "2026-11-10T04:25:08Z",
       "stargazers_count": 1,
       "open_issues_count": 1,
       "latest_release": null,
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42539827673",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/42755741536",
         "head_branch": "main"
       },
       "health": "active"
@@ -67,9 +67,9 @@
       "language": "TypeScript",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-08T23:33:17Z",
+      "pushed_at": "2026-11-10T02:24:40Z",
       "stargazers_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 2,
       "latest_release": {
         "tag_name": "v3.1.1",
         "name": "v3.1.1",
@@ -77,10 +77,41 @@
         "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
       },
       "ci": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42535765787",
-        "head_branch": "docs/v4-plan"
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/42742578772",
+        "head_branch": "dependabot/npm_and_yarn/development-minor-patch-ad441a7b4e"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-09T05:35:40Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42770641253",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -120,38 +151,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/42492204059",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-08T05:25:15Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/42568168466",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/42657839743",
         "head_branch": "main"
       },
       "health": "active"
@@ -274,7 +274,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42486064024",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/42657041383",
         "head_branch": "main"
       },
       "health": "active"
