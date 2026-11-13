@@ -1,52 +1,42 @@
 {
-  "generated_at": "2026-11-12",
-  "generated_ts": "2026-11-12T06:38:23.968713+00:00",
+  "generated_at": "2026-11-13",
+  "generated_ts": "2026-11-13T05:56:02.365326+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
     "total_repos_all": 29,
     "total_stars": 28,
     "counts": {
-      "active": 21,
-      "steady": 5,
+      "active": 7,
+      "steady": 19,
       "stale": 0
     },
     "languages": {
+      "CSS": 1,
       "C": 1,
       "HTML": 1,
       "TypeScript": 3,
       "Go": 9,
-      "CSS": 1,
       "Python": 4
     }
   },
   "repos": [
     {
-      "name": "carelink-api-research",
-      "html_url": "https://github.com/NovaLux12/carelink-api-research",
-      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
-      "topics": [
-        "api",
-        "carelink",
-        "defensive-security",
-        "documentation",
-        "medtronic",
-        "nightscout",
-        "research",
-        "reverse-engineering",
-        "security"
-      ],
-      "language": "C",
+      "name": "loopwise.uk",
+      "html_url": "https://github.com/NovaLux12/loopwise.uk",
+      "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
+      "topics": [],
+      "language": "CSS",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-12T00:26:44Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
+      "pushed_at": "2026-11-12T21:51:06Z",
+      "stargazers_count": 0,
+      "open_issues_count": 0,
       "latest_release": null,
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43127323751",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43314286937",
         "head_branch": "main"
       },
       "health": "active"
@@ -75,19 +65,49 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-11-11T23:58:43Z",
+      "pushed_at": "2026-11-12T17:21:09Z",
       "stargazers_count": 2,
       "open_issues_count": 1,
       "latest_release": {
-        "tag_name": "v0.2.0",
-        "name": "carelink-bridge v0.2.0",
-        "published_at": "2026-07-22T13:12:20Z",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.2.0"
+        "tag_name": "v0.3.1",
+        "name": "v0.3.1 \u2014 documentation accuracy, and a page that could leak your pump serial",
+        "published_at": "2026-11-12T17:21:22Z",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.3.1"
       },
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/43123793150",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/43267764967",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "carelink-api-research",
+      "html_url": "https://github.com/NovaLux12/carelink-api-research",
+      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "topics": [
+        "api",
+        "carelink",
+        "defensive-security",
+        "documentation",
+        "medtronic",
+        "nightscout",
+        "research",
+        "reverse-engineering",
+        "security"
+      ],
+      "language": "C",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-12T13:07:58Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43253124347",
         "head_branch": "main"
       },
       "health": "active"
@@ -106,7 +126,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-11T05:32:47Z",
+      "pushed_at": "2026-11-12T06:38:25Z",
       "stargazers_count": 1,
       "open_issues_count": 1,
       "latest_release": {
@@ -118,7 +138,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/43169485610",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/43375184660",
         "head_branch": "main"
       },
       "health": "active"
@@ -151,7 +171,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/43122288217",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/43324315804",
         "head_branch": "main"
       },
       "health": "active"
@@ -257,27 +277,7 @@
       "open_issues_count": 0,
       "latest_release": null,
       "ci": null,
-      "health": "active"
-    },
-    {
-      "name": "loopwise.uk",
-      "html_url": "https://github.com/NovaLux12/loopwise.uk",
-      "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
-      "topics": [],
-      "language": "CSS",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-29T23:12:31Z",
-      "stargazers_count": 0,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43039908210",
-        "head_branch": "main"
-      },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "NovaLux12",
@@ -297,7 +297,7 @@
       "open_issues_count": 1,
       "latest_release": null,
       "ci": null,
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "agent-identity-kit",
@@ -329,7 +329,7 @@
         "html_url": "https://github.com/NovaLux12/agent-identity-kit/actions/runs/40970486335",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "cadence",
@@ -361,7 +361,7 @@
         "html_url": "https://github.com/NovaLux12/cadence/actions/runs/40970478663",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "openclaw-umans-usage",
@@ -392,7 +392,7 @@
         "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/43062790603",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "lumina",
@@ -417,7 +417,7 @@
         "html_url": "https://github.com/NovaLux12/lumina/actions/runs/40968127709",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "ns-reports",
@@ -452,7 +452,7 @@
         "html_url": "https://github.com/NovaLux12/ns-reports/actions/runs/40968115862",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "ns-cgm-graph",
@@ -488,7 +488,7 @@
         "html_url": "https://github.com/NovaLux12/ns-cgm-graph/actions/runs/40968107589",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "b2-verify",
@@ -513,7 +513,7 @@
         "html_url": "https://github.com/NovaLux12/b2-verify/actions/runs/40968076660",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "dig",
@@ -544,7 +544,7 @@
         "html_url": "https://github.com/NovaLux12/dig/actions/runs/40968068957",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "cron-doctor",
@@ -569,7 +569,7 @@
         "html_url": "https://github.com/NovaLux12/cron-doctor/actions/runs/40968061033",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "fleet-pulse",
@@ -601,7 +601,7 @@
         "html_url": "https://github.com/NovaLux12/fleet-pulse/actions/runs/40968053418",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "gh-digest",
@@ -635,7 +635,7 @@
         "html_url": "https://github.com/NovaLux12/gh-digest/actions/runs/40968046063",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "agent-search",
@@ -669,7 +669,7 @@
         "html_url": "https://github.com/NovaLux12/agent-search/actions/runs/40968038151",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "agentcard-mcp",
@@ -699,7 +699,7 @@
         "html_url": "https://github.com/NovaLux12/agentcard-mcp/actions/runs/40968015763",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "openclaw-patterns",
@@ -757,7 +757,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/.github/actions/runs/42039826676",
+        "html_url": "https://github.com/NovaLux12/.github/actions/runs/43231662167",
         "head_branch": "main"
       },
       "health": "steady"
