@@ -1,46 +1,26 @@
 {
-  "generated_at": "2026-11-13",
-  "generated_ts": "2026-11-13T05:56:02.365326+00:00",
+  "generated_at": "2026-11-14",
+  "generated_ts": "2026-11-14T05:44:54.260477+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
     "total_repos_all": 29,
     "total_stars": 28,
     "counts": {
-      "active": 7,
-      "steady": 19,
+      "active": 8,
+      "steady": 18,
       "stale": 0
     },
     "languages": {
+      "TypeScript": 3,
+      "HTML": 1,
       "CSS": 1,
       "C": 1,
-      "HTML": 1,
-      "TypeScript": 3,
       "Go": 9,
       "Python": 4
     }
   },
   "repos": [
-    {
-      "name": "loopwise.uk",
-      "html_url": "https://github.com/NovaLux12/loopwise.uk",
-      "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
-      "topics": [],
-      "language": "CSS",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-12T21:51:06Z",
-      "stargazers_count": 0,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43314286937",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
     {
       "name": "carelink-bridge",
       "html_url": "https://github.com/NovaLux12/carelink-bridge",
@@ -65,9 +45,9 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-11-12T17:21:09Z",
+      "pushed_at": "2026-11-14T00:11:43Z",
       "stargazers_count": 2,
-      "open_issues_count": 1,
+      "open_issues_count": 5,
       "latest_release": {
         "tag_name": "v0.3.1",
         "name": "v0.3.1 \u2014 documentation accuracy, and a page that could leak your pump serial",
@@ -78,6 +58,122 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/43267764967",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "spotify-mcp-server",
+      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
+      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
+      "topics": [
+        "ai-tools",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "spotify",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-13T15:58:23Z",
+      "stargazers_count": 1,
+      "open_issues_count": 3,
+      "latest_release": {
+        "tag_name": "v3.1.1",
+        "name": "v3.1.1",
+        "published_at": "2026-10-18T21:18:13Z",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/43523453207",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "cadence",
+      "html_url": "https://github.com/NovaLux12/cadence",
+      "description": "\ud83d\udd14 Cadence \u2014 personal recurring items tracker. Subscriptions, cadence reminders, watchlist, Kuga PHEV running costs. Single dashboard, Telegram alerts at 30/14/7/1 days.",
+      "topics": [
+        "cloudflare-workers",
+        "d1",
+        "personal-finance",
+        "reminders",
+        "subscriptions",
+        "telegram"
+      ],
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-13T15:00:41Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v0.2.1",
+        "name": "Cadence v0.2.1",
+        "published_at": "2026-10-03T07:09:03Z",
+        "html_url": "https://github.com/NovaLux12/cadence/releases/tag/v0.2.1"
+      },
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/cadence/actions/runs/43448264929",
+        "head_branch": "dependabot/npm_and_yarn/hono-4.13.16"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-13T05:56:03Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/43562980077",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "loopwise.uk",
+      "html_url": "https://github.com/NovaLux12/loopwise.uk",
+      "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
+      "topics": [],
+      "language": "CSS",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-12T21:51:06Z",
+      "stargazers_count": 0,
+      "open_issues_count": 0,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43445542459",
         "head_branch": "main"
       },
       "health": "active"
@@ -107,71 +203,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43253124347",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-12T06:38:25Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/43375184660",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
-      "name": "spotify-mcp-server",
-      "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
-      "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
-      "topics": [
-        "ai-tools",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "spotify",
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-10T02:24:40Z",
-      "stargazers_count": 1,
-      "open_issues_count": 2,
-      "latest_release": {
-        "tag_name": "v3.1.1",
-        "name": "v3.1.1",
-        "published_at": "2026-10-18T21:18:13Z",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/releases/tag/v3.1.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/43324315804",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43451327765",
         "head_branch": "main"
       },
       "health": "active"
@@ -327,38 +359,6 @@
         "conclusion": "success",
         "status": "completed",
         "html_url": "https://github.com/NovaLux12/agent-identity-kit/actions/runs/40970486335",
-        "head_branch": "main"
-      },
-      "health": "steady"
-    },
-    {
-      "name": "cadence",
-      "html_url": "https://github.com/NovaLux12/cadence",
-      "description": "\ud83d\udd14 Cadence \u2014 personal recurring items tracker. Subscriptions, cadence reminders, watchlist, Kuga PHEV running costs. Single dashboard, Telegram alerts at 30/14/7/1 days.",
-      "topics": [
-        "cloudflare-workers",
-        "d1",
-        "personal-finance",
-        "reminders",
-        "subscriptions",
-        "telegram"
-      ],
-      "language": "TypeScript",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-10-29T23:03:53Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": {
-        "tag_name": "v0.2.1",
-        "name": "Cadence v0.2.1",
-        "published_at": "2026-10-03T07:09:03Z",
-        "html_url": "https://github.com/NovaLux12/cadence/releases/tag/v0.2.1"
-      },
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/cadence/actions/runs/40970478663",
         "head_branch": "main"
       },
       "health": "steady"
