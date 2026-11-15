@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14",
-  "generated_ts": "2026-11-14T05:44:54.260477+00:00",
+  "generated_at": "2026-11-15",
+  "generated_ts": "2026-11-15T05:45:03.058907+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -12,8 +12,8 @@
       "stale": 0
     },
     "languages": {
-      "TypeScript": 3,
       "HTML": 1,
+      "TypeScript": 3,
       "CSS": 1,
       "C": 1,
       "Go": 9,
@@ -45,19 +45,50 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-11-14T00:11:43Z",
+      "pushed_at": "2026-11-15T00:35:02Z",
       "stargazers_count": 2,
-      "open_issues_count": 5,
+      "open_issues_count": 8,
       "latest_release": {
-        "tag_name": "v0.3.1",
-        "name": "v0.3.1 \u2014 documentation accuracy, and a page that could leak your pump serial",
-        "published_at": "2026-11-12T17:21:22Z",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.3.1"
+        "tag_name": "v0.4.1",
+        "name": "v0.4.1",
+        "published_at": "2026-11-14T22:33:53Z",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.4.1"
       },
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/43267764967",
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/43658890478",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-14T05:44:55Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/43682375884",
         "head_branch": "main"
       },
       "health": "active"
@@ -90,7 +121,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/43523453207",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/43644431937",
         "head_branch": "main"
       },
       "health": "active"
@@ -128,37 +159,6 @@
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-13T05:56:03Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/43562980077",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "loopwise.uk",
       "html_url": "https://github.com/NovaLux12/loopwise.uk",
       "description": "Loopwise Health \u2014 public site (AI-native operations for Type 1 diabetes).",
@@ -173,7 +173,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43445542459",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43600956693",
         "head_branch": "main"
       },
       "health": "active"
@@ -203,7 +203,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43451327765",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43602994549",
         "head_branch": "main"
       },
       "health": "active"
