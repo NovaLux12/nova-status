@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16",
-  "generated_ts": "2026-11-16T05:44:34.698190+00:00",
+  "generated_at": "2026-11-17",
+  "generated_ts": "2026-11-17T07:21:48.905401+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -45,9 +45,9 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-11-16T02:21:56Z",
+      "pushed_at": "2026-11-16T16:45:49Z",
       "stargazers_count": 2,
-      "open_issues_count": 6,
+      "open_issues_count": 12,
       "latest_release": {
         "tag_name": "v0.4.2",
         "name": "v0.4.2",
@@ -55,10 +55,10 @@
         "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.4.2"
       },
       "ci": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/43791688282",
-        "head_branch": "main"
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/43911090648",
+        "head_branch": "dependabot/npm_and_yarn/minor-patch-19a8e8c639"
       },
       "health": "active"
     },
@@ -76,7 +76,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-15T05:45:04Z",
+      "pushed_at": "2026-11-16T05:44:35Z",
       "stargazers_count": 1,
       "open_issues_count": 1,
       "latest_release": {
@@ -88,7 +88,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/43812155763",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/44038072844",
         "head_branch": "main"
       },
       "health": "active"
@@ -121,7 +121,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/43767835397",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/44002664014",
         "head_branch": "main"
       },
       "health": "active"
@@ -173,7 +173,7 @@
       "ci": {
         "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43722676107",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43904174308",
         "head_branch": "main"
       },
       "health": "active"
@@ -203,7 +203,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43725748636",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43913149465",
         "head_branch": "main"
       },
       "health": "active"
