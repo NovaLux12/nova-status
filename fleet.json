@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17",
-  "generated_ts": "2026-11-17T07:21:48.905401+00:00",
+  "generated_at": "2026-11-18",
+  "generated_ts": "2026-11-18T06:46:34.056167+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 26,
@@ -21,6 +21,37 @@
     }
   },
   "repos": [
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-17T07:21:49Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/44253785030",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
     {
       "name": "carelink-bridge",
       "html_url": "https://github.com/NovaLux12/carelink-bridge",
@@ -63,37 +94,6 @@
       "health": "active"
     },
     {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-16T05:44:35Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/44038072844",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
-    {
       "name": "spotify-mcp-server",
       "html_url": "https://github.com/NovaLux12/spotify-mcp-server",
       "description": "The definitive Spotify MCP server \u2014 full non-deprecated Web API coverage, paginated everything, podcast-first, tested end to end",
@@ -121,7 +121,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/44002664014",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/44204999549",
         "head_branch": "main"
       },
       "health": "active"
@@ -173,7 +173,7 @@
       "ci": {
         "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/43904174308",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/44123905580",
         "head_branch": "main"
       },
       "health": "active"
@@ -203,7 +203,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/43913149465",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/44130343678",
         "head_branch": "main"
       },
       "health": "active"
@@ -809,7 +809,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/42932328799",
+        "html_url": "https://github.com/NovaLux12/agent-card/actions/runs/44208833997",
         "head_branch": "main"
       },
       "health": "steady"
