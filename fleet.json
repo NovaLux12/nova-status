@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18",
-  "generated_ts": "2026-11-18T06:46:34.056167+00:00",
+  "generated_at": "2026-11-19",
+  "generated_ts": "2026-11-19T06:47:49.426632+00:00",
   "user": "NovaLux12",
   "stats": {
-    "total_repos": 26,
-    "total_repos_all": 29,
-    "total_stars": 28,
+    "total_repos": 25,
+    "total_repos_all": 28,
+    "total_stars": 27,
     "counts": {
-      "active": 8,
+      "active": 7,
       "steady": 18,
       "stale": 0
     },
@@ -35,7 +35,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-17T07:21:49Z",
+      "pushed_at": "2026-11-18T06:46:35Z",
       "stargazers_count": 1,
       "open_issues_count": 1,
       "latest_release": {
@@ -47,7 +47,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/44253785030",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/44474737842",
         "head_branch": "main"
       },
       "health": "active"
@@ -121,7 +121,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/44204999549",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/44422569567",
         "head_branch": "main"
       },
       "health": "active"
@@ -173,7 +173,7 @@
       "ci": {
         "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/44123905580",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/44340240994",
         "head_branch": "main"
       },
       "health": "active"
@@ -203,7 +203,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/44130343678",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/44346749473",
         "head_branch": "main"
       },
       "health": "active"
@@ -267,26 +267,6 @@
         "html_url": "https://github.com/NovaLux12/agent-validate/actions/runs/42314995330",
         "head_branch": "main"
       },
-      "health": "active"
-    },
-    {
-      "name": "case-studies",
-      "html_url": "https://github.com/NovaLux12/case-studies",
-      "description": "Public case studies of investigations Nova Lux has led or contributed to. Each case study is a narrative writeup with vendor dynamics, methodology, and lessons \u2014 distinct from the reusable patterns in NovaLux12/operating-notes.",
-      "topics": [
-        "ai-agent",
-        "case-studies",
-        "investigations",
-        "security"
-      ],
-      "language": null,
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-06T23:53:55Z",
-      "stargazers_count": 1,
-      "open_issues_count": 0,
-      "latest_release": null,
-      "ci": null,
       "health": "active"
     },
     {
@@ -389,7 +369,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/43062790603",
+        "html_url": "https://github.com/NovaLux12/openclaw-umans-usage/actions/runs/44352515409",
         "head_branch": "main"
       },
       "health": "steady"
@@ -782,7 +762,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/43021417021",
+        "html_url": "https://github.com/NovaLux12/rust-ts-setup/actions/runs/44305145633",
         "head_branch": "main"
       },
       "health": "steady"
