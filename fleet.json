@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26",
-  "generated_ts": "2026-11-26T07:41:33.715507+00:00",
+  "generated_at": "2026-11-27",
+  "generated_ts": "2026-11-27T07:40:41.207222+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 25,
     "total_repos_all": 28,
     "total_stars": 27,
     "counts": {
-      "active": 5,
-      "steady": 20,
+      "active": 3,
+      "steady": 22,
       "stale": 0
     },
     "languages": {
@@ -35,7 +35,7 @@
       "language": "HTML",
       "fork": false,
       "archived": false,
-      "pushed_at": "2026-11-25T07:50:57Z",
+      "pushed_at": "2026-11-26T07:41:34Z",
       "stargazers_count": 1,
       "open_issues_count": 1,
       "latest_release": {
@@ -47,7 +47,7 @@
       "ci": {
         "conclusion": null,
         "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/45777159131",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/45960059497",
         "head_branch": "main"
       },
       "health": "active"
@@ -121,7 +121,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/45734300489",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/45921304546",
         "head_branch": "main"
       },
       "health": "active"
@@ -173,10 +173,10 @@
       "ci": {
         "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/45664915665",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/45864950168",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "carelink-api-research",
@@ -203,10 +203,10 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/45669838536",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/45869695598",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "agent-init",
@@ -737,7 +737,7 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/.github/actions/runs/44538025180",
+        "html_url": "https://github.com/NovaLux12/.github/actions/runs/45833556765",
         "head_branch": "main"
       },
       "health": "steady"
