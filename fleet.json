@@ -1,57 +1,26 @@
 {
-  "generated_at": "2026-11-27",
-  "generated_ts": "2026-11-27T07:40:41.207222+00:00",
+  "generated_at": "2026-11-28",
+  "generated_ts": "2026-11-28T07:08:00.550184+00:00",
   "user": "NovaLux12",
   "stats": {
     "total_repos": 25,
     "total_repos_all": 28,
     "total_stars": 27,
     "counts": {
-      "active": 3,
-      "steady": 22,
+      "active": 2,
+      "steady": 23,
       "stale": 0
     },
     "languages": {
+      "C": 1,
       "HTML": 1,
       "TypeScript": 3,
       "CSS": 1,
-      "C": 1,
       "Go": 9,
       "Python": 4
     }
   },
   "repos": [
-    {
-      "name": "nova-status",
-      "html_url": "https://github.com/NovaLux12/nova-status",
-      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
-      "topics": [
-        "automation",
-        "dashboard",
-        "monitoring",
-        "openclaw",
-        "status"
-      ],
-      "language": "HTML",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-26T07:41:34Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": {
-        "tag_name": "v3.0.0",
-        "name": "NOVA OBSERVATORY v3.0.0",
-        "published_at": "2026-09-05T01:02:42Z",
-        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
-      },
-      "ci": {
-        "conclusion": null,
-        "status": "in_progress",
-        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/45960059497",
-        "head_branch": "main"
-      },
-      "health": "active"
-    },
     {
       "name": "carelink-bridge",
       "html_url": "https://github.com/NovaLux12/carelink-bridge",
@@ -76,7 +45,7 @@
       "language": "TypeScript",
       "fork": true,
       "archived": false,
-      "pushed_at": "2026-11-23T16:46:05Z",
+      "pushed_at": "2026-11-28T00:15:26Z",
       "stargazers_count": 2,
       "open_issues_count": 12,
       "latest_release": {
@@ -86,10 +55,71 @@
         "html_url": "https://github.com/NovaLux12/carelink-bridge/releases/tag/v0.4.2"
       },
       "ci": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/45220222368",
-        "head_branch": "dependabot/npm_and_yarn/minor-patch-fa94e17c6d"
+        "html_url": "https://github.com/NovaLux12/carelink-bridge/actions/runs/46086908931",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "carelink-api-research",
+      "html_url": "https://github.com/NovaLux12/carelink-api-research",
+      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
+      "topics": [
+        "api",
+        "carelink",
+        "defensive-security",
+        "documentation",
+        "medtronic",
+        "nightscout",
+        "research",
+        "reverse-engineering",
+        "security"
+      ],
+      "language": "C",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-27T23:53:01Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": null,
+      "ci": {
+        "conclusion": "success",
+        "status": "completed",
+        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/46084912674",
+        "head_branch": "main"
+      },
+      "health": "active"
+    },
+    {
+      "name": "nova-status",
+      "html_url": "https://github.com/NovaLux12/nova-status",
+      "description": "Self-contained status page for Nova Lux \u2014 active projects, stack, links",
+      "topics": [
+        "automation",
+        "dashboard",
+        "monitoring",
+        "openclaw",
+        "status"
+      ],
+      "language": "HTML",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-27T07:40:42Z",
+      "stargazers_count": 1,
+      "open_issues_count": 1,
+      "latest_release": {
+        "tag_name": "v3.0.0",
+        "name": "NOVA OBSERVATORY v3.0.0",
+        "published_at": "2026-09-05T01:02:42Z",
+        "html_url": "https://github.com/NovaLux12/nova-status/releases/tag/v3.0.0"
+      },
+      "ci": {
+        "conclusion": null,
+        "status": "in_progress",
+        "html_url": "https://github.com/NovaLux12/nova-status/actions/runs/46119746367",
+        "head_branch": "main"
       },
       "health": "active"
     },
@@ -121,10 +151,10 @@
       "ci": {
         "conclusion": "success",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/45921304546",
+        "html_url": "https://github.com/NovaLux12/spotify-mcp-server/actions/runs/46089640511",
         "head_branch": "main"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "cadence",
@@ -156,7 +186,7 @@
         "html_url": "https://github.com/NovaLux12/cadence/actions/runs/43448264929",
         "head_branch": "dependabot/npm_and_yarn/hono-4.13.16"
       },
-      "health": "active"
+      "health": "steady"
     },
     {
       "name": "loopwise.uk",
@@ -173,37 +203,7 @@
       "ci": {
         "conclusion": "failure",
         "status": "completed",
-        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/45864950168",
-        "head_branch": "main"
-      },
-      "health": "steady"
-    },
-    {
-      "name": "carelink-api-research",
-      "html_url": "https://github.com/NovaLux12/carelink-api-research",
-      "description": "Read-only research map of Medtronic CareLink's API surface \u2014 hosts, auth tenants, namespaces, published configuration, and undocumented services. No credentials used.",
-      "topics": [
-        "api",
-        "carelink",
-        "defensive-security",
-        "documentation",
-        "medtronic",
-        "nightscout",
-        "research",
-        "reverse-engineering",
-        "security"
-      ],
-      "language": "C",
-      "fork": false,
-      "archived": false,
-      "pushed_at": "2026-11-12T13:07:58Z",
-      "stargazers_count": 1,
-      "open_issues_count": 1,
-      "latest_release": null,
-      "ci": {
-        "conclusion": "success",
-        "status": "completed",
-        "html_url": "https://github.com/NovaLux12/carelink-api-research/actions/runs/45869695598",
+        "html_url": "https://github.com/NovaLux12/loopwise.uk/actions/runs/46037035360",
         "head_branch": "main"
       },
       "health": "steady"
